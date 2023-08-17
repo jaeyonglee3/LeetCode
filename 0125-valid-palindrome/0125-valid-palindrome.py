@@ -8,10 +8,6 @@ class Solution:
         #         clean_s += c
 
         clean_s = "".join([c.lower() for c in s if c.isalnum()])
-        
-        reverse = ""
-        for i in range(1, len(clean_s) + 1):
-            reverse += clean_s[-i]
-        
+        reverse = clean_s[::-1]
         return reverse == clean_s
         
