@@ -3,7 +3,7 @@ class Solution:
         # if we could use division, we could take product of nums 
         # and divide it by the values of each element
         
-        # compute two arrays first, prefix and postfix
+        # compute prefix first and multiply by postfix values after
         res = [1] * len(nums)
         prefix = 1
 
