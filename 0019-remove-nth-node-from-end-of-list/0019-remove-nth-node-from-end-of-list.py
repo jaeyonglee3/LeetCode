@@ -19,7 +19,6 @@ class Solution:
         if curr_delayed.next is None:
             curr_delayed.next = None
         else:
-            print('here')
             curr_delayed.next = curr_delayed.next.next
 
         return temp.next
