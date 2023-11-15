@@ -33,6 +33,8 @@ class Solution:
         #             res = substring if len(substring) > len(res) else res
         
         # return res
+        
+        # CORRECT - expand from center approach
         if len(s) <= 1:
             return s
 
