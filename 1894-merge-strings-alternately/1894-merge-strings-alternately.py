@@ -6,9 +6,4 @@ class Solution:
         for i in range(smaller_len):
             res += word1[i] + word2[i]
         
-        if len(word1) - len(word2) < 0:
-            res += word2[len(word1): ]
-        elif len(word1) - len(word2) > 0:
-            res += word1[len(word2): ]
-        
-        return res
+        return res + word1[smaller_len : ] if len(word1) != smaller_len else res + word2[smaller_len : ]
