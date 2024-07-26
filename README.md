@@ -7,10 +7,12 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0001-two-sum) |
+| [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0001-two-sum) |
+| [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
 ## Two Pointers
 |  |
 | ------- |
@@ -49,4 +51,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/jaeyonglee3/LeetCode/tree/master/0199-binary-tree-right-side-view) |
+## Sorting
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
 <!---LeetCode Topics End-->
