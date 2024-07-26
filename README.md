@@ -14,10 +14,12 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 ## Two Pointers
 |  |
 | ------- |
+| [0125-valid-palindrome](https://github.com/jaeyonglee3/LeetCode/tree/master/0125-valid-palindrome) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
 ## String
 |  |
 | ------- |
+| [0125-valid-palindrome](https://github.com/jaeyonglee3/LeetCode/tree/master/0125-valid-palindrome) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
 ## Linked List
 |  |
