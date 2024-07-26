@@ -13,6 +13,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | ------- |
 | [0001-two-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0001-two-sum) |
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 ## Two Pointers
 |  |
 | ------- |
@@ -22,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0125-valid-palindrome](https://github.com/jaeyonglee3/LeetCode/tree/master/0125-valid-palindrome) |
+| [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
 ## Linked List
 |  |
@@ -55,4 +57,5 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 <!---LeetCode Topics End-->
