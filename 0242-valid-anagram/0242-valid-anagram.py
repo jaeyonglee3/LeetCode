@@ -11,3 +11,7 @@ class Solution:
                 return False
 
         return True
+
+        # first, populate a hashmap with letters to how many times they're used in s
+        # iterate through the chars in t, using count function and comparing to the number in hashmap
+        # if numbers aren't same, return false
