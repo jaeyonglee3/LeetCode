@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | ------- |
 | [0001-two-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0001-two-sum) |
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
+| [0238-product-of-array-except-self](https://github.com/jaeyonglee3/LeetCode/tree/master/0238-product-of-array-except-self) |
 ## Hash Table
 |  |
 | ------- |
@@ -58,4 +59,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | ------- |
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
+## Prefix Sum
+|  |
+| ------- |
+| [0238-product-of-array-except-self](https://github.com/jaeyonglee3/LeetCode/tree/master/0238-product-of-array-except-self) |
 <!---LeetCode Topics End-->
