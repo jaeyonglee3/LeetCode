@@ -1,13 +1,13 @@
-from collections import defaultdict
-
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        hmap = defaultdict(list)
+        hmap = {}
 
         for word in strs:
-            char_count = [0] * 26
-            for char in word:
-                char_count[ord(char) - ord('a')] += 1
-            hmap[tuple(char_count)].append(word)
-
+            sorted_word = ''.join(sorted(word))
+            if sorted_word in hmap:
+                hmap[sorted_word].append(word)
+            else:
+                hmap[sorted_word] = [word]
+        
         return list(hmap.values())
+        
