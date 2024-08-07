@@ -1,15 +1,20 @@
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        res = []
-        freq_map = defaultdict(lambda: 0)
-
-        for num in nums:
-            freq_map[num] += 1
-
-        sorted_map = dict(sorted(freq_map.items(), key=lambda item: item[1]))
-        sorted_keys = list(sorted_map.keys())
-
-        for _ in range(k):
-            res.append(sorted_keys.pop())
+        counter = {}
+        freq = [[] for _ in range(len(nums) + 1)]
         
-        return res
+        for n in nums:
+            counter[n] = 1 + counter.get(n, 0)
+        
+        for n, count in counter.items():
+            freq[count].append(n)
+        
+        res = []
+        for i in range(len(freq) - 1, 0, -1):
+            for n in freq[i]:
+                if len(res) != k:
+                    res.append(n)
+
+            if len(res) == k:
+                return res
+
