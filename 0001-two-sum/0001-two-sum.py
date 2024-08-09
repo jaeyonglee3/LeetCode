@@ -10,7 +10,9 @@ class Solution:
         hmap = {}
 
         for i, num in enumerate(nums):
-            if target - num in hmap:
-                return [hmap[target - num], i]
+            complement = target - num
+
+            if complement in hmap:
+                return [hmap[complement], i]
             
             hmap[num] = i
