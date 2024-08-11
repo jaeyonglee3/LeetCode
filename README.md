@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0001-two-sum) |
+| [0011-container-with-most-water](https://github.com/jaeyonglee3/LeetCode/tree/master/0011-container-with-most-water) |
 | [0049-group-anagrams](https://github.com/jaeyonglee3/LeetCode/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/jaeyonglee3/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
@@ -24,6 +25,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 ## Two Pointers
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/jaeyonglee3/LeetCode/tree/master/0011-container-with-most-water) |
 | [0125-valid-palindrome](https://github.com/jaeyonglee3/LeetCode/tree/master/0125-valid-palindrome) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
 ## String
@@ -96,4 +98,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
+## Greedy
+|  |
+| ------- |
+| [0011-container-with-most-water](https://github.com/jaeyonglee3/LeetCode/tree/master/0011-container-with-most-water) |
 <!---LeetCode Topics End-->
