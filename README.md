@@ -31,6 +31,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/jaeyonglee3/LeetCode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/jaeyonglee3/LeetCode/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
@@ -102,4 +103,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/jaeyonglee3/LeetCode/tree/master/0011-container-with-most-water) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
