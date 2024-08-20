@@ -37,6 +37,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0125-valid-palindrome](https://github.com/jaeyonglee3/LeetCode/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
+| [2496-count-days-spent-together](https://github.com/jaeyonglee3/LeetCode/tree/master/2496-count-days-spent-together) |
 ## Linked List
 |  |
 | ------- |
@@ -116,4 +117,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0022-generate-parentheses) |
+## Math
+|  |
+| ------- |
+| [2496-count-days-spent-together](https://github.com/jaeyonglee3/LeetCode/tree/master/2496-count-days-spent-together) |
 <!---LeetCode Topics End-->
