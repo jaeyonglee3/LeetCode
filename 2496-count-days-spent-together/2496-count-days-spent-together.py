@@ -1,8 +1,8 @@
 class Solution:
     def countDaysTogether(self, arriveAlice: str, leaveAlice: str, arriveBob: str, leaveBob: str) -> int:
-        return max(0, self.getDate(min(leaveAlice, leaveBob)) - self.getDate(max(arriveAlice, arriveBob)) + 1)
+        return max(0, self.getDayOfYear(min(leaveAlice, leaveBob)) - self.getDayOfYear(max(arriveAlice, arriveBob)) + 1)
     
-    def getDate(self, date):
+    def getDayOfYear(self, date):
         monthList = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
         month = int(date[:2])
         days = int(date[3:])
