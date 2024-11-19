@@ -1,20 +1,22 @@
+from queue import PriorityQueue
+
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        counter = {}
-        freq = [[] for _ in range(len(nums) + 1)]
-        
-        for n in nums:
-            counter[n] = 1 + counter.get(n, 0)
-        
-        for n, count in counter.items():
-            freq[count].append(n)
-        
+        # use a frequency map to map value to frequency
+        # extract the k values with highest frequency
         res = []
-        for i in range(len(freq) - 1, 0, -1):
-            for n in freq[i]:
-                if len(res) != k:
-                    res.append(n)
+        freq_map = defaultdict(lambda: 0)
 
-            if len(res) == k:
-                return res
+        for num in nums:
+            freq_map[num] += 1
 
+        # Throw the numbers into a priority queue
+        # Priority is highest frequency
+        p_queue = PriorityQueue()
+        for pair in freq_map.items():
+            p_queue.put((-pair[1], pair[0]))
+
+        for _ in range(k):
+            res.append(p_queue.get()[1])
+        
+        return res
