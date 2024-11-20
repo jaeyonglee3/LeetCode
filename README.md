@@ -120,6 +120,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0020-valid-parentheses) |
+| [0155-min-stack](https://github.com/jaeyonglee3/LeetCode/tree/master/0155-min-stack) |
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
 ## Dynamic Programming
 |  |
@@ -143,4 +144,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
+## Design
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/jaeyonglee3/LeetCode/tree/master/0155-min-stack) |
 <!---LeetCode Topics End-->
