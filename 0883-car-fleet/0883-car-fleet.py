@@ -32,10 +32,13 @@ class Solution:
         #         while cars[-1][0] == target:
         #             cars.pop()
 
+        # [0, 3, 5, 8, 10] - positions
+        # [1, 3, 1, 4, 2] - speeds
+        # [(10, 2), (8, 4), (5, 1), (3, 3), (0, 1)]
         for dist, speed in sorted(cars, reverse=True):
-            destination_time = (target - dist)/speed
-            if curr_time < destination_time:
+            destination_hour = (target - dist)/speed
+            if curr_time < destination_hour:
                 res += 1
-                curr_time = destination_time
+                curr_time = destination_hour
         
         return res
