@@ -35,6 +35,12 @@ class Solution:
         # [0, 3, 5, 8, 10] - positions
         # [1, 3, 1, 4, 2] - speeds
         # [(10, 2), (8, 4), (5, 1), (3, 3), (0, 1)]
+        # dest = 1, curr_time = 0, res += 1, curr_time = 1
+        # dest = 1, curr_time = 1, res += 0, curr_time = 1
+        # dest = 7, curr_time = 1, res += 1, curr_time = 7
+        # dest = 3, curr_time = 7, res += 0, curr_time = 7
+        # dest = 12, curr_time = 7, res += 1, curr_time = 12
+        # return res = 3
         for dist, speed in sorted(cars, reverse=True):
             destination_hour = (target - dist)/speed
             if curr_time < destination_hour:
