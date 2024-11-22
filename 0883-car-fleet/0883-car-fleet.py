@@ -17,41 +17,16 @@ class Solution:
         
         # return res
 
+        # NEETCODE - stack solution
         cars = list(zip(position, speed))
         stack = []
         for dist, speed in sorted(cars, reverse=True):
             stack.append((target - dist)/speed)
             if len(stack) > 1 and stack[-1] <= stack[-2]:
-                stack.pop()
+                # always popping cars in the fleet with faster speeds 
+                # so that only the slowest cars remain
+                # and stack eventually only contains 1 car from each fleet.
+                stack.pop() 
         
         return len(stack)
-
-        # OLD FAILED SOL'N + NOTES
-        # sort the cars based on their position from target and their speeds too
-        # [0, 3, 5, 8, 10] - positions
-        # [1, 3, 1, 4, 2] - speeds
-        # {0: 1, 3: 3, 5: 1, 8: 4, 10: 2} - slowest speeds
-        # while there are remaining cars
-            # increment +1 hour of travel time
-            # [1, 6, 6, 12, 12] - positions
-            # pop off all that are at target, increment result +1
-            # [2, 7, 7] - positions
-            # [3, 8, 8] - positions
-            # [4, 9, 9] - positions
-            # ...
-            # [7, 12, 12] - positions
-            # pop off all that are at target, increment result +1
-            # only one car remains, increment result +1
-        
-        # while cars:
-        #     for car in reversed(cars):
-        #         car[0] += car[1]
-        #         speeds[car[0]] = min(speeds[car[0]], car[1])
-        #         car[1] = speeds[car[0]]
-            
-        #     if (cars[-1][0] == target):
-        #         res += 1
-        #         while cars[-1][0] == target:
-        #             cars.pop()
-        # Got stuck here lol
 
