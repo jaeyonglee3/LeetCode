@@ -16,8 +16,7 @@ class Solution:
                 ls = stack.pop()
                 operation = operators[token]
                 new_val = operation(ls, rs)
-                # stack.append(int(new_val))
-                stack.append(int(math.trunc(new_val)))
+                stack.append(int(new_val)) # conversion to int truncates towards zero
             else:
                 stack.append(int(token))
         
