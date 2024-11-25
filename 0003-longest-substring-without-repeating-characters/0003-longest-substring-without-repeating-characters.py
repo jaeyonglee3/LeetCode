@@ -19,4 +19,3 @@ class Solution:
             visited[char] = r
         
         return res
-
