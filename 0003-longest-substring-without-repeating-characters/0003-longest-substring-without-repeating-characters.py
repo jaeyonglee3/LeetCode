@@ -1,18 +1,18 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        # sliding window technique, O(n) time
-        visited = {}  # char:last known index
-        l_ptr = 0
-        greatest_len = 0
+        visited = {}
+        l = 0
+        res = 0
 
-        for r_ptr in range(len(s)):
-            char = s[r_ptr]
+        for r in range(len(s)):
+            char = s[r]
 
-            if char in visited and visited[char] >= l_ptr:
-                l_ptr = visited[char] + 1
+            if char in visited and visited[char] >= l:
+                l = visited[char] + 1
             else:
-                greatest_len = max(greatest_len, r_ptr + 1 - l_ptr)
-            visited[char] = r_ptr
+                res = max(res, r + 1 - l)
+            
+            visited[char] = r
         
-        return greatest_len
-    
+        return res
+
