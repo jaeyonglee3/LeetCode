@@ -14,11 +14,14 @@ class Solution:
 
         for x_i, x in enumerate(nums):
             # Optimization: Skip duplicate numbers for the fixed 'x'
+            # if it isn't the first value in nums
+            # and if its the same num as the one before it, skip it!
             if x_i > 0 and nums[x_i] == nums[x_i - 1]:  
                 continue 
 
             target = -x
-            l, r = 0, len(nums) - 1
+            # l starts at x_i + 1 because
+            l, r = x_i + 1, len(nums) - 1
             
             while r > l:
                 curr_sum = nums[l] + nums[r]
@@ -28,11 +31,10 @@ class Solution:
                 elif r == x_i or curr_sum > target:
                     r -= 1
                 else:
-                    triple = tuple(sorted([nums[l], nums[r], x]))
-                    if triple not in seen:
-                        res.append(list(triple))
-                        seen.add(triple)
+                    res.append([nums[l], nums[r], x])
+                    # e.g. [-2, -2, 0, 0, 2, 2]
                     l += 1
-                    r -= 1
+                    while nums[l] == nums[l - 1] and r > l:
+                        l += 1
         
         return res
