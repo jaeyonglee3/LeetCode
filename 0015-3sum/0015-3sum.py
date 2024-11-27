@@ -1,27 +1,38 @@
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        # naive sol'n: triple nested for loops, but cannot avoid duplicates 
-        res = []
+        # P - return an array of arrays each containing 3 nums that add up to 0 w no duplicates
+        # C - 
+        # C - how to iterate nums? 
+        # L -
+        # I - 
+        # M -
+        # T -
+
         nums.sort()
+        res = []
+        seen = set()
 
-        for i, val in enumerate(nums): 
-            # dont want to reuse same value in same position twice
-            if i > 0 and val == nums[i - 1]:
-                continue
+        for x_i, x in enumerate(nums):
+            # Optimization: Skip duplicate numbers for the fixed 'x'
+            if x_i > 0 and nums[x_i] == nums[x_i - 1]:  
+                continue 
+
+            target = -x
+            l, r = 0, len(nums) - 1
             
-            l, r = i + 1, len(nums) - 1
-            while l < r:
-                three_sum = val + nums[l] + nums[r]
+            while r > l:
+                curr_sum = nums[l] + nums[r]
 
-                if three_sum > 0:
+                if l == x_i or curr_sum < target:
+                    l += 1
+                elif r == x_i or curr_sum > target:
                     r -= 1
-                elif three_sum < 0:
-                    l += 1
                 else:
-                    res.append([val, nums[l], nums[r]])
+                    triple = tuple(sorted([nums[l], nums[r], x]))
+                    if triple not in seen:
+                        res.append(list(triple))
+                        seen.add(triple)
                     l += 1
-
-                    while nums[l] == nums[l - 1] and l < r:
-                        l += 1
+                    r -= 1
         
         return res
