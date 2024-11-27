@@ -10,7 +10,6 @@ class Solution:
 
         nums.sort()
         res = []
-        seen = set()
 
         for x_i, x in enumerate(nums):
             # Optimization: Skip duplicate numbers for the fixed 'x'
@@ -20,7 +19,8 @@ class Solution:
                 continue 
 
             target = -x
-            # l starts at x_i + 1 because
+            # l starts at x_i + 1 because we've already considered all 
+            # possible triplets with x as the fixed value and indices less than x_i in previous iterations.
             l, r = x_i + 1, len(nums) - 1
             
             while r > l:
@@ -32,8 +32,9 @@ class Solution:
                     r -= 1
                 else:
                     res.append([nums[l], nums[r], x])
-                    # e.g. [-2, -2, 0, 0, 2, 2]
+                    # e.g. [0, -2, -2, 0, 0, 2, 2]
                     # Optimization: Skip duplicate numbers for 'l' and 'r'
+                    # Because its sorted, all duplicates would be next to each other!
                     while l < r and nums[l] == nums[l + 1]:  
                         l += 1
                     while l < r and nums[r] == nums[r - 1]:
