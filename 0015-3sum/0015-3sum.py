@@ -26,9 +26,9 @@ class Solution:
             while r > l:
                 curr_sum = nums[l] + nums[r]
 
-                if l == x_i or curr_sum < target:
+                if curr_sum < target:
                     l += 1
-                elif r == x_i or curr_sum > target:
+                elif curr_sum > target:
                     r -= 1
                 else:
                     res.append([nums[l], nums[r], x])
