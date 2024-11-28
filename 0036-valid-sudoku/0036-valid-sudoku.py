@@ -8,15 +8,12 @@ class Solution:
         for row_num, row in enumerate(board):
             for col_num, val in enumerate(row):
                 if val in valid_numbers:
-                    row_copy = rows[row_num].copy()
-                    col_copy = cols[col_num].copy()
-                    squares_copy = squares[(row_num // 3, col_num // 3)].copy()
+                    if (val in rows[row_num] or val in cols[col_num] or val in squares[(row_num // 3, col_num // 3)]):
+                            return False
 
+                    # If no duplicate, add val to the sets
                     rows[row_num].add(val)
                     cols[col_num].add(val)
                     squares[(row_num // 3, col_num // 3)].add(val)
 
-                    if (rows[row_num] == row_copy or cols[col_num] == col_copy or squares[(row_num // 3, col_num // 3)] == squares_copy):
-                        return False
-        
-        return True
+        return True  # If no duplicates were found, the board is valid
