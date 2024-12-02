@@ -9,10 +9,12 @@ class Solution:
         curr = head
         num_nodes = 0
 
+        # Calculate number of nodes
         while curr:
             num_nodes += 1
             curr = curr.next
         
+        # Iterate curr to be at nth node from the end, prev to be at (n-1)th from the end
         prev, curr = None, head
         curr_n = num_nodes
         curr_i = 0
@@ -23,12 +25,14 @@ class Solution:
             curr = curr.next
             curr_n = num_nodes - curr_i
         
-        # Once loop completes, curr is at nth from end, prev is at (n - 1)th from end
+        # Make prev point to curr's next node
+        # dummy can point to original head
         if prev:
             prev.next = curr.next
             dummy = head
+        # Else: The node being removed is the head. 
+        # Simply make dummy be the 2nd node in the linkedlist
         else:
-            # The node being removed is the head
             dummy = curr.next
 
         return dummy
