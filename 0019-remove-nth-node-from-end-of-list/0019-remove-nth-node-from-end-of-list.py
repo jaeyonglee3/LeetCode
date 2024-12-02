@@ -5,20 +5,30 @@
 #         self.next = next
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
-        # Have two pointers and update one w a delay of n steps 
-        temp = ListNode(0, head)
-        curr, curr_delayed = temp, temp
+        dummy = ListNode()
+        curr = head
+        num_nodes = 0
 
-        for _ in range(n):
+        while curr:
+            num_nodes += 1
             curr = curr.next
         
-        while curr.next:
-            curr, curr_delayed = curr.next, curr_delayed.next
+        prev, curr = None, head
+        curr_n = num_nodes
+        curr_i = 0
 
-        # At this point, curr_delayed refers to the node before the one to delete
-        if curr_delayed.next is None:
-            curr_delayed.next = None
+        while curr_n != n:
+            curr_i += 1
+            prev = curr
+            curr = curr.next
+            curr_n = num_nodes - curr_i
+        
+        # Once loop completes, curr is at nth from end, prev is at (n - 1)th from end
+        if prev:
+            prev.next = curr.next
+            dummy = head
         else:
-            curr_delayed.next = curr_delayed.next.next
+            # The node being removed is the head
+            dummy = curr.next
 
-        return temp.next
+        return dummy
