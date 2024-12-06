@@ -7,21 +7,23 @@
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        # recursive, fairly fast
-        # if (p.val <= root.val and q.val >= root.val) or (p.val >= root.val and q.val <= root.val): 
-        #     return root
+        p_path = self.findPath(root, p)
+        q_path = self.findPath(root, q)
 
-        # if p.val < root.val and q.val < root.val:
-        #     return self.lowestCommonAncestor(root.left, p, q)
-        # else:
-        #     return self.lowestCommonAncestor(root.right, p, q)
+        for i, node in enumerate(q_path):
+            if i > len(p_path) - 1 or p_path[i] != node:
+                return p_path[i - 1]
+        
+        return p_path[len(q_path) - 1]
 
-        # iterative
-        curr = root
-        while curr:
-            if p.val < curr.val and q.val < curr.val:
-                curr = curr.left
-            elif p.val > curr.val and q.val > curr.val:
-                curr = curr.right
-            else:
-                return curr
+    
+    def findPath(self, root, target):
+        if root == target:
+            return [root]
+        
+        if target.val > root.val:
+            next_node = root.right
+        else:
+            next_node = root.left
+
+        return [root] + self.findPath(next_node, target)
