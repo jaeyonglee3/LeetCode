@@ -81,6 +81,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0110-balanced-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0110-balanced-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/jaeyonglee3/LeetCode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0226-invert-binary-tree) |
+| [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 ## Depth-First Search
 |  |
@@ -89,6 +90,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0110-balanced-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0110-balanced-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/jaeyonglee3/LeetCode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0226-invert-binary-tree) |
+| [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 ## Breadth-First Search
 |  |
@@ -103,6 +105,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0110-balanced-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0110-balanced-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/jaeyonglee3/LeetCode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0226-invert-binary-tree) |
+| [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 ## Sorting
 |  |
@@ -198,4 +201,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0287-find-the-duplicate-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0287-find-the-duplicate-number) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 <!---LeetCode Topics End-->
