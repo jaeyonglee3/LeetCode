@@ -10,19 +10,20 @@ class Solution:
         q.append(root)
         res = []
 
-        while q:  # continue iterating until queue is empty
-            q_len = len(q)  # we'll iterate through each value at each level
-            level = []
-            for i in range(q_len):
-                node = q.popleft()
-                if node:  # could be None, so ensure they are not before adding to level list
-                    level.append(node.val)
-                    q.append(node.left)
-                    q.append(node.right)
+        while q:  # continue until queue is empty
+            q_len = len(q)
+            curr_level = []
+
+            for _ in range(q_len):
+                d = q.popleft()
+
+                if d:
+                    q.append(d.left)
+                    q.append(d.right)
+                    curr_level.append(d.val)
             
-            if level:
-                res.append(level)
+            if curr_level:
+                res.append(curr_level)
         
         return res
-
-        
+           
