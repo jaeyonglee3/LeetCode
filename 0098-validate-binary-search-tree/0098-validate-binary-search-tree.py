@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        def valid(node, left, right):  # left and right boundaries for the values of nodes
+        def valid(node, lower_bound, upper_bound):  # left and right boundaries for the values of nodes
             # Two Base cases:
             # 1. Empty tree
             # 2. We have a BST property violation
@@ -14,9 +14,11 @@ class Solution:
             if not node: # empty tree is still valid BST
                 return True
             
-            if right <= node.val or left >= node.val:
+            if node.val >= upper_bound or node.val <= lower_bound:
                 return False
             
-            return valid(node.left, left, node.val) and valid(node.right, node.val, right)
+            # check if left subtree is valid, lower bound doesnt change, upper bound is parent
+            # check if right subtree is valid, upper bound doesnt change, lower bound is parent
+            return valid(node.left, lower_bound, node.val) and valid(node.right, node.val, upper_bound)
         
         return valid(root, -math.inf, math.inf)
