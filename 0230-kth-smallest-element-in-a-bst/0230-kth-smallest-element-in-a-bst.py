@@ -6,35 +6,20 @@
 #         self.right = right
 class Solution:
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
-        # Recursive solution:
-        # In order traversal to save elements to list
-        # least_to_greatest = self.inorderTraversal(root)
-        # return least_to_greatest[k - 1]
+        self.k = k
+        self.result = None
+        self.inorder(root)
+        return self.result
     
-    # def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-    #     if not root:
-    #         return []
+    def inorder(self, node):
+        if not node or self.result is not None:  # Optimization hint!
+            return
 
-    #     return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
+        self.inorder(node.left)
 
-        # Iterative solution 
-        # start at root
-        num_visited = 0  # to keep track of the number of elements visited
-        stack = []
-        curr = root
+        self.k -= 1
+        if self.k == 0:
+            self.result = node.val
+            return  # Stop traversing once found
 
-        # while curr is not null or stack != []:
-        while curr or stack:
-            while curr:
-                stack.append(curr)
-                curr = curr.left
-            
-            curr = stack.pop()  # once while loop finishes, curr is null (too far left), so pop last element added to stack
-            num_visited += 1
-
-            if num_visited == k:  # will always execute b/c we are guaranteed k nodes in the tree
-                return curr.val
-            
-            curr = curr.right
-
-
+        self.inorder(node.right)
