@@ -7,13 +7,16 @@
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         def valid(node, left, right):  # left and right boundaries for the values of nodes
-            if not node:
-                return True  # an empty bst is still a bst
+            # Two Base cases:
+            # 1. Empty tree
+            # 2. We have a BST property violation
+
+            if not node: # empty tree is still valid BST
+                return True
             
-            if node.val >= right or node.val <= left:
-            # if not(node.val < right and node.val > left):  # another way of writing the if statement
-                return False  # found a node that 'breaks' the bst (does not respect boundaries)
+            if right <= node.val or left >= node.val:
+                return False
             
-            return (valid(node.left, left, node.val) and valid(node.right, node.val, right))  # ensure right and left subtrees are valid
+            return valid(node.left, left, node.val) and valid(node.right, node.val, right)
         
         return valid(root, -math.inf, math.inf)
