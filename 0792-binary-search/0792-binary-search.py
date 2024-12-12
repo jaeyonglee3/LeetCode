@@ -7,9 +7,9 @@ class Solution:
 
             if nums[mid] == target:
                 return mid 
-            elif target > nums[mid]:
-                l = mid + 1
+            elif nums[mid] < target:
+                l = mid + 1 # Target must be to the right of mid
             else:
-                r = mid - 1
+                r = mid - 1 # Target must be to the left of mid
         
         return -1
