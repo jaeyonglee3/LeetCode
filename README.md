@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0015-3sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0015-3sum) |
 | [0036-valid-sudoku](https://github.com/jaeyonglee3/LeetCode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/jaeyonglee3/LeetCode/tree/master/0049-group-anagrams) |
+| [0074-search-a-2d-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/jaeyonglee3/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/jaeyonglee3/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
@@ -218,6 +219,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 ## Binary Search
 |  |
 | ------- |
+| [0074-search-a-2d-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/jaeyonglee3/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0287-find-the-duplicate-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0792-binary-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0792-binary-search) |
@@ -225,6 +227,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/jaeyonglee3/LeetCode/tree/master/0036-valid-sudoku) |
+| [0074-search-a-2d-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0074-search-a-2d-matrix) |
 ## Bit Manipulation
 |  |
 | ------- |
