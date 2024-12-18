@@ -6,6 +6,9 @@ class Solution:
             days_taken = 0
 
             while curr_package < len(weights):
+                if days_taken > days:
+                    return False
+
                 while curr_package < len(weights) and curr_load + weights[curr_package] <= capacity:
                     curr_load += weights[curr_package]
                     curr_package += 1
