@@ -2,19 +2,14 @@ class Solution:
     def shipWithinDays(self, weights: List[int], days: int) -> int:
         def isPossible(capacity) -> bool:
             curr_load = 0
-            curr_package = 0
-            days_taken = 0
+            days_taken = 1
 
-            while curr_package < len(weights):
-                if days_taken > days:
-                    return False
-
-                while curr_package < len(weights) and curr_load + weights[curr_package] <= capacity:
-                    curr_load += weights[curr_package]
-                    curr_package += 1
-                
-                curr_load = 0
-                days_taken += 1
+            for weight in weights:
+                if curr_load + weight > capacity: # Then, ship load is at capacity!
+                    days_taken += 1
+                    curr_load = weight # Start a new load with the current weight
+                else:
+                    curr_load += weight # Add the weight to the current load
             
             return days_taken <= days
         
