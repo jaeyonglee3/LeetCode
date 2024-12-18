@@ -23,8 +23,12 @@ class Solution:
         
     
     def findHeight(self, root) -> int:
+        # valid because in a complete binary tree, the left subtree will always 
+        # be a perfect binary tree (all levels completely filled), 
+        # and its height will be the same as the height of the complete tree minus 1.
         height = 0
         while root:
             height += 1
-            root = root.left  # Only traverse the left subtree
+            root = root.left
+        
         return height
