@@ -7,17 +7,19 @@ class Solution:
 
             if nums[mid] == target: 
                 return mid
-            elif nums[l] == target:
-                return l
-            elif nums[r] == target:
-                return r
-            elif nums[l] < nums[mid]:
-                if nums[l] < target < nums[mid]:
+
+            # apply binary search by determining which half of 
+            # the array is sorted and whether the target lies within it.
+            # Check if left half is sorted
+            elif nums[l] <= nums[mid]:
+                if nums[l] <= target < nums[mid]:
                     r = mid - 1
                 else:
                     l = mid + 1
+            
+            # Otherwise, right half is sorted
             else:
-                if nums[mid] < target < nums[r]:
+                if nums[mid] < target <= nums[r]:
                     l = mid + 1
                 else:
                     r = mid - 1
