@@ -42,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
 ## Two Pointers
 |  |
@@ -63,6 +64,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0049-group-anagrams](https://github.com/jaeyonglee3/LeetCode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/jaeyonglee3/LeetCode/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
+| [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
 | [1823-determine-if-string-halves-are-alike](https://github.com/jaeyonglee3/LeetCode/tree/master/1823-determine-if-string-halves-are-alike) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
@@ -226,6 +228,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/jaeyonglee3/LeetCode/tree/master/0155-min-stack) |
+| [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 ## Binary Search
 |  |
 | ------- |
@@ -237,6 +240,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0287-find-the-duplicate-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0792-binary-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0792-binary-search) |
 | [0907-koko-eating-bananas](https://github.com/jaeyonglee3/LeetCode/tree/master/0907-koko-eating-bananas) |
+| [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/jaeyonglee3/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 ## Matrix
 |  |
