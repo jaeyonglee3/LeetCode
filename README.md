@@ -26,6 +26,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0238-product-of-array-except-self](https://github.com/jaeyonglee3/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0287-find-the-duplicate-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
 | [0792-binary-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0792-binary-search) |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
@@ -44,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
 ## Two Pointers
@@ -199,6 +201,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0144-binary-tree-preorder-traversal](https://github.com/jaeyonglee3/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/jaeyonglee3/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/jaeyonglee3/LeetCode/tree/master/0155-min-stack) |
+| [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 ## Dynamic Programming
@@ -226,6 +229,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 ## Monotonic Stack
 |  |
 | ------- |
+| [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 ## Design
