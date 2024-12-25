@@ -27,6 +27,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0287-find-the-duplicate-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
+| [0503-next-greater-element-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
 | [0792-binary-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0792-binary-search) |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
@@ -202,6 +203,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0150-evaluate-reverse-polish-notation](https://github.com/jaeyonglee3/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/jaeyonglee3/LeetCode/tree/master/0155-min-stack) |
 | [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
+| [0503-next-greater-element-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 ## Dynamic Programming
@@ -230,6 +232,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
+| [0503-next-greater-element-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 ## Design
