@@ -1,6 +1,6 @@
 class Solution:
     def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        # monotonically decreasing stack problem
+        # monotonically decreasing stack problem, solves in O(n1 * n2) time
 
         res = [-1] * len(nums1)
         stack = []
