@@ -21,6 +21,8 @@ class Solution:
                 if removed in nums1:
                     res[nums1_map[removed]] = num2
             
-            stack.append(num2)
+            # only add to the stack if num2 is in nums1
+            if num2 in nums1:
+                stack.append(num2)
         
         return res
