@@ -9,6 +9,8 @@ class Solution:
             while stack and num2 > stack[-1]:
                 removed = stack.pop()
 
+                # constant time lookup! O(1)
+                # instead of O(n1) lookup with "removed in nums1"
                 if removed in nums1_map:
                     res[nums1_map[removed]] = num2
             
