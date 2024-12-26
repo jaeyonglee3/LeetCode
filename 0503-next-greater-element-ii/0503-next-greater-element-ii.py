@@ -8,9 +8,13 @@ class Solution:
 
         for i in range(n * 2):
             while stack and nums[i % n] > nums[stack[-1] % n]:
-                removed = stack.pop() % n
+                removed = stack.pop()
                 res[removed] = nums[i % n]
             
-            stack.append(i)
+
+            # For the first pass, we need to fill the stack with index.
+            # Avoid pushing index onto the stack in the second pass to prevent duplicating work.
+            if i < n:
+                stack.append(i % n)
         
         return res
