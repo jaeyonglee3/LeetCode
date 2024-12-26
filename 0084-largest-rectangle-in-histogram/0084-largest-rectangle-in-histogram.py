@@ -21,9 +21,8 @@ class Solution:
         # after traversing the histogram heights,
         # check if the stack still contains anything.
         # anything remaining in the stack can be stretched all the way to the right
-        while stack:
-            removed = stack.pop()
-            area = (len(heights) - removed[0]) * removed[1]
+        for i, h in stack:
+            area = (len(heights) - i) * h
             res = max(res, area)
         
         return res
