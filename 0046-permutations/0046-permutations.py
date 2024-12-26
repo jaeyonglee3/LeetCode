@@ -6,7 +6,7 @@ class Solution:
             if i == len(nums):
                 # the permutation contains all elements
                 # we have a complete permutation we can add to results
-                res.append(curr.copy())
+                res.append(curr[:])
                 return
             
             for j in range(len(nums)):
