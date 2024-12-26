@@ -4,6 +4,8 @@ class Solution:
 
         def dfs(i):
             if i == len(nums):
+                # the permutation contains all elements
+                # we have a complete permutation we can add to results
                 res.append(curr.copy())
                 return
             
