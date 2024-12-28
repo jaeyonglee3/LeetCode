@@ -75,6 +75,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0556-next-greater-element-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/0556-next-greater-element-iii) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
+| [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/jaeyonglee3/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1823-determine-if-string-halves-are-alike](https://github.com/jaeyonglee3/LeetCode/tree/master/1823-determine-if-string-halves-are-alike) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
 | [2496-count-days-spent-together](https://github.com/jaeyonglee3/LeetCode/tree/master/2496-count-days-spent-together) |
@@ -235,6 +236,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jaeyonglee3/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/jaeyonglee3/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 ## Monotonic Stack
 |  |
 | ------- |
