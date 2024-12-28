@@ -78,6 +78,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/jaeyonglee3/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1823-determine-if-string-halves-are-alike](https://github.com/jaeyonglee3/LeetCode/tree/master/1823-determine-if-string-halves-are-alike) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
+| [2470-removing-stars-from-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 | [2496-count-days-spent-together](https://github.com/jaeyonglee3/LeetCode/tree/master/2496-count-days-spent-together) |
 ## Linked List
 |  |
@@ -212,6 +213,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0503-next-greater-element-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
+| [2470-removing-stars-from-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -280,4 +282,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0098-validate-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/jaeyonglee3/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+## Simulation
+|  |
+| ------- |
+| [2470-removing-stars-from-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 <!---LeetCode Topics End-->
