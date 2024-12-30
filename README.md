@@ -73,6 +73,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0049-group-anagrams](https://github.com/jaeyonglee3/LeetCode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/jaeyonglee3/LeetCode/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
+| [0394-decode-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0394-decode-string) |
 | [0556-next-greater-element-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/0556-next-greater-element-iii) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
@@ -96,6 +97,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0021-merge-two-sorted-lists](https://github.com/jaeyonglee3/LeetCode/tree/master/0021-merge-two-sorted-lists) |
 | [0143-reorder-list](https://github.com/jaeyonglee3/LeetCode/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/jaeyonglee3/LeetCode/tree/master/0206-reverse-linked-list) |
+| [0394-decode-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0394-decode-string) |
 ## Tree
 |  |
 | ------- |
@@ -210,6 +212,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0144-binary-tree-preorder-traversal](https://github.com/jaeyonglee3/LeetCode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/jaeyonglee3/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/jaeyonglee3/LeetCode/tree/master/0155-min-stack) |
+| [0394-decode-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0394-decode-string) |
 | [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0735-asteroid-collision](https://github.com/jaeyonglee3/LeetCode/tree/master/0735-asteroid-collision) |
