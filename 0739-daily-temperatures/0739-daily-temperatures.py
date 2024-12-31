@@ -1,20 +1,17 @@
 class Solution:
     def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
-        # need a stack that is montonically decreasing
+        # monotonically decreasing stack problem!
+        # keep on adding to the stack until what you're about to add
+        # is GREATER than whats at the top of the stack!
 
-        res = len(temperatures) * [0]
-        t_stack = [] # (index, temp)
+        stack = [] # (index, temperature)
+        res = [0] * len(temperatures)
 
-        # iterate over the temperatures array
         for i, temp in enumerate(temperatures):
-            # check if the current temperature is greater
-            # than the temp sitting at the top of the stack.
-            # if true, we can update the answer in the results arr
-            # for the temp for which we've just found a bigger one
-            while t_stack and temp > t_stack[-1][1]:
-                res[t_stack[-1][0]] = i - t_stack[-1][0]
-                t_stack.pop()
+            while stack and temp > stack[-1][1]:
+                removed = stack.pop()
+                res[removed[0]] = i - removed[0]
             
-            t_stack.append((i, temp))
+            stack.append((i, temp))
         
         return res
