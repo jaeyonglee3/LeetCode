@@ -18,7 +18,6 @@ class Solution:
 
         while r >= l:
             mid = (l + r) // 2
-            print(mid)
 
             if isFeasible(mid):
                 res = mid
