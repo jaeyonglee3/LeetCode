@@ -16,11 +16,10 @@ class Trie:
             if char in curr_node.children:
                 if is_last_char:
                     curr_node.children[char].isEndOfWord = True
-                else:
-                    curr_node = curr_node.children[char]
             else:
                 curr_node.children[char] = TrieNode(isEndOfWord=is_last_char)
-                curr_node = curr_node.children[char]
+            
+            curr_node = curr_node.children[char]
 
     def search(self, word: str) -> bool:
         curr_node = self.root
