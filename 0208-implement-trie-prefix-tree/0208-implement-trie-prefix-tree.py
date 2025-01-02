@@ -25,8 +25,8 @@ class Trie:
         for char in word:
             if char not in curr_node.children:
                 return False
-            else:
-                curr_node = curr_node.children[char]
+
+            curr_node = curr_node.children[char]
         
         return curr_node.isEndOfWord
 
