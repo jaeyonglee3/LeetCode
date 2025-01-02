@@ -1,19 +1,13 @@
 class Solution:
     def maxOperations(self, nums: List[int], k: int) -> int:
-        nums.sort()
+        seen = defaultdict(int)
         res = 0
-        l, r = 0, len(nums) - 1
 
-        while r > l:
-            total = nums[l] + nums[r]
-
-            if total == k:
+        for num in nums:
+            if seen[k - num] > 0:
+                seen[k - num] -= 1
                 res += 1
-                l += 1
-                r -= 1
-            elif total > k:
-                r -= 1
             else:
-                l += 1
+                seen[num] += 1
         
         return res
