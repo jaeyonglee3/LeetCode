@@ -1,7 +1,7 @@
 class TrieNode:
-    def __init__(self, isEndOfWord=False):
+    def __init__(self):
         self.children = {} # Maps character to its representative TrieNode
-        self.isEndOfWord = isEndOfWord
+        self.isEndOfWord = False
 
 class Trie:
     def __init__(self):
@@ -10,30 +10,25 @@ class Trie:
     def insert(self, word: str) -> None:
         curr_node = self.root
         
-        for i, char in enumerate(word):
-            is_last_char = i == len(word) - 1
-
-            if char in curr_node.children:
-                if is_last_char:
-                    curr_node.children[char].isEndOfWord = True
-            else:
-                curr_node.children[char] = TrieNode(isEndOfWord=is_last_char)
+        for char in word:
+            if char not in curr_node.children:
+                curr_node.children[char] = TrieNode()
             
             curr_node = curr_node.children[char]
+        
+        # By end of for loop, curr_node refers to last char of the word
+        curr_node.isEndOfWord = True
 
     def search(self, word: str) -> bool:
         curr_node = self.root
 
-        for i, char in enumerate(word):
-            is_last_char = i == len(word) - 1
-
-            if char in curr_node.children:
-                if is_last_char:
-                    return curr_node.children[char].isEndOfWord
-                else:
-                    curr_node = curr_node.children[char]
-            else:
+        for char in word:
+            if char not in curr_node.children:
                 return False
+            else:
+                curr_node = curr_node.children[char]
+        
+        return curr_node.isEndOfWord
 
     def startsWith(self, prefix: str) -> bool:
         curr_node = self.root
