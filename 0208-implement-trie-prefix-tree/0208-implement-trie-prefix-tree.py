@@ -34,10 +34,10 @@ class Trie:
         curr_node = self.root
 
         for char in prefix:
-            if char in curr_node.children:
-                curr_node = curr_node.children[char]
-            else:
+            if char not in curr_node.children:
                 return False
+            
+            curr_node = curr_node.children[char]
         
         return True
 
