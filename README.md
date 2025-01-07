@@ -82,6 +82,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 | [0394-decode-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0394-decode-string) |
 | [0556-next-greater-element-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/0556-next-greater-element-iii) |
+| [0886-score-of-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0886-score-of-parentheses) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/jaeyonglee3/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
@@ -226,6 +227,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0735-asteroid-collision](https://github.com/jaeyonglee3/LeetCode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
+| [0886-score-of-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0886-score-of-parentheses) |
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
 | [2470-removing-stars-from-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 ## Dynamic Programming
