@@ -1,23 +1,21 @@
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
         res = []
-        curr_subset = []
 
-        # dfs helper function takes in the index we are currently at in nums arr
-        def dfs(i):
-            if i >= len(nums):
-                res.append(curr_subset.copy())
+        subset = []
+
+        def dfs(i, subset):
+            if i == len(nums):
+                res.append(subset[:])
                 return
             
-            # left branch of decision tree
-            # decision to include nums[i]
-            curr_subset.append(nums[i])
-            dfs(i + 1)
+            # left branch, add nums[i] to subset
+            subset.append(nums[i])
+            dfs(i + 1, subset)
 
-            # right branch of decision tree
-            # decision NOT to include nums[i]
-            curr_subset.pop()
-            dfs(i + 1)
+            # right branch, do not add nums[i] to subset
+            subset.pop()
+            dfs(i + 1, subset)
         
-        dfs(0)
+        dfs(0, subset)
         return res
