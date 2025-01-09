@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0049-group-anagrams](https://github.com/jaeyonglee3/LeetCode/tree/master/0049-group-anagrams) |
 | [0074-search-a-2d-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0078-subsets](https://github.com/jaeyonglee3/LeetCode/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0079-word-search) |
 | [0084-largest-rectangle-in-histogram](https://github.com/jaeyonglee3/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0090-subsets-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0090-subsets-ii) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/jaeyonglee3/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
@@ -79,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0020-valid-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0022-generate-parentheses) |
 | [0049-group-anagrams](https://github.com/jaeyonglee3/LeetCode/tree/master/0049-group-anagrams) |
+| [0079-word-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/jaeyonglee3/LeetCode/tree/master/0125-valid-palindrome) |
 | [0208-implement-trie-prefix-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
@@ -129,6 +131,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0079-word-search) |
 | [0094-binary-tree-inorder-traversal](https://github.com/jaeyonglee3/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0101-symmetric-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0101-symmetric-tree) |
@@ -246,6 +249,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0040-combination-sum-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/jaeyonglee3/LeetCode/tree/master/0046-permutations) |
 | [0078-subsets](https://github.com/jaeyonglee3/LeetCode/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0090-subsets-ii) |
 ## Math
 |  |
@@ -293,6 +297,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | ------- |
 | [0036-valid-sudoku](https://github.com/jaeyonglee3/LeetCode/tree/master/0036-valid-sudoku) |
 | [0074-search-a-2d-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [0079-word-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0079-word-search) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
 ## Bit Manipulation
 |  |
