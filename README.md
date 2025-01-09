@@ -41,6 +41,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/jaeyonglee3/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
+| [2292-counting-words-with-a-given-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
 ## Hash Table
 |  |
@@ -92,6 +93,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/jaeyonglee3/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1823-determine-if-string-halves-are-alike](https://github.com/jaeyonglee3/LeetCode/tree/master/1823-determine-if-string-halves-are-alike) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
+| [2292-counting-words-with-a-given-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2470-removing-stars-from-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 | [2496-count-days-spent-together](https://github.com/jaeyonglee3/LeetCode/tree/master/2496-count-days-spent-together) |
 ## Linked List
@@ -326,4 +328,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
+## String Matching
+|  |
+| ------- |
+| [2292-counting-words-with-a-given-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
 <!---LeetCode Topics End-->
