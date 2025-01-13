@@ -6,24 +6,24 @@ class Solution:
         def backtrack(r, c, i):
             if i == len(word):
                 return True
-            if (r < 0 or c < 0 or r >= len(board) or c >= len(cols) 
-                or word[i] != board[r][c] or (r, c) in path):
+            if (r < 0 or c < 0 or r >= len(board) or c >= len(cols)
+                or (r, c) in path or word[i] != board[r][c]):
                 return False
             
+            # Base cases have passed so add to path
             path.add((r, c))
-            res = (backtrack(r + 1, c, i + 1) or backtrack(r - 1, c, i + 1) 
-                    or backtrack(r, c + 1, i + 1) or backtrack(r, c - 1, i + 1))
-            
+
+            # Make recursive calls to all 4 possible directions
+            new = i + 1
+            res = (backtrack(r + 1, c, new) or backtrack(r - 1, c, new) or 
+            backtrack(r, c + 1, new) or backtrack(r, c - 1, new))
+
             path.remove((r, c))
             return res
-
-        # First, starting from the beginning of the grid,
-        # iterate to the first letter of the word.
-        # Once found, start backtracking algorithm from there
-        for r in range(len(board)):
-            for c in range(len(cols)):
-                if backtrack(r, c, 0):
+        
+        for row in range(len(board)):
+            for col in range(len(cols)):
+                if backtrack(row, col, 0):
                     return True
         
-        # if loops finish and no solution found
         return False
