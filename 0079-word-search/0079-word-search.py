@@ -18,7 +18,10 @@ class Solution:
             res = (backtrack(r + 1, c, new) or backtrack(r - 1, c, new) or 
             backtrack(r, c + 1, new) or backtrack(r, c - 1, new))
 
+            # Remove to ensure backward is considered too (r to l connection)
             path.remove((r, c))
+            # If res is true that means we've found a valid path!
+            # i.e. if even one of the backtracks are true
             return res
         
         for row in range(len(board)):
