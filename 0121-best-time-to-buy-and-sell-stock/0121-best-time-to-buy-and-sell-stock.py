@@ -1,14 +1,23 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        max_profit = 0
-        l, r = 0, 1
+      # the day we buy must come before the day we sell
+      # profit = selling price - purchase price
 
-        while r < len(prices) and r > l:
-            curr_profit = prices[r] - prices[l]
-            max_profit = max(max_profit, curr_profit)
+      res = 0
 
-            if curr_profit < 0:
-                l = r
-            r += 1
+      # left will be the price at which we buy at
+      # right will be the selling price
+      l, r = 0, 1
+
+      while r < len(prices):
+        profit = prices[r] - prices[l]
+        res = max(res, profit)
+
+        # move pointers based on result
+        if profit <= 0:
+          l = r
         
-        return max_profit
+        r += 1
+      
+      return res
+
