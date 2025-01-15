@@ -84,6 +84,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0049-group-anagrams](https://github.com/jaeyonglee3/LeetCode/tree/master/0049-group-anagrams) |
 | [0079-word-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/jaeyonglee3/LeetCode/tree/master/0125-valid-palindrome) |
+| [0131-palindrome-partitioning](https://github.com/jaeyonglee3/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0208-implement-trie-prefix-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 | [0394-decode-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0394-decode-string) |
@@ -245,6 +246,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0022-generate-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0022-generate-parentheses) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/jaeyonglee3/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0131-palindrome-partitioning](https://github.com/jaeyonglee3/LeetCode/tree/master/0131-palindrome-partitioning) |
 ## Backtracking
 |  |
 | ------- |
@@ -255,6 +257,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0078-subsets](https://github.com/jaeyonglee3/LeetCode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0090-subsets-ii) |
+| [0131-palindrome-partitioning](https://github.com/jaeyonglee3/LeetCode/tree/master/0131-palindrome-partitioning) |
 ## Math
 |  |
 | ------- |
