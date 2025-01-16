@@ -2,26 +2,21 @@ class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         res = []
 
-        curr = []
-        curr_total = 0
-        def dfs(i, curr, curr_total):
-            if curr_total > target or i > len(candidates) - 1:
+        def dfs(i, curr_nums, curr_sum):
+            if curr_sum == target:
+                res.append(curr_nums[:])
                 return
-            elif curr_total == target:
-                res.append(curr[:])
-                return 
+            if i > len(candidates) - 1 or curr_sum > target:
+                return
             
-            # Left branch, add a new number
-            curr.append(candidates[i])
-            curr_total += candidates[i]
-            dfs(i, curr, curr_total)
+            # left branch
+            curr_nums.append(candidates[i])
+            dfs(i, curr_nums, curr_sum + candidates[i])
 
-            # Right branch, do not add a new number
-            removed = curr.pop()
-            curr_total -= removed
-            dfs(i + 1, curr, curr_total)
-        
-        dfs(0, curr, curr_total)
+            # right branch
+            curr_nums.pop()
+            dfs(i + 1, curr_nums, curr_sum)
 
+        dfs(0, [], 0)
         return res
 
