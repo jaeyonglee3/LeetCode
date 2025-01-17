@@ -59,6 +59,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
+| [0567-permutation-in-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0567-permutation-in-string) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
@@ -74,6 +75,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/jaeyonglee3/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0287-find-the-duplicate-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0556-next-greater-element-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/0556-next-greater-element-iii) |
+| [0567-permutation-in-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0567-permutation-in-string) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
 ## String
@@ -92,6 +94,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 | [0394-decode-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0394-decode-string) |
 | [0556-next-greater-element-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/0556-next-greater-element-iii) |
+| [0567-permutation-in-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0567-permutation-in-string) |
 | [0886-score-of-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0886-score-of-parentheses) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
@@ -274,6 +277,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jaeyonglee3/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0567-permutation-in-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0567-permutation-in-string) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/jaeyonglee3/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 ## Monotonic Stack
 |  |
