@@ -1,26 +1,23 @@
 class Solution:
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
-        res = []
         nums.sort()
-
+        res = []
         subset = []
-        def dfs(i, subset):
-            if i == len(nums):
+
+        def dfs(i):
+            if i >= len(nums):
                 res.append(subset[:])
-                return
+                return            
             
-            # All subsets that include nums[i]
             # Left branch, add nums[i]
             subset.append(nums[i])
-            dfs(i + 1, subset)
+            dfs(i + 1)
 
-            # All subsets that don't include nums[i]
-            # Right branch, do not include nums[i]
-            # but, be sure to skip any duplicates
+            # right brach, do not add nums[i]
             subset.pop()
-            while i < len(nums) - 1 and nums[i] == nums[i + 1]:
+            while i < len(nums) - 1 and nums[i + 1] == nums[i]:
                 i += 1
-            dfs(i + 1, subset)
+            dfs(i + 1)
         
-        dfs(0, subset)
+        dfs(0)
         return res
