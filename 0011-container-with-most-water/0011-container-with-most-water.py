@@ -5,12 +5,11 @@ class Solution:
 
         while r > l:
             curr_area = min(height[l], height[r]) * (r - l)
-            res = max(res, curr_area)
+            res = max(curr_area, res)
 
-            # move the pointers appropriately to find the max area
-            if height[l] > height[r]:
-                r -= 1
-            else:
+            if height[l] < height[r]:
                 l += 1
+            else:
+                r -= 1
         
         return res
