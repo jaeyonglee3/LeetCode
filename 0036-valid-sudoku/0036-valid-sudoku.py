@@ -1,7 +1,5 @@
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        import collections
-        
         # Maps for rows, columns, and sub-boxes
         boxes_map = collections.defaultdict(set)
         rows_map = collections.defaultdict(set)
