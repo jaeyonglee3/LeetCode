@@ -40,6 +40,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0792-binary-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0792-binary-search) |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 | [0907-koko-eating-bananas](https://github.com/jaeyonglee3/LeetCode/tree/master/0907-koko-eating-bananas) |
+| [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/jaeyonglee3/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
@@ -173,6 +174,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0200-number-of-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
+| [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Binary Tree
 |  |
@@ -328,6 +330,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0079-word-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/0200-number-of-islands) |
 | [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
+| [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
 ## Bit Manipulation
 |  |
