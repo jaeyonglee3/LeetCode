@@ -34,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0503-next-greater-element-ii) |
+| [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
 | [0735-asteroid-collision](https://github.com/jaeyonglee3/LeetCode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
 | [0792-binary-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0792-binary-search) |
@@ -157,6 +158,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0230-kth-smallest-element-in-a-bst](https://github.com/jaeyonglee3/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0543-diameter-of-binary-tree) |
+| [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Breadth-First Search
 |  |
@@ -167,6 +169,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0199-binary-tree-right-side-view](https://github.com/jaeyonglee3/LeetCode/tree/master/0199-binary-tree-right-side-view) |
 | [0200-number-of-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0226-invert-binary-tree) |
+| [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Binary Tree
 |  |
@@ -205,6 +208,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/jaeyonglee3/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0200-number-of-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/0200-number-of-islands) |
+| [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -320,6 +324,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0074-search-a-2d-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/0200-number-of-islands) |
+| [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
 ## Bit Manipulation
 |  |
