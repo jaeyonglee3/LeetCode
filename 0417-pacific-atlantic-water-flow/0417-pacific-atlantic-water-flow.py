@@ -10,6 +10,7 @@ class Solution:
         def dfs(r, c, curr_set, prev_height):
             # curr_set is the set we are currently working with
             # prev_height will help us determine if we should continue recursing
+            # (we're going backwards, from ocean to inwards, so curr height must be >= prev_height)
             if r < 0 or c < 0 or r >= ROWS or c >= COLS or heights[r][c] < prev_height or (r, c) in curr_set:
                 return
             
