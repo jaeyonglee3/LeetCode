@@ -1,5 +1,6 @@
 class Solution:
     def solveNQueens(self, n: int) -> List[List[str]]:
+        # These sets will help us keep track of where we've placed queens
         # -ve diagonals use r - c, +ve diagonals use r + c
         cols, pos_diagonals, neg_diagonals = set(), set(), set()
 
