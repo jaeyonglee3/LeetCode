@@ -24,6 +24,9 @@ class Solution:
                     return False
             
             path.remove(c)
+            # Optimization: we will mark a course as processed (cycle-free) 
+            # by setting its adjacency list to empty and checking this as a base case.
+            # This ensures no unnecessary reprocessing of nodes, reducing redundant DFS calls.
             graph[c] = []
             return True
         
