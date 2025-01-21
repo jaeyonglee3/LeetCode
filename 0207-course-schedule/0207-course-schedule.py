@@ -10,7 +10,7 @@ class Solution:
         for a, b in prerequisites:
             graph[b].append(a)
         
-        # Visited stores all the courses 
+        # Path stores the set of nodes currently in the recursion stack
         def dfs(c, path):
             if c in path:
                 return False
@@ -24,7 +24,7 @@ class Solution:
                     return False
             
             path.remove(c)
-            # Optimization: we will mark a course as processed (cycle-free) 
+            # Optimization to avoid TLE: we will mark a course as processed (cycle-free) 
             # by setting its adjacency list to empty and checking this as a base case.
             # This ensures no unnecessary reprocessing of nodes, reducing redundant DFS calls.
             graph[c] = []
