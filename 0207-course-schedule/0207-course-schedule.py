@@ -7,8 +7,8 @@ class Solution:
         
         # First, build the adjacency list representation of the prerequisite graph
         graph = collections.defaultdict(list)
-        for a, b in prerequisites:
-            graph[b].append(a)
+        for crs, pre in prerequisites:
+            graph[crs].append(pre)
         
         # Path stores the set of nodes currently in the recursion stack
         def dfs(c, path):
