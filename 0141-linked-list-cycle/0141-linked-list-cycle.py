@@ -7,19 +7,13 @@
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         curr = head
-        visited = []
+        seen = set()
 
-        if head is None:
-            return False
-
-        while curr.next is not None:
-            visited.append(curr)
-
-            if curr.next in visited:
+        while curr:
+            if curr in seen:
                 return True
-            else:
-                curr = curr.next
+
+            seen.add(curr)
+            curr = curr.next
         
         return False
-
-        # NEXT STEP - this is very slow. optimize w/ two pointer approach.
