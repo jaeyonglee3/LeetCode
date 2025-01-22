@@ -7,8 +7,9 @@ class Solution:
         
         # Path stores the set of nodes currently in the recursion stack
         result = []
+        path = set()
         
-        def dfs(c, path):
+        def dfs(c):
             if c in path:
                 return False  # Cycle detected
             if graph[c] == []:
@@ -18,7 +19,7 @@ class Solution:
             
             path.add(c)
             for course in graph[c]:
-                if not dfs(course, path):
+                if not dfs(course):
                     return False
             
             path.remove(c)
@@ -29,8 +30,7 @@ class Solution:
         # DFS on every course, looking for cycles
         for course in range(numCourses):
             if course not in result:  # Only process unvisited courses
-                path = set()
-                if not dfs(course, path):
+                if not dfs(course):
                     return []  # Cycle detected, return empty list
         
         return result  # Reverse the result to get the correct order
