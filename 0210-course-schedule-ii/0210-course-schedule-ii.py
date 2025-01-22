@@ -1,36 +1,28 @@
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-        # Build the adjacency list representation of the prerequisite graph
-        graph = collections.defaultdict(list)
+        prereq = {c: [] for c in range(numCourses)}
         for crs, pre in prerequisites:
-            graph[crs].append(pre)
-        
-        # Path stores the set of nodes currently in the recursion stack
-        result = []
-        path = set()
-        
-        def dfs(c):
-            if c in path:
-                return False  # Cycle detected
-            if graph[c] == []:
-                if c not in result:  # Avoid duplicates
-                    result.append(c)
+            prereq[crs].append(pre)
+
+        output = []
+        visit, cycle = set(), set()
+
+        def dfs(crs):
+            if crs in cycle:
+                return False
+            if crs in visit:
                 return True
-            
-            path.add(c)
-            for course in graph[c]:
-                if not dfs(course):
+
+            cycle.add(crs)
+            for pre in prereq[crs]:
+                if dfs(pre) == False:
                     return False
-            
-            path.remove(c)
-            graph[c] = []  # Mark as processed
-            result.append(c)  # Add to result in reverse topological order
+            cycle.remove(crs)
+            visit.add(crs)
+            output.append(crs)
             return True
-        
-        # DFS on every course, looking for cycles
-        for course in range(numCourses):
-            if course not in result:  # Only process unvisited courses
-                if not dfs(course):
-                    return []  # Cycle detected, return empty list
-        
-        return result  # Reverse the result to get the correct order
+
+        for c in range(numCourses):
+            if dfs(c) == False:
+                return []
+        return output
