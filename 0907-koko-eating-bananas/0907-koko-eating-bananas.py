@@ -1,28 +1,32 @@
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
-        # search window for k: 1 to max(piles)
-        # find the slowest values for k such that all can be eaten within h hours
+        # We need to find the smallest k such that koko can eat all bananas
+        # What is the search window for k?
+        # k is an element of [1, max(piles)]
 
-        def isFeasible(k):
-            total_hrs = 0
-            for pile in piles:
-                if k >= pile:
-                    total_hrs += 1
-                else:
-                    total_hrs += math.ceil(pile/k)
+        # define helper isFeasible, returns bool given proposed k val
+        def is_doable(k):
+            time_total = 0
             
-            return total_hrs <= h
+            for pile in piles:
+                if k > pile:
+                    time_total += 1
+                else:
+                    time_total += math.ceil(pile / k)
+            
+            return time_total <= h
         
+        # Now, do a binary search on the window for k
         l, r = 1, max(piles)
         res = 0
 
         while r >= l:
-            mid = (l + r) // 2
-
-            if isFeasible(mid):
-                res = mid
-                r = mid - 1
+            curr_k = (l + r) // 2
+            
+            if is_doable(curr_k):
+                r = curr_k - 1
+                res = curr_k
             else:
-                l = mid + 1
+                l = curr_k + 1
         
         return res
