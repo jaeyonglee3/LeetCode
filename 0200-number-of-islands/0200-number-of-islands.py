@@ -5,17 +5,16 @@ class Solution:
 
         def dfs(r, c):
             if r < 0 or c < 0 or r >= len(grid) or c >= len(grid[0]) or grid[r][c] == "0":
-                return False
+                return
             
             grid[r][c] = "0"
             for dr, dc in directions:
                 dfs(r + dr, c + dc)
             
-            return True
-            
         for row_num, row in enumerate(grid):
-            for col_num, col in enumerate(row):
-                if dfs(row_num, col_num):
+            for col_num, val in enumerate(row):
+                if val == "1":
                     res += 1
+                    dfs(row_num, col_num)
         
         return res
