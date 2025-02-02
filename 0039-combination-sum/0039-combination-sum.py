@@ -10,6 +10,7 @@ class Solution:
                 return
             
             # left branch, keep adding i
+            # No need for i + 1 because same number can be used multiple times
             subset.append(candidates[i])
             dfs(i, subset, curr_sum + candidates[i])
 
