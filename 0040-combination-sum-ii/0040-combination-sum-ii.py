@@ -1,30 +1,24 @@
 class Solution:
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
-        res = []
-        # Sort candidates arr to ensure all duplicates are consecutive 
         candidates.sort()
+        res = []
 
-        def dfs(i, curr, curr_total):
-            if curr_total == target:
-                res.append(curr[:])
+        def dfs(i, subset, curr_sum):
+            if curr_sum == target:
+                res.append(subset[:])
                 return
-            if i > len(candidates) - 1 or curr_total > target:
+            if i >= len(candidates) or curr_sum > target:
                 return
             
-            # Left branch, include candidates[i]
-            curr.append(candidates[i])
-            curr_total += candidates[i]
-            dfs(i + 1, curr, curr_total) # call with i+1 to avoid reusing the same element twice
+            # left branch, include current candidates[i]
+            subset.append(candidates[i])
+            dfs(i + 1, subset, curr_sum + candidates[i])
 
-            # Right branch, skip candidates[i]
-            removed = curr.pop()
-            curr_total -= removed
-
-            while i != len(candidates) - 1 and candidates[i] == candidates[i + 1]:
-                # Move i to the very last duplicated value
-                # Duplicates will be consecutive since we sorted candidates arr
+            # right branch, exclude candidates[i] and any duplicates
+            while i < len(candidates) - 1 and candidates[i] == candidates[i + 1]:
                 i += 1
-            dfs(i + 1, curr, curr_total)
+            subset.pop()
+            dfs(i + 1, subset, curr_sum)
         
         dfs(0, [], 0)
         return res
