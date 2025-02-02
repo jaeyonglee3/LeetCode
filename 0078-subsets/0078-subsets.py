@@ -1,20 +1,17 @@
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
         res = []
-        subset = []
 
-        def dfs(i):
+        def dfs(i, subset):
             if i >= len(nums):
-                res.append(subset[:])
+                res.append(subset[:])  # Append a copy of the subset
                 return
             
-            # left branch, include i
-            subset.append(nums[i])
-            dfs(i + 1)
+            # Include nums[i] in the subset (left branch)
+            dfs(i + 1, subset + [nums[i]])
 
-            # right branch, remove i
-            subset.pop()
-            dfs(i + 1)
+            # Exclude nums[i] from the subset (right branch)
+            dfs(i + 1, subset)
 
-        dfs(0)
+        dfs(0, [])  # Start DFS with an empty subset
         return res
