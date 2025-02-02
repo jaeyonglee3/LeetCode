@@ -8,13 +8,13 @@ class Solution:
                 res.append(subset[:])
                 return
             
-            # left branch, include nums[i]
+            # left branch, include i
             subset.append(nums[i])
             dfs(i + 1)
 
-            # right branch, do not include nums[i]
+            # right branch, remove i
             subset.pop()
             dfs(i + 1)
-        
+
         dfs(0)
         return res
