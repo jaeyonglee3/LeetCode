@@ -1,32 +1,28 @@
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
+        ROWS, COLS = len(board), len(board[0])
         path = set()
-        cols = [col for col in zip(*board)]
+        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
-        def backtrack(r, c, i):
-            if i == len(word):
+        def dfs(i, r, c):
+            # Base case
+            if i >= len(word):
                 return True
-            if (r < 0 or c < 0 or r >= len(board) or c >= len(cols)
-                or (r, c) in path or word[i] != board[r][c]):
+            if r < 0 or c < 0 or r >= ROWS or c >= COLS or board[r][c] != word[i] or (r, c) in path:
                 return False
             
-            # Base cases have passed so add to path
+            # DFS body
             path.add((r, c))
-
-            # Make recursive calls to all 4 possible directions
-            new = i + 1
-            res = (backtrack(r + 1, c, new) or backtrack(r - 1, c, new) or 
-            backtrack(r, c + 1, new) or backtrack(r, c - 1, new))
-
-            # Remove to ensure backward is considered too (r to l connection)
+            for dr, dc in directions:
+                if dfs(i + 1, r + dr, c + dc):
+                    return True
+            
             path.remove((r, c))
-            # If res is true that means we've found a valid path!
-            # i.e. if even one of the backtracks are true
-            return res
+            return False
         
-        for row in range(len(board)):
-            for col in range(len(cols)):
-                if backtrack(row, col, 0):
+        for row_num, row in enumerate(board):
+            for col_num in range(COLS):
+                if dfs(0, row_num, col_num):
                     return True
         
         return False
