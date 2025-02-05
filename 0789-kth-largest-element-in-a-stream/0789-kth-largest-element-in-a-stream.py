@@ -19,7 +19,6 @@ class KthLargest:
         # 0th index will always store the minimum value
         return self.min_heap[0]
 
-
 # Your KthLargest object will be instantiated and called as such:
 # obj = KthLargest(k, nums)
 # param_1 = obj.add(val)
