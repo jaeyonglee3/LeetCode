@@ -5,34 +5,24 @@
 #         self.next = next
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
-        dummy = ListNode()
+        # calculate total number of nodes
+        # total - n = the node number (from the front) we need to delete
+
         curr = head
-        num_nodes = 0
-
-        # Calculate number of nodes
+        total = 0
         while curr:
-            num_nodes += 1
+            total += 1
             curr = curr.next
+        node_num = total - n
         
-        # Iterate curr to be at nth node from the end, prev to be at (n-1)th from the end
         prev, curr = None, head
-        curr_n = num_nodes
-        curr_i = 0
-
-        while curr_n != n:
-            curr_i += 1
+        for _ in range(node_num):
             prev = curr
             curr = curr.next
-            curr_n = num_nodes - curr_i
         
-        # Make prev point to curr's next node
-        # dummy can point to original head
         if prev:
             prev.next = curr.next
-            dummy = head
-        # Else: The node being removed is the head. 
-        # Simply make dummy be the 2nd node in the linkedlist
         else:
-            dummy = curr.next
-
-        return dummy
+            return curr.next
+        
+        return head
