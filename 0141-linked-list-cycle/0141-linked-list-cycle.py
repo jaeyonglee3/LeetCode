@@ -12,7 +12,7 @@ class Solution:
         while curr:
             if curr in seen:
                 return True
-
+            
             seen.add(curr)
             curr = curr.next
         
