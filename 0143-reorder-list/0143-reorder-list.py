@@ -8,7 +8,9 @@ class Solution:
         """
         Do not return anything, modify head in-place instead.
         """
-        slow, fast = head, head.next
+        # Use slow, fast, prev pointers
+        slow = head
+        fast = head.next
 
         while slow:
             prev = None
@@ -16,14 +18,16 @@ class Solution:
             while fast and fast.next:
                 prev = fast
                 fast = fast.next
-
+            
             if prev:
-                old_slow_next = slow.next
+                prev.next = None
+                slow_next_old = slow.next
                 slow.next = fast
                 
-                slow = old_slow_next
-                fast.next = slow
-                prev.next = None
-                fast = slow.next
+                fast.next = slow_next_old
+                slow = slow_next_old
+
+                # eventually fast becomes none when slow and prev are next to each other
+                fast = slow.next  
             else:
                 return
