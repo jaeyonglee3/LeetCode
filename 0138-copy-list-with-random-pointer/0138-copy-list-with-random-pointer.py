@@ -10,23 +10,23 @@ class Node:
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
         if not head: return head
-        copies = {}
+        old_to_new = {}
 
         curr = head
         while curr:
-            copies[curr] = Node(curr.val)
+            old_to_new[curr] = Node(curr.val)
             curr = curr.next
         
         curr = head
         while curr:
-            new_copy = copies[curr]
+            new_copy = old_to_new[curr]
 
             if curr.next:
-                new_copy.next = copies[curr.next]
+                new_copy.next = old_to_new[curr.next]
 
             if curr.random:
-                new_copy.random = copies[curr.random]
+                new_copy.random = old_to_new[curr.random]
             
             curr = curr.next
         
-        return copies[head]
+        return old_to_new[head]
