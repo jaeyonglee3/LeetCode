@@ -31,5 +31,14 @@ class Solution:
         
         if is_carry:
             dummy_curr.next = ListNode(1)
-            
+
         return dummy_head.next
+
+# The time complexity of this solution is O(max(N, M)), 
+# where N and M are the lengths of l1 and l2. 
+# This is because we traverse both linked lists once, 
+# processing each node in a single pass.
+
+# The space complexity is also O(max(N, M)) since we 
+# create a new linked list to store the sum, 
+# with at most one extra node for a carry at the end.
