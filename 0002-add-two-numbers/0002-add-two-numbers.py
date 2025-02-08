@@ -6,43 +6,30 @@
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         curr1, curr2 = l1, l2
-        res = curr_res = ListNode()
-        carry = False
+        dummy_head = dummy_curr = ListNode()
+        is_carry = False
 
-        while curr1 and curr2:
-            new_val = curr1.val + curr2.val
+        while curr1 or curr2:
+            curr1_val = 0 if not curr1 else curr1.val
+            curr2_val = 0 if not curr2 else curr2.val
 
-            if carry:
-                new_val += 1
-                carry = False
-
-            if (new_val % 10 != new_val):
-                new_val = new_val % 10
-                carry = True
+            result = (curr1_val + curr2_val)
+            if is_carry:
+                is_carry = False
+                result += 1
             
-            curr_res.next = ListNode(val=new_val)
-            curr_res = curr_res.next
+            if result > 9:
+                result = result % 10
+                is_carry = True
+    
+            new_node = ListNode(result)
+            dummy_curr.next = new_node
 
-            curr1 = curr1.next
-            curr2 = curr2.next
+            curr1 = curr1.next if curr1 else None
+            curr2 = curr2.next if curr2 else None
+            dummy_curr = dummy_curr.next
         
-        if curr1 or curr2 or carry:
-            remaining = curr1 if curr1 else curr2
-            while remaining or carry:
-                if carry and not remaining:
-                    curr_res.next = ListNode(val=1)
-                    carry = False
-                else:
-                    new_val = remaining.val + 1 if carry else remaining.val
-                    curr_res.next = ListNode(val=new_val % 10)
-
-                    if (new_val % 10 != new_val):
-                        new_val = new_val % 10
-                        carry = True
-                    else:
-                        carry = False
-                    
-                    curr_res = curr_res.next
-                    remaining = remaining.next
-
-        return res.next
+        if is_carry:
+            dummy_curr.next = ListNode(1)
+            
+        return dummy_head.next
