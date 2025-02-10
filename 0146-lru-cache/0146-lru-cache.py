@@ -16,12 +16,12 @@ class LRUCache:
         self.left.next, self.right.prev = self.right, self.left
     
     def remove(self, node):
-        # Remove from the list
+        # Remove node from doubly linked list
         prev, nxt = node.prev, node.next
         prev.next, nxt.prev = nxt, prev
     
     def insert(self, node):
-        # Insert at right
+        # Insert at far right of doulby linked list
         prev, nxt = self.right.prev, self.right
         # insert the node between prev and nxt
         prev.next = node
@@ -30,8 +30,8 @@ class LRUCache:
 
     def get(self, key: int) -> int:
         if key in self.cache:
-            # Must also update the node to most recent
-            # remove it, then reinsert it
+            # Must also update the node to most recent position
+            # so remove it, then reinsert it so its at the far right
             self.remove(self.cache[key])
             self.insert(self.cache[key])
             return self.cache[key].val
@@ -45,6 +45,7 @@ class LRUCache:
         self.cache[key] = Node(key, value)
         self.insert(self.cache[key])
 
+        # If the cache exceeds the set capacity size
         if len(self.cache) > self.cap:
             # remove from linkedlist and delete/evict the LRU from hashmap (cache)
             lru = self.left.next
