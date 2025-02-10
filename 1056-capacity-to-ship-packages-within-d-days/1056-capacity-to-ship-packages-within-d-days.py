@@ -5,7 +5,7 @@ class Solution:
             total_weight = 0
 
             for weight in weights:
-                if num_days > days or weight > capacity:
+                if num_days > days:
                     return False
 
                 if total_weight + weight <= capacity:
@@ -16,12 +16,11 @@ class Solution:
             
             return num_days <= days
         
-        # define our search window for possible capacities
-        # min could be len(weights) * min(weights), could be feasible if all packages
-        # have the same weight as smallest weight
-        # max could be num packages * max(weights)
+        # define search window
+        # min would be max(weights) bc ship should be able to ship >= 1 package
+        # max would be sum(weights) bc then we could ship ALL the packages in 1 day
         res = 0
-        l, r = 1, max(weights) * len(weights)
+        l, r = max(weights), sum(weights)
 
         while l <= r:
             mid = (l + r) // 2
