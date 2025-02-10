@@ -10,17 +10,15 @@ class Solution:
         self.res = 0
 
         # Returns the max height between L and R subtrees
-        def dfs(curr):
-            if not curr:
-                return 0
-            
-            left = dfs(curr.left)
-            right = dfs(curr.right)
+        def maxDepth(curr):
+            if not curr: return 0
+
+            left = maxDepth(curr.left)
+            right = maxDepth(curr.right)
             self.res = max(self.res, left + right)
 
             # Add 1 for the current node we are at
             return 1 + max(left, right)
         
-        # Ensure you call the dfs function
-        dfs(root)
+        maxDepth(root)
         return self.res
