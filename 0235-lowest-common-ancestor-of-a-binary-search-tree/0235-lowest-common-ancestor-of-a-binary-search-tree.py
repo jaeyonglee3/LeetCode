@@ -7,23 +7,12 @@
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        p_path = self.findPath(root, p)
-        q_path = self.findPath(root, q)
-
-        for i, node in enumerate(q_path):
-            if i > len(p_path) - 1 or p_path[i] != node:
-                return p_path[i - 1]
+        # if both p and q are smaller than the root, LCA must be in left subtree
+        # if both p and q are greater than the root, LCA must be in right subtree
+        # if one of p is greater and the other is smaller than root, you have your LCA
+        if p.val < root.val and q.val < root.val:
+            return self.lowestCommonAncestor(root.left, p, q)
+        elif p.val > root.val and q.val > root.val:
+            return self.lowestCommonAncestor(root.right, p, q)
         
-        return p_path[len(q_path) - 1]
-
-    
-    def findPath(self, root, target):
-        if root == target:
-            return [root]
-        
-        if target.val > root.val:
-            next_node = root.right
-        else:
-            next_node = root.left
-
-        return [root] + self.findPath(next_node, target)
+        return root
