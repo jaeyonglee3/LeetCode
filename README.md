@@ -157,6 +157,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0230-kth-smallest-element-in-a-bst](https://github.com/jaeyonglee3/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0543-diameter-of-binary-tree) |
+| [0572-subtree-of-another-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Depth-First Search
@@ -182,6 +183,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0417-pacific-atlantic-water-flow](https://github.com/jaeyonglee3/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0543-diameter-of-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0543-diameter-of-binary-tree) |
+| [0572-subtree-of-another-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0684-redundant-connection](https://github.com/jaeyonglee3/LeetCode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
@@ -222,6 +224,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0230-kth-smallest-element-in-a-bst](https://github.com/jaeyonglee3/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0543-diameter-of-binary-tree) |
+| [0572-subtree-of-another-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Sorting
@@ -409,6 +412,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 ## String Matching
 |  |
 | ------- |
+| [0572-subtree-of-another-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/jaeyonglee3/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 ## Rolling Hash
@@ -418,6 +422,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 ## Hash Function
 |  |
 | ------- |
+| [0572-subtree-of-another-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/jaeyonglee3/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 ## Graph
 |  |
