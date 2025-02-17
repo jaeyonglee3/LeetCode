@@ -73,6 +73,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0567-permutation-in-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0567-permutation-in-string) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
@@ -160,6 +161,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0543-diameter-of-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Depth-First Search
 |  |
@@ -187,6 +189,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0572-subtree-of-another-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0684-redundant-connection](https://github.com/jaeyonglee3/LeetCode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Breadth-First Search
 |  |
@@ -205,6 +208,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0417-pacific-atlantic-water-flow](https://github.com/jaeyonglee3/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0684-redundant-connection](https://github.com/jaeyonglee3/LeetCode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Binary Tree
@@ -227,6 +231,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0543-diameter-of-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Sorting
 |  |
