@@ -1,33 +1,32 @@
 class Solution:
     def orangesRotting(self, grid: List[List[int]]) -> int:
-        # Can solve using BFS
         directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-        q = collections.deque() # contains only rotten oranges
+        ROWS, COLS = len(grid), len(grid[0])
+        q = collections.deque()  # holds (r, c) positions of rotten oranges only
         fresh = 0
-        minutes = 0
-        
-        # Initial setup - count # of fresh oranges and add all
-        # rotten oranges to a queue
-        for row_num, row in enumerate(grid):
-            for col_num, val in enumerate(row):
-                if val == 1:
-                    fresh += 1
-                if val == 2:
-                    q.append((row_num, col_num))
 
-        # Ready now to begin BFS traversal
-        while q and fresh > 0:
+        for r in range(ROWS):
+            for c in range(COLS):
+                if grid[r][c] == 2:
+                    q.append((r, c))
+                elif grid[r][c] == 1:
+                    fresh += 1
+
+        minutes = 0
+        while q and fresh != 0:
             for _ in range(len(q)):
                 r, c = q.popleft()
-                
-                for dr, dc in directions:  
-                    row, col = r + dr, c + dc
 
-                    # Check the bounds of the row and column
-                    if row >= 0 and col >= 0 and row < len(grid) and col < len(grid[0]) and grid[row][col] == 1 :
-                        grid[row][col] = 2 # set that fresh orange to be a rotton one
-                        fresh -= 1
-                        q.append((row, col))
+                # Visit all the neighbouring cells and turn any fresh oranges rotten
+                for dr, dc in directions:
+                    new_r, new_c = r + dr, c + dc
+
+                    if new_r < 0 or new_c < 0 or new_r == ROWS or new_c == COLS or grid[new_r][new_c] != 1:
+                        continue
+                    
+                    grid[new_r][new_c] = 2
+                    fresh -= 1
+                    q.append((new_r, new_c))
             
             minutes += 1
         
