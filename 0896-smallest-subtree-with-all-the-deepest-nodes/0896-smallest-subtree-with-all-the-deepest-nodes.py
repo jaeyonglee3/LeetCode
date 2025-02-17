@@ -1,58 +1,42 @@
-# Definition for a binary tree node.
+ # Definition for a binary tree node.
 # class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
 class Solution:
-    def __init__(self):
-        self.res = None
-
-    def subtreeWithAllDeepest(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        if root is None: return None
+    def subtreeWithAllDeepest(self, root: TreeNode) -> TreeNode:
         
-        deepest_nodes = self.findDeepestNodes(root)
-        if len(deepest_nodes) == 1:
-            return deepest_nodes[0]
-        
-        # need to return the LCA of all deepest nodes
-        self.postOrder(root, len(deepest_nodes), deepest_nodes)
-        return self.res
-    
-    def postOrder(self, node, target, deepest_nodes):
-        if node is None:
-            return 0
-        
-        # left
-        left = self.postOrder(node.left, target, deepest_nodes)
-        
-        # right
-        right = self.postOrder(node.right, target, deepest_nodes)
-        
-        if left + right == target and self.res == None:
-            self.res = node
-        
-        if node in deepest_nodes:
-            return left + right + 1
-        return left + right
-
-    def findDeepestNodes(self, root):
-        # do a level order traversal
-        q = collections.deque([root])
-        res = []
-
-        while q:
-            q_len = len(q)
-            curr_level = []
-
-            for _ in range(q_len):
-                curr = q.popleft()
-
-                if curr:
-                    curr_level.append(curr)
-                    q.append(curr.left)
-                    q.append(curr.right)
+        def deepestDepth(node, depth):
             
-            if curr_level: res.append(curr_level)
-        
-        return res[-1]
+            if not node:
+                return node, depth
+            
+			
+            left, leftDepth = deepestDepth(node.left, depth + 1)
+            right, rightDepth = deepestDepth(node.right, depth + 1)    
+
+			# If the deepest node on the left subtree is deeper than the deepest node 
+			# on the right subtree return the left subtree and the left deepest depth 
+            if leftDepth > rightDepth:
+                return left, leftDepth
+            
+			# If the deepest node on the right subtree is deeper than the deepest node 
+			# on the left subtree return the right subtree and the right deepest depth 
+            if rightDepth > leftDepth:
+                return right, rightDepth
+            
+			
+			# If the above two conditions isn't met, then leftDepth == rightDepth
+			#
+			# leftDepth equal rightDepth means that the deepest node
+			# in the left subtree has the same depth as the deepest node 
+			# in the right subtree, as such, we should return the current node 
+			# as it is the root of the current subtree that contains the deepest 
+			# nodes on the left and right subtree.
+			#
+			# return statment can also be `return node, rightDepth`
+            return node, leftDepth
+            
+        return deepestDepth(root, 0)[0]
