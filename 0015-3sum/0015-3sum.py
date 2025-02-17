@@ -4,8 +4,8 @@ class Solution:
         nums.sort()
 
         for i in range(len(nums)):
-            while i > 0 and i < len(nums) - 1 and nums[i - 1] == nums[i]:
-                i += 1
+            if i > 0 and nums[i - 1] == nums[i]:
+                continue
 
             target = -nums[i]
             l, r = i + 1, len(nums) - 1
