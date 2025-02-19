@@ -6,8 +6,7 @@ class Solution:
         while r > l:
             if clean_s[l] != clean_s[r]:
                 return False
-            
-            r -= 1
             l += 1
+            r -= 1
         
         return True
