@@ -8,7 +8,6 @@ class Solution:
         l, r = 0, len(nums) - 1
         while r >= l:
             mid = (r + l) // 2
-            print(mid)
 
             if nums[mid] == target:
                 return mid
