@@ -307,6 +307,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0022-generate-parentheses) |
+| [0070-climbing-stairs](https://github.com/jaeyonglee3/LeetCode/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/jaeyonglee3/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0131-palindrome-partitioning](https://github.com/jaeyonglee3/LeetCode/tree/master/0131-palindrome-partitioning) |
@@ -329,6 +330,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/jaeyonglee3/LeetCode/tree/master/0002-add-two-numbers) |
+| [0070-climbing-stairs](https://github.com/jaeyonglee3/LeetCode/tree/master/0070-climbing-stairs) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/jaeyonglee3/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0556-next-greater-element-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/0556-next-greater-element-iii) |
 | [1013-fibonacci-number](https://github.com/jaeyonglee3/LeetCode/tree/master/1013-fibonacci-number) |
@@ -451,5 +453,6 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 ## Memoization
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/jaeyonglee3/LeetCode/tree/master/0070-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/jaeyonglee3/LeetCode/tree/master/1013-fibonacci-number) |
 <!---LeetCode Topics End-->
