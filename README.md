@@ -29,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0150-evaluate-reverse-polish-notation](https://github.com/jaeyonglee3/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/jaeyonglee3/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0169-majority-element](https://github.com/jaeyonglee3/LeetCode/tree/master/0169-majority-element) |
 | [0200-number-of-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/0200-number-of-islands) |
 | [0212-word-search-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0212-word-search-ii) |
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
@@ -67,6 +68,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0138-copy-list-with-random-pointer](https://github.com/jaeyonglee3/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/jaeyonglee3/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/jaeyonglee3/LeetCode/tree/master/0146-lru-cache) |
+| [0169-majority-element](https://github.com/jaeyonglee3/LeetCode/tree/master/0169-majority-element) |
 | [0208-implement-trie-prefix-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
@@ -238,6 +240,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | ------- |
 | [0015-3sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/jaeyonglee3/LeetCode/tree/master/0049-group-anagrams) |
+| [0169-majority-element](https://github.com/jaeyonglee3/LeetCode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
@@ -259,6 +262,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/jaeyonglee3/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
+| [0169-majority-element](https://github.com/jaeyonglee3/LeetCode/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
 ## Heap (Priority Queue)
 |  |
@@ -273,6 +277,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/jaeyonglee3/LeetCode/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [1823-determine-if-string-halves-are-alike](https://github.com/jaeyonglee3/LeetCode/tree/master/1823-determine-if-string-halves-are-alike) |
 ## Quickselect
