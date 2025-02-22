@@ -3,16 +3,15 @@ class Solution:
         # the question guarantees nums to have at least 1
         # element that occurs more than half the time in the array
 
-        result, count = nums[0], 0
+        max_occurances = -math.inf
+        res = 0
+        h_map = collections.defaultdict(int)
 
         for n in nums:
-            if count != 0:
-                if n == result:
-                    count += 1
-                else:
-                    count -= 1
-            else:
-                count = 1
-                result = n
+            h_map[n] += 1
+            
+            if h_map[n] > max_occurances:
+                max_occurances = h_map[n]
+                res = n
         
-        return result
+        return res
