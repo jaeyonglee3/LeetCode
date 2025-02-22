@@ -1,27 +1,28 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
+        # O(log n) complexity + sorted input -> binary search
+        # we will be halving the search window size each time
+        # b/c the array is sorted and rotated, there are two sorted portions, left and right
+        # we can leverage binary search to determine which portion the target may lie in
+
         l, r = 0, len(nums) - 1
-
         while r >= l:
-            mid = (l + r) // 2
+            mid = (r + l) // 2
+            print(mid)
 
-            if nums[mid] == target: 
+            if nums[mid] == target:
                 return mid
-
-            # apply binary search by determining which half of 
-            # the array is sorted and whether the target lies within it.
-            # Check if left half is sorted
-            elif nums[l] <= nums[mid]:
-                if nums[l] <= target < nums[mid]:
-                    r = mid - 1
+            elif nums[mid] >= nums[0]:
+                # we are in the left sorted portion
+                if target >= nums[l] and target < nums[mid]:
+                    r = mid -1
                 else:
                     l = mid + 1
-            
-            # Otherwise, right half is sorted
             else:
-                if nums[mid] < target <= nums[r]:
+                # we are in the right sorted portion
+                if nums[mid] < target and target <= nums[r]:
                     l = mid + 1
                 else:
                     r = mid - 1
-        
+
         return -1
