@@ -99,6 +99,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jaeyonglee3/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0014-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0020-valid-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0022-generate-parentheses) |
@@ -420,6 +421,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 ## Trie
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0208-implement-trie-prefix-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/jaeyonglee3/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0212-word-search-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0212-word-search-ii) |
