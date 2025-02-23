@@ -7,16 +7,10 @@
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         if not root:
-            return None
+            return
         
-        q = collections.deque([root])
-        while q:
-            for _ in range(len(q)):
-                curr = q.popleft()
+        root.left, root.right = root.right, root.left
+        self.invertTree(root.left)
+        self.invertTree(root.right)
 
-                if curr:
-                    curr.left, curr.right = curr.right, curr.left
-                    q.append(curr.left)
-                    q.append(curr.right)
-        
         return root
