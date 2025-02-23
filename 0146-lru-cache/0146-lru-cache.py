@@ -6,49 +6,53 @@ class Node:
         self.next = None
 
 class LRUCache:
-    # Implemented with doubly linked list and hashmap
+
     def __init__(self, capacity: int):
+        self.cache = {}
         self.cap = capacity
-        self.cache = {}  # maps key to node, i.e. value is a ptr to node
-        
-        # Initialize dummy nodes for pointing to LRU and most recent
-        self.left, self.right = Node(0, 0), Node(0, 0)
-        self.left.next, self.right.prev = self.right, self.left
-    
-    def remove(self, node):
-        # Remove node from doubly linked list
-        prev, nxt = node.prev, node.next
-        prev.next, nxt.prev = nxt, prev
+        # dummy nodes for lru and mru
+        self.lru = Node(0, 0)
+        self.mru = Node(0, 0)
+
+        self.lru.next, self.mru.prev = self.mru, self.lru
     
     def insert(self, node):
-        # Insert at far right of doulby linked list
-        prev, nxt = self.right.prev, self.right
-        # insert the node between prev and nxt
-        prev.next = node
-        nxt.prev  = node
-        node.next, node.prev = nxt, prev
+        prev_mru = self.mru.prev
+        prev_mru.next = node
+        node.prev = prev_mru
+        self.mru.prev = node
+        node.next = self.mru
+
+    def remove(self, node):
+        node.prev.next = node.next
+        node.next.prev = node.prev
 
     def get(self, key: int) -> int:
-        if key in self.cache:
-            # Must also update the node to most recent position
-            # so remove it, then reinsert it so its at the far right
-            self.remove(self.cache[key])
-            self.insert(self.cache[key])
-            return self.cache[key].val
+        # if key does not exist, return -1
+        # o/w return the value associated w/ the key
+        # then, make that node become the mru
+        if key not in self.cache:
+            return -1
         
-        return -1
-
-    def put(self, key: int, value: int) -> None:
-        if key in self.cache:
-            self.remove(self.cache[key])
-        
-        self.cache[key] = Node(key, value)
+        value = self.cache[key].val
+        self.remove(self.cache[key])
         self.insert(self.cache[key])
 
-        # If the cache exceeds the set capacity size
+        return value
+
+    def put(self, key: int, value: int) -> None:
+        # if key in cache, update the value
+        # o/w add the new key value pair to the cache
+        # if number of keys exceeds capacity, evict lru
+        if key in self.cache:
+            self.remove(self.cache[key])
+        
+        new_node = Node(key, value)
+        self.cache[key] = new_node
+        self.insert(new_node)
+
         if len(self.cache) > self.cap:
-            # remove from linkedlist and delete/evict the LRU from hashmap (cache)
-            lru = self.left.next
+            lru = self.lru.next
             self.remove(lru)
             del self.cache[lru.key]
 
@@ -57,3 +61,9 @@ class LRUCache:
 # obj = LRUCache(capacity)
 # param_1 = obj.get(key)
 # obj.put(key,value)
+
+# to get in constant time, we should use a hashmap
+# where the keys are the key passed in, and values point to a node in the DLL
+
+# we need a doubly LL b/c we frequently reorder the nodes in the cache
+# e.g. everytime we call "get" on some value, it becomes the most recently used
