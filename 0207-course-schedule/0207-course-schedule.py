@@ -12,7 +12,7 @@ class Solution:
         
         # Step 2: detect a cycle - if a cycle is detected, it is
         # not possible to take all of the courses
-        visited = set()
+        visited = set()  # prevents redundant DFS calls → avoids reprocessing nodes that have already been checked for cycles.
         def dfs_is_cycle_detected(node, path):
             if node in path:
                 # Then the node is already in the current recursion path, meaning
