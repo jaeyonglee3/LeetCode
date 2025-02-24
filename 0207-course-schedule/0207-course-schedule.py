@@ -32,6 +32,7 @@ class Solution:
             visited.add(node)
             return True
         
+        # Call dfs on every node because the graph may be disconnected
         for course in range(numCourses):
             if not dfs_is_cycle_detected(course, set()):
                 return False
