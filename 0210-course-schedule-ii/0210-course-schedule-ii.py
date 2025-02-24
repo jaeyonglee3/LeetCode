@@ -1,36 +1,33 @@
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-        # Build the adjacency list representation of the prerequisite graph
+        # step 1: represent the data in a directed graph using adjacency list
         graph = collections.defaultdict(list)
-        for crs, pre in prerequisites:
-            graph[crs].append(pre)
+        for a, b in prerequisites:
+            graph[a].append(b)
         
-        # Path stores the set of nodes currently in the recursion stack
-        result = []
-        path, processed = set(), set()
-        
-        def dfs(c):
-            if c in path:
-                return False  # Cycle detected
-            if c in processed:
-                if c not in result:  # Avoid duplicates
-                    result.append(c)
+        # step 2: build a valid course ordering list, or return [] if impossible
+        # this is a topological sort
+        res = []
+        visited = set()
+
+        def dfs(node, path):
+            if node in path:
+                return False
+            if node in visited:
                 return True
             
-            path.add(c)
-            for course in graph[c]:
-                if not dfs(course):
+            path.add(node)
+            for n in graph[node]:
+                if not dfs(n, path):
                     return False
             
-            path.remove(c)
-            processed.add(c)  # Mark as processed
-            result.append(c)  # Add to result in reverse topological order
+            path.remove(node)
+            visited.add(node)
+            res.append(node)
             return True
-        
-        # DFS on every course, looking for cycles
+
         for course in range(numCourses):
-            if course not in result:  # Only process unvisited courses
-                if not dfs(course):
-                    return []  # Cycle detected, return empty list
+            if not dfs(course, set()):
+                return []
         
-        return result  # Reverse the result to get the correct order
+        return res
