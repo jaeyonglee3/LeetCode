@@ -1,20 +1,32 @@
 class Solution:
     def validPalindrome(self, s: str) -> bool:
-        # Two pointer approach
-        p1 = 0
-        p2 = len(s) - 1
+        del_used = False
+        l, r = 0, len(s) - 1
 
-        while p1 <= p2:
-            if s[p1] != s[p2]:
-                string1 = s[:p1] + s[p1+1:]  # Try removing mismatched character at p1
-                string2 = s[:p2] + s[p2+1:]  # Try removing mismatched character at p2
+        def is_palindrome(s):
+            l, r = 0, len(s) - 1
 
-                # Check if either worked
-                return string1 == string1[::-1] or string2 == string2[::-1]
-            
-            # Increment pointers
-            p1 += 1
-            p2 -= 1
+            while r >= l:
+                if s[l] != s[r]:
+                    return False
+                l += 1
+                r -= 1
+            return True
+
+        while r >= l:
+            if s[l] != s[r]:
+                if r - l == 1:
+                    return True
+                elif is_palindrome(s[l + 1 : r + 1]) and not del_used:
+                    l += 1
+                    del_used = True
+                elif is_palindrome(s[l : r]) and not del_used:
+                    r -= 1
+                    del_used = True
+                else:
+                    return False
+            else:
+                l += 1
+                r -= 1
         
         return True
-
