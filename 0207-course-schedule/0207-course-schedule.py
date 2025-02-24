@@ -1,40 +1,32 @@
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        # This is a cycle detection problem
-        # If a cycle is detected in the graph with edges formed by prerequisites, return false
-        # A graph contains a cycle iff DFS yields a back edge
-        # A back edge is defined as an edge that points to an ancestor of the current node in a DFS traversal.
-        
-        # First, build the adjacency list representation of the prerequisite graph
+        # step 1: build adjacency list representation of directed graph with
+        # vertices 0 -> numCourses - 1 and edges: prerequisites
         graph = collections.defaultdict(list)
-        for crs, pre in prerequisites:
-            graph[crs].append(pre)
+        for a, b in prerequisites:
+            graph[a].append(b)
         
-        # Path stores the set of nodes currently in the recursion stack
-        def dfs(c, path):
-            if c in path:
+        # step 2: detect a cycle - if a cycle is detected, it is
+        # not possible to take all of the courses
+        def dfs_is_cycle_detected(node, visited):
+            if node in visited:
                 return False
-            if graph[c] == []:
+            if graph[node] == []:
+                # The node has no neighbours
+                # it is a standalone node and therefore cannot have any cycles
                 return True
             
-            path.add(c)
-            for course in graph[c]:
-                # If the DFS returns false, we can return false early
-                if not dfs(course, path):
+            visited.add(node)
+            for n in graph[node]:
+                if not dfs_is_cycle_detected(n, visited):
                     return False
             
-            path.remove(c)
-            # Optimization to avoid TLE: we will mark a course as processed (cycle-free) 
-            # by setting its adjacency list to empty and checking this as a base case.
-            # This ensures no unnecessary reprocessing of nodes, reducing redundant DFS calls.
-            graph[c] = []
+            visited.remove(node)
+            graph[node] = []
             return True
         
-        # DFS on every course, looking for cycles
         for course in range(numCourses):
-            path = set()
-            is_possible = dfs(course, path)
-            if not is_possible:
+            if not dfs_is_cycle_detected(course, set()):
                 return False
         
         return True
