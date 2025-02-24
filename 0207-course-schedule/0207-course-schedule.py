@@ -5,7 +5,7 @@ class Solution:
         # dependency. Thus, the problem reduces to detecting cycles in a directed graph.
         
         # Step 1: build adjacency list representation of directed graph with
-        # vertices 0 -> numCourses - 1 and edges: prerequisites
+        # vertices: {0 -> numCourses - 1} and edges: {prerequisites}
         graph = collections.defaultdict(list)
         for a, b in prerequisites:
             graph[a].append(b)
