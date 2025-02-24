@@ -18,9 +18,8 @@ class Solution:
                 # Then the node is already in the current recursion path, meaning
                 # a cycle exists!
                 return False
-            if node in visited or graph[node] == []:
-                # Either the node has already been process and no cycle was detected
-                # or the node has no neighbours, meaning no cycle possible
+            if node in visited:
+                # The node has already been processed and no cycle was detected
                 return True
             
             path.add(node)
