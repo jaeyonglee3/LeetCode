@@ -8,21 +8,22 @@ class Solution:
         
         # step 2: detect a cycle - if a cycle is detected, it is
         # not possible to take all of the courses
-        def dfs_is_cycle_detected(node, visited):
-            if node in visited:
+        visited = set()
+        def dfs_is_cycle_detected(node, path):
+            if node in path:
                 return False
-            if graph[node] == []:
+            if node in visited or graph[node] == []:
                 # The node has no neighbours
                 # it is a standalone node and therefore cannot have any cycles
                 return True
             
-            visited.add(node)
+            path.add(node)
             for n in graph[node]:
-                if not dfs_is_cycle_detected(n, visited):
+                if not dfs_is_cycle_detected(n, path):
                     return False
             
-            visited.remove(node)
-            graph[node] = []
+            path.remove(node)
+            visited.add(node)
             return True
         
         for course in range(numCourses):
