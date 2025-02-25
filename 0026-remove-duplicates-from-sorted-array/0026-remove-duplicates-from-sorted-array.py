@@ -1,17 +1,21 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        j = 1
-        k = 1
+        seen = set()
+        i = 0
 
-        for i in range(1, len(nums)):
-            if nums[i] not in nums[:j]:
-                # swap nums[i] with nums[j]
-                nums[i], nums[j] = nums[j], nums[i]
-                j += 1
-                k += 1
+        while i < len(nums):
+            if nums[i] in seen:
+                j = i + 1
+                while j < len(nums) and nums[j] in seen:
+                    j += 1
+
+                if j == len(nums):
+                    # No more unique elements can be found in nums
+                    return len(seen)
+                
+                nums[i] = nums[j]
+                seen.add(nums[j])
             else:
-                pass
+                seen.add(nums[i])
 
-        return k
-
-            
+            i += 1
