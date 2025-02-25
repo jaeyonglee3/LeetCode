@@ -1,17 +1,18 @@
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
-        list_so_far = []
-        
+        res = []
+
         for i in range(1, n + 1):
-            s = ""
+            to_add = []
 
             if i % 3 == 0:
-                s += "Fizz"
+                to_add.append("Fizz")
             if i % 5 == 0:
-                s += "Buzz"
-            if s == "":
-                s += str(i)
+                to_add.append("Buzz")
             
-            list_so_far.append(s)
+            if not to_add: 
+                to_add = str(i)
+            
+            res.append("".join(to_add))
         
-        return list_so_far
+        return res
