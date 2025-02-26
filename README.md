@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0046-permutations](https://github.com/jaeyonglee3/LeetCode/tree/master/0046-permutations) |
 | [0049-group-anagrams](https://github.com/jaeyonglee3/LeetCode/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/jaeyonglee3/LeetCode/tree/master/0051-n-queens) |
+| [0056-merge-intervals](https://github.com/jaeyonglee3/LeetCode/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/jaeyonglee3/LeetCode/tree/master/0057-insert-interval) |
 | [0074-search-a-2d-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0078-subsets](https://github.com/jaeyonglee3/LeetCode/tree/master/0078-subsets) |
@@ -254,6 +255,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | ------- |
 | [0015-3sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/jaeyonglee3/LeetCode/tree/master/0049-group-anagrams) |
+| [0056-merge-intervals](https://github.com/jaeyonglee3/LeetCode/tree/master/0056-merge-intervals) |
 | [0088-merge-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0169-majority-element](https://github.com/jaeyonglee3/LeetCode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
