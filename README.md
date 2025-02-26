@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0046-permutations](https://github.com/jaeyonglee3/LeetCode/tree/master/0046-permutations) |
 | [0049-group-anagrams](https://github.com/jaeyonglee3/LeetCode/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/jaeyonglee3/LeetCode/tree/master/0051-n-queens) |
+| [0053-maximum-subarray](https://github.com/jaeyonglee3/LeetCode/tree/master/0053-maximum-subarray) |
 | [0056-merge-intervals](https://github.com/jaeyonglee3/LeetCode/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/jaeyonglee3/LeetCode/tree/master/0057-insert-interval) |
 | [0074-search-a-2d-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0074-search-a-2d-matrix) |
@@ -280,6 +281,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 ## Divide and Conquer
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/jaeyonglee3/LeetCode/tree/master/0053-maximum-subarray) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/jaeyonglee3/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0169-majority-element](https://github.com/jaeyonglee3/LeetCode/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
@@ -333,6 +335,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0022-generate-parentheses) |
+| [0053-maximum-subarray](https://github.com/jaeyonglee3/LeetCode/tree/master/0053-maximum-subarray) |
 | [0070-climbing-stairs](https://github.com/jaeyonglee3/LeetCode/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/jaeyonglee3/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
