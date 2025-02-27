@@ -12,8 +12,10 @@ class Solution:
         for i in range(1, len(intervals)):
             if intervals[i][0] <= res[-1][1]:
                 # The current interval overlaps with the last interval added to res.
-                # Merge them by updating rse[-1].
-                res[-1][0] = min(intervals[i][0], res[-1][0])
+                # Merge them by updating res[-1].
+                # its not necessary to update res[-1][0] bcuz we sorted the intervals array
+                # at the start. whats already in the result is guaranteed to have a smaller,
+                # or equal starting value.
                 res[-1][1] = max(intervals[i][1], res[-1][1])
             else:
                 # They do not overlap, so add the current interval to the result list.
