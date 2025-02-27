@@ -11,12 +11,14 @@ class Solution:
 
         for num in nums:
             if num < 0:
-                # Swap when encountering a negative number
+                # Swap when encountering a -ve number
+                # b/c when the number is -ve, the max product becomes the smallest
+                # product when multiplied with it
+                # and the min product becomes the largest product when multiplied with it.
                 max_product, min_product = min_product, max_product
 
             max_product = max(num, max_product * num)
             min_product = min(num, min_product * num)
-
             result = max(result, max_product)
 
         return result
