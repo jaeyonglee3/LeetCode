@@ -15,6 +15,7 @@ class Solution:
                 # b/c when the number is -ve, the max product becomes the smallest
                 # product when multiplied with it
                 # and the min product becomes the largest product when multiplied with it.
+                # (this is rooted in the fact that a +ve times a -ve is -ve)
                 max_product, min_product = min_product, max_product
 
             max_product = max(num, max_product * num)
