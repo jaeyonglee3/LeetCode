@@ -15,4 +15,4 @@ class Solution:
             
             return dfs(node.left, lower_bound, node.val) and dfs(node.right, node.val, upper_bound)
         
-        return dfs(root.left, -math.inf, root.val) and dfs(root.right, root.val, math.inf)
+        return dfs(root, -math.inf, math.inf)
