@@ -7,23 +7,13 @@
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        p_path = self.findPath(root, p)
-        q_path = self.findPath(root, q)
-
-        i = 0
-        while True:
-            if i > len(p_path) - 1 or i > len(q_path) - 1 or p_path[i] != q_path[i]:
-                return p_path[i - 1]
-            else:
-                i += 1
-    
-    def findPath(self, root, target):
-        # return an array of nodes representing the path
-        # from root to target node
-        if root == target:
-            return [root]
-        
-        if target.val > root.val:
-            return [root] + self.findPath(root.right, target)
+        if p.val > root.val and q.val > root.val:
+            # then, LCA must be on the right subtree of root
+            return self.lowestCommonAncestor(root.right, p, q)
+        elif p.val < root.val and q.val < root.val:
+            # then, LCA must be on the left subtree of root
+            return self.lowestCommonAncestor(root.left, p, q)
         else:
-            return [root] + self.findPath(root.left, target)
+            # we've found the LCA to be root as one of p or q is greater,
+            # and one is lesser, than the root value.
+            return root
