@@ -5,7 +5,7 @@ class Solution:
         res = 0
 
         for r, c in enumerate(s):
-            if c in seen:
+            if c in seen and seen[c] >= l:
                 l = seen[c] + 1
             else:
                 res = max(res, r - l + 1)
