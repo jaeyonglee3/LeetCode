@@ -19,7 +19,7 @@ class MinStack:
         return self.stack[-1][0]
 
     def getMin(self) -> int:
-        return self.stack[-1][1]
+        return self.last_min
 
 
 # Your MinStack object will be instantiated and called as such:
