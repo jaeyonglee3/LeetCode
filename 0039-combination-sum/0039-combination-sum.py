@@ -2,22 +2,20 @@ class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         res = []
 
-        def dfs(i, subset, curr_sum):
-            if curr_sum == target:
-                res.append(subset[:])
+        def dfs(i, curr_combo, curr_total):
+            if i > len(candidates) - 1 or curr_total > target:
                 return
-            if i >= len(candidates) or curr_sum > target:
+            if curr_total == target:
+                res.append(curr_combo.copy())
                 return
             
-            # left branch, keep adding i
-            # No need for i + 1 because same number can be used multiple times
-            subset.append(candidates[i])
-            dfs(i, subset, curr_sum + candidates[i])
+            # left branch
+            curr_combo.append(candidates[i])
+            dfs(i, curr_combo, curr_total + candidates[i])
 
-            # right branch, never include i
-            subset.pop()
-            dfs(i + 1, subset, curr_sum)
+            # right branch
+            curr_combo.pop()
+            dfs(i + 1, curr_combo, curr_total)
         
         dfs(0, [], 0)
         return res
-
