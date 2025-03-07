@@ -11,6 +11,7 @@ class Solution:
             
             # For the first pass, we need to fill the stack with index.
             # Avoid pushing index onto the stack in the second pass to prevent duplicating work.
-            stack.append(i % n)
+            if i < n:
+                stack.append(i)
         
         return res
