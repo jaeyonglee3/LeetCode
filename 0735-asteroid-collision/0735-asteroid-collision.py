@@ -1,24 +1,23 @@
 class Solution:
     def asteroidCollision(self, asteroids: List[int]) -> List[int]:
-        # sign represents direction, absolute value represents size, speed is constant
-        # after collision, smaller one explodes. if same size, both explode
-        # two asteroids moving in the same direction never meet
-
         stack = []
 
         for asteroid in asteroids:
-            should_add = True
+            add_curr = True
 
-            while stack and should_add and ((stack[-1] > 0 and asteroid < 0)):
-                if abs(stack[-1]) < abs(asteroid):
+            while stack and (asteroid < 0 and stack[-1] > 0) and add_curr:
+                # then, we have some collisions to deal with
+                if abs(stack[-1]) == abs(asteroid):
                     stack.pop()
-                elif abs(stack[-1]) == abs(asteroid):
-                    should_add = False
+                    add_curr = False
+                elif abs(stack[-1]) < abs(asteroid):
                     stack.pop()
                 else:
-                    should_add = False
+                    add_curr = False
             
-            if should_add:
+            if add_curr:
                 stack.append(asteroid)
         
         return stack
+            
+
