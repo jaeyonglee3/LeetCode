@@ -1,20 +1,23 @@
 class Solution:
     def carFleet(self, target: int, position: List[int], speed: List[int]) -> int:
-        fleets = []
-        # [(pos, speed), (pos, speed)]
-        cars = list(zip(position, speed))
+        stack = []  # [(arrival time)]
+        cars = list(zip(position, speed))  # [(pos, speed)]
+        cars.sort(key=lambda pair : -pair[0])
 
-        # go through the cars in reverse based on position
-        # so that we see the cars closer to target first
-        for pos, speed in sorted(cars, reverse=True):
+        # visit the pairs closest to target first
+        for pos, speed in cars:
             arrival_time = (target - pos) / speed
-            fleets.append(arrival_time)
+            stack.append(arrival_time)
 
-            # if car just added arrives sooner or at the same time
-            # as a car already in fleets (which is ahead of it)
-            # they must form a fleet at some point
-            # so just remove what you just added
-            while len(fleets) >= 2 and fleets[-2] >= fleets[-1]:
-                fleets.pop()
+            # smaller arrival time => arriving before the one w/ greater arrival time.
+            # if what we just added to the stack (stack[-1]) arrives 
+            # before what was already in the stack (stack[-2]), since cars is
+            # sorted by closest to dest first, these two cars MUST intersect
+            # at some point. so just pop from the stack as long as this is true,
+            # and the car we keep in there represents the fleet since its the slowest.
+            while len(stack) >= 2 and stack[-1] <= stack[-2]:
+                stack.pop()
         
-        return len(fleets)
+        # at the end, each "fleet" formed is represented by one "car"
+        # that we've kept in the stack, so len(stack) represents total num fleets.
+        return len(stack)
