@@ -7,6 +7,8 @@ class StockSpanner:
         span = 1
         while self.prices and self.prices[-1][0] <= price:
             removed = self.prices.pop()
+            # notice the span of the current price is always the sum of all the
+            # spans belonging to all the prices that are <= the current price.
             span += removed[1]
         
         self.prices.append((price, span))
