@@ -58,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/jaeyonglee3/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1127-last-stone-weight](https://github.com/jaeyonglee3/LeetCode/tree/master/1127-last-stone-weight) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
+| [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/jaeyonglee3/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/jaeyonglee3/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2058-concatenation-of-array](https://github.com/jaeyonglee3/LeetCode/tree/master/2058-concatenation-of-array) |
@@ -337,6 +338,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 | [0886-score-of-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0886-score-of-parentheses) |
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
+| [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/jaeyonglee3/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [2470-removing-stars-from-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 ## Dynamic Programming
 |  |
@@ -390,6 +392,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
+| [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/jaeyonglee3/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 ## Design
 |  |
 | ------- |
