@@ -9,6 +9,8 @@ class Solution:
                 removed = stack.pop()
                 res[removed] = nums[i % n]
             
+            # For the first pass, we need to fill the stack with index.
+            # Avoid pushing index onto the stack in the second pass to prevent duplicating work.
             stack.append(i % n)
         
         return res
