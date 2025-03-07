@@ -5,6 +5,9 @@ class Solution:
         for asteroid in asteroids:
             add_curr = True
 
+            # collisions only occur if aseroid < 0 and stack[-1] > 0. Not if vice versa
+            # because they're going in opposite directions (since their position in the
+            # array represents their relative position)
             while stack and (asteroid < 0 and stack[-1] > 0) and add_curr:
                 # then, we have some collisions to deal with
                 if abs(stack[-1]) == abs(asteroid):
