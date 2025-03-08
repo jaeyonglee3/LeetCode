@@ -1,25 +1,25 @@
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        # well-formed parentheses have the same number of open + close parentheses
-        # also cannot have closing come before opening parentheses
-        # You can only add a closing parenthesis if num closing < num opening 
-
-        # This could be more of a backtracking problem...
         res = []
-        
-        def backtrack(open_n, closed_n, path):
-            if open_n == closed_n == n:
-                res.append(path)
+
+        # well formed parentheses have an equal number of openings and closings
+        def backtrack(curr, num_open, num_close):
+            if num_open == num_close == n:
+                res.append("".join(curr))
                 return
             
+            # left branch, add opening bracket
+            if num_open < n:
+                curr.append("(")
+                backtrack(curr, num_open + 1, num_close)
+                curr.pop()
 
-            if open_n < n:
-                backtrack(open_n + 1, closed_n, path + "(")
-             
-
-            if closed_n < open_n:
-                backtrack(open_n, closed_n + 1, path + ")")
-                
-        backtrack(0, 0, "")
+            # right branch, add closing bracket
+            if num_close < num_open:
+                curr.append(")")
+                backtrack(curr, num_open, num_close + 1)
+                curr.pop()
+        
+        backtrack(["("], 1, 0)
         return res
 
