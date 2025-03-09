@@ -1,20 +1,19 @@
 class Solution:
     def trap(self, height: List[int]) -> int:
-        # O(n) time and memory
         res = 0
-        n = len(height)
-        left_max = [0] * n
-        right_max = [0] * n
+        l, r = 0, len(height) - 1
+        max_l, max_r = height[l], height[r]
 
-        left_max[0] = height[0]
-        for i in range(1, n):
-            left_max[i] = max(left_max[i - 1], height[i])
-        
-        right_max[-1] = height[-1]
-        for i in range(n - 2, -1, -1):
-            right_max[i] = max(right_max[i + 1], height[i])
-        
-        for i in range(n):
-            res += max(min(left_max[i], right_max[i]) - height[i], 0)
+        while r > l:
+            # by working with the pointer with the smaller max value, we retain
+            # the min(tallest wall to left or right) part of the equation
+            if max_l < max_r:
+                res += max(max_l - height[l], 0)
+                l += 1
+                max_l = max(max_l, height[l])
+            else:
+                res += max(max_r - height[r], 0)
+                r -= 1
+                max_r = max(max_r, height[r])
         
         return res
