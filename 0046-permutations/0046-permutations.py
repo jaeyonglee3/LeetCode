@@ -20,7 +20,6 @@ class Solution:
             
             # In Python, if a function reaches the end without an 
             # explicit return statement, it implicitly returns None.
-            
         
         dfs([])
         return res
