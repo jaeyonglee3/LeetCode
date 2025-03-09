@@ -1,6 +1,6 @@
 class Solution:
     def trap(self, height: List[int]) -> int:
-        # O(n^2) time
+        # O(n) time and memory
         res = 0
         n = len(height)
         left_max = [0] * n
