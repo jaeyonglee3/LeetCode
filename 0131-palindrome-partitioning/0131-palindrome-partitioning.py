@@ -1,4 +1,6 @@
 class Solution:
+    memo = {}
+
     def partition(self, s: str) -> List[List[str]]:
         res = []
 
@@ -17,11 +19,17 @@ class Solution:
         return res
         
     def isPalindrome(self, s: str):
+        if s in Solution.memo:
+            return Solution.memo[s]
+
+        # O(n) time
         l, r = 0, len(s) - 1
         while r >= l:
             if s[l] != s[r]:
+                Solution.memo[s] = False
                 return False
             l += 1
             r -= 1
         
+        Solution.memo[s] = True
         return True
