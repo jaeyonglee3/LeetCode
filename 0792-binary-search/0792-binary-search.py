@@ -1,15 +1,19 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        l, r = 0, len(nums) - 1
-
-        while l <= r:
+        def helper(l, r):
+            if not r >= l:
+                return -1
+            
             mid = (l + r) // 2
+            curr_val = nums[mid]
 
-            if nums[mid] == target:
+            if curr_val == target:
                 return mid
-            elif nums[mid] > target:
-                r = mid - 1
+            elif curr_val > target:
+                return helper(l, mid - 1)
             else:
-                l = mid + 1
+                return helper(mid + 1, r)
         
-        return -1
+        res = helper(0, len(nums) - 1)
+        return res
+            
