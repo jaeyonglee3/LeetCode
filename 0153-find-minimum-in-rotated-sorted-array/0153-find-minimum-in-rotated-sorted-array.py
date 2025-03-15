@@ -1,12 +1,13 @@
 class Solution:
     def findMin(self, nums: List[int]) -> int:
         res = nums[0]
-        
-        # edge case: entire nums array is sorted
-        if nums[0] < nums[-1]: return res
 
         l, r = 0, len(nums) - 1
         while r >= l:
+            if nums[l] < nums[r]:
+                res = min(res, nums[l])
+                break
+                
             mid = (r + l) // 2
             curr_val = nums[mid]
 
