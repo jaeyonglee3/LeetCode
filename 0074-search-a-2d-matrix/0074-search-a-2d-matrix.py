@@ -4,7 +4,7 @@ class Solution:
         l, r = 0, ROWS * COLS - 1
 
         while r >= l:
-            mid = l + (r - l) // 2
+            mid = (l + r) // 2
             row, col = mid // COLS, mid % COLS
             curr_val = matrix[row][col]
 
