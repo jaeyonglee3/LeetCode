@@ -1,22 +1,18 @@
 class Solution:
     def findMin(self, nums: List[int]) -> int:
-        res = nums[0]
-
         l, r = 0, len(nums) - 1
+        res = nums[0]
+      
         while r >= l:
-            if nums[l] < nums[r]:
-                res = min(res, nums[l])
-                break
-                
-            mid = (r + l) // 2
+            mid = (l + r) // 2
             curr_val = nums[mid]
-
-            if curr_val < nums[0]:
-                # we are in the right sorted portion
-                r = mid - 1
-                res = curr_val
-            else:
-                # we are in the left sorted portion
+            res = min(res, curr_val)
+          
+            if curr_val > nums[r]:  # Check towards right of curr_val
                 l = mid + 1
-
+            elif curr_val < nums[r]:  # Check towards left of curr_val
+                r = mid - 1
+            else:
+                r -= 1  # Handle duplicates by shrinking search space
+      
         return res
