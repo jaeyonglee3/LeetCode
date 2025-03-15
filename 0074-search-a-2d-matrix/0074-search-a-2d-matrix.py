@@ -1,18 +1,19 @@
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        # first, find the row the target could fit into
+        # 1) iterate over the rows and find the row that target could fit in
+        # 2) do an iterative binary search on that row and return T or F
+
         for row in matrix:
-            if row[0] <= target and target <= row[-1]:
-                # the target must be in this row
-                # perform a binary search on this row
+            if row[0] <= target and row[-1] >= target:
                 l, r = 0, len(row) - 1
 
-                while l <= r:
-                    mid = (l + r) // 2
+                while r >= l:
+                    mid = (r + l) // 2
+                    curr_val = row[mid]
 
-                    if row[mid] == target:
+                    if curr_val == target:
                         return True
-                    elif row[mid] > target:
+                    elif curr_val > target:
                         r = mid - 1
                     else:
                         l = mid + 1
