@@ -1,14 +1,19 @@
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
-        # fixed sliding window approach
-        left, right = 0, len(s1)
+        freq_s1 = collections.defaultdict(int)
+        for c in s1:
+            freq_s1[c] += 1
 
-        while right <= len(s2):
-            substring = s2[left : right]
-            if sorted(substring) == sorted(s1):
+        l, r = 0, len(s1) - 1
+        while r < len(s2):
+            freq_s2 = collections.defaultdict(int)
+            for c in s2[l : r + 1]:
+                freq_s2[c] += 1
+            
+            if freq_s1 == freq_s2:
                 return True
             
-            left += 1
-            right = left + len(s1)
+            l += 1
+            r += 1
         
         return False
