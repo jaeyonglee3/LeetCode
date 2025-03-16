@@ -145,6 +145,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1823-determine-if-string-halves-are-alike](https://github.com/jaeyonglee3/LeetCode/tree/master/1823-determine-if-string-halves-are-alike) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
+| [2337-remove-digit-from-number-to-maximize-result](https://github.com/jaeyonglee3/LeetCode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
 | [2470-removing-stars-from-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 | [2496-count-days-spent-together](https://github.com/jaeyonglee3/LeetCode/tree/master/2496-count-days-spent-together) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/jaeyonglee3/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
@@ -323,6 +324,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0435-non-overlapping-intervals](https://github.com/jaeyonglee3/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0680-valid-palindrome-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0680-valid-palindrome-ii) |
+| [2337-remove-digit-from-number-to-maximize-result](https://github.com/jaeyonglee3/LeetCode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
 ## Stack
 |  |
 | ------- |
@@ -509,4 +511,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | ------- |
 | [0070-climbing-stairs](https://github.com/jaeyonglee3/LeetCode/tree/master/0070-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/jaeyonglee3/LeetCode/tree/master/1013-fibonacci-number) |
+## Enumeration
+|  |
+| ------- |
+| [2337-remove-digit-from-number-to-maximize-result](https://github.com/jaeyonglee3/LeetCode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
 <!---LeetCode Topics End-->
