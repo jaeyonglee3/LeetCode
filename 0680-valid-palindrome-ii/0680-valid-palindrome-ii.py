@@ -19,3 +19,5 @@ class Solution:
             r -= 1
         
         return True
+
+        # O(N) time, O(1) space
