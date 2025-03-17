@@ -20,7 +20,7 @@ class Solution:
             
             return balls_used == m
         
-        l, r =  1, max(position) - min(position)
+        l, r =  1, int(position[-1] / (m - 1.0)) + 1
         res = 1
         while r >= l:
             mid = (l + r) // 2
