@@ -20,7 +20,8 @@ class Solution:
             
             return balls_used == m
         
-        l, r =  1, int(position[-1] / (m - 1.0)) + 1
+        # r = the maximum gap between m balls if all positions from 1 to position[-1] are available.
+        l, r =  1, position[-1] // (m - 1) + 1
         res = 1
         while r >= l:
             mid = (l + r) // 2
