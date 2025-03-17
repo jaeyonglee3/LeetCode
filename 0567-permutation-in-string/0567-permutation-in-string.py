@@ -18,5 +18,6 @@ class Solution:
         
         return False
 
-        # time: O(nm) where n and m are the sizes of s1 and s2
+        # time: O(26m) = O(m) where m is the size of s2.
+        # 26 b/c freq_s1 has length at most 26 and we iterate over the entirety of s2
         # space: O(1) since as input grows, frequency maps are a fixed size of at most 26
