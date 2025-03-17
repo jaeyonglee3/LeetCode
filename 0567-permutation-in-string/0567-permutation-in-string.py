@@ -17,3 +17,6 @@ class Solution:
             r += 1
         
         return False
+
+        # time: O(nm) where n and m are the sizes of s1 and s2
+        # space: O(1) since as input grows, frequency maps are a fixed size of at most 26
