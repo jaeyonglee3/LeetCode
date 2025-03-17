@@ -1,24 +1,21 @@
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
-        if len(s1) > len(s2): return False
+        freq = {}
+        for c in s1:
+            freq[c] = freq.get(c, 0) + 1
         
-        freq_s1 = Counter(s1)
-        freq_s2 = Counter(s2[:len(s1)])
-        
-        if freq_s1 == freq_s2: return True
-        
-        l, r = 0, len(s1)
-        while r < len(s2):
-            freq_s2[s2[r]] += 1  # Add new char to window
-            freq_s2[s2[l]] -= 1  # Remove old char from window
-            
-            if freq_s2[s2[l]] == 0:
-                del freq_s2[s2[l]]  # Remove key if count becomes 0
-            
-            # slide the window
-            l += 1
-            r += 1
+        freq_copy = freq.copy()
+        l = 0
+        for i in range(len(s2)):
+            if s2[i] in freq:
+                freq[s2[i]] -= 1
+                if freq[s2[i]] == 0 and i - l + 1 == len(s1):
+                    return True
+                while freq[s2[i]] < 0:
+                    freq[s2[l]] += 1
+                    l += 1            
+            else:
+                freq = freq_copy.copy()
+                l = i + 1
 
-            if freq_s1 == freq_s2: return True
-        
         return False
