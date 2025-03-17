@@ -1,23 +1,24 @@
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
-        freq_s1 = collections.defaultdict(int)
-        for c in s1:
-            freq_s1[c] += 1
+        if len(s1) > len(s2):
+            return False
 
-        l, r = 0, len(s1) - 1
-        while r < len(s2):
-            freq_s2 = collections.defaultdict(int)
-            for c in s2[l : r + 1]:
-                freq_s2[c] += 1
+        n = len(s1)
+        m = len(s2)
+        s1_map = Counter(s1)
+        s2_map = Counter()
+
+        for i in range(m):
+            s2_map[s2[i]] += 1
             
-            if freq_s1 == freq_s2:
-                return True
-            
-            l += 1
-            r += 1
-        
+            if i >= n:
+                char_to_rmv = s2[i - n]
+                if s2_map[char_to_rmv] > 1:
+                    s2_map[char_to_rmv] -= 1                    
+                else:
+                    del s2_map[char_to_rmv]
+
+            if s1_map == s2_map:
+                return True 
+
         return False
-
-        # time: O(26m) = O(m) where m is the size of s2.
-        # 26 b/c freq_s1 has length at most 26 and we iterate over the entirety of s2
-        # space: O(1) since as input grows, frequency maps are a fixed size of at most 26
