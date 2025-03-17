@@ -21,7 +21,8 @@ class Solution:
             return balls_used == m
         
         # r = the maximum gap possible in the positions array
-        l, r = min(position[i] - position[i - 1] for i in range(1, len(position))), position[-1] - position[0]
+        # l = the smallest possible gap size, which is 1 between each ball
+        l, r =  1, position[-1] - position[0]
         res = 1
         while r >= l:
             mid = (l + r) // 2
