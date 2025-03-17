@@ -68,6 +68,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [2058-concatenation-of-array](https://github.com/jaeyonglee3/LeetCode/tree/master/2058-concatenation-of-array) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
+| [2665-minimum-time-to-repair-cars](https://github.com/jaeyonglee3/LeetCode/tree/master/2665-minimum-time-to-repair-cars) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/jaeyonglee3/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 ## Hash Table
 |  |
@@ -433,6 +434,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/jaeyonglee3/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/jaeyonglee3/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1675-magnetic-force-between-two-balls](https://github.com/jaeyonglee3/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
+| [2665-minimum-time-to-repair-cars](https://github.com/jaeyonglee3/LeetCode/tree/master/2665-minimum-time-to-repair-cars) |
 ## Matrix
 |  |
 | ------- |
