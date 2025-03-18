@@ -60,6 +60,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/jaeyonglee3/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1127-last-stone-weight](https://github.com/jaeyonglee3/LeetCode/tree/master/1127-last-stone-weight) |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/jaeyonglee3/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/jaeyonglee3/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/jaeyonglee3/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
@@ -432,6 +433,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0907-koko-eating-bananas](https://github.com/jaeyonglee3/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/jaeyonglee3/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/jaeyonglee3/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/jaeyonglee3/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1675-magnetic-force-between-two-balls](https://github.com/jaeyonglee3/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
 | [2665-minimum-time-to-repair-cars](https://github.com/jaeyonglee3/LeetCode/tree/master/2665-minimum-time-to-repair-cars) |
