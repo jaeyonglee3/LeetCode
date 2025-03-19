@@ -11,12 +11,17 @@ class Solution:
         def dfs(node, depth):
             if not node:
                 return
+                
+            # Each list in res corresponds to a level in the tree.
+            # if len(res) == depth is true, we're at a new depth, so add a new list.
+            # if the len(res) exceeds depth, the list corresponding to that depth already exists.
             if len(res) == depth:
                 res.append([])
             
             res[depth].append(node.val)
             dfs(node.left, depth + 1)
             dfs(node.right, depth + 1)
-        
+
         dfs(root, 0)
         return res
+
