@@ -7,20 +7,16 @@
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         res = []
-        q = collections.deque([root])
 
-        while q:
-            curr_level = []
-
-            for _ in range(len(q)):
-                curr = q.popleft()
-
-                if curr:
-                    curr_level.append(curr.val)
-                    q.append(curr.left)
-                    q.append(curr.right)
+        def dfs(node, depth):
+            if not node:
+                return
+            if len(res) == depth:
+                res.append([])
             
-            if curr_level:
-                res.append(curr_level)
+            res[depth].append(node.val)
+            dfs(node.left, depth + 1)
+            dfs(node.right, depth + 1)
         
+        dfs(root, 0)
         return res
