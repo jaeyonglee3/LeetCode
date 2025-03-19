@@ -22,7 +22,7 @@ class Solution:
             # step 1: update result! - left + right is the diameter for the node we're currently at
             self.res = max(self.res, left + right)
 
-            # step 2: actually return the max depth from the current node
+            # step 2: return the max depth, +1 to include the current node itself
             return 1 + max(left, right)
         
         maxDepth(root)
