@@ -25,9 +25,7 @@ class Solution:
         return dfs(root)
 
         # time: O(n * m). N is the number of nodes in the root tree. M is the number of nodes in the subRoot tree.
-        # In the worst case, we may need to check every node in the root tree (which has N nodes) to see if it 
-        # is the root of a subtree that matches subRoot. This is because we traverse all nodes of the root tree 
-        # in the dfs function. For each node in root, we may need to check the entire subRoot tree (which has M nodes) 
-        # to see if the trees are identical using the sameTree function.
+        # In the worst case, we may need to compare every node in the root tree (which has N nodes) again every 
+        # node in the subroot tree.
 
         # space: O(H) (O(log N) for balanced trees, O(N) for skewed trees). Only recursion stack takes extra memory
