@@ -6,23 +6,23 @@
 #         self.right = right
 class Solution:
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
-        # Diameter may or may not pass through the root!
-        # Use member variable to make it accessible within nested dfs function
+        # Using self.res allows us to maintain a global state that 
+        # is accessible throughout all recursive calls.
         self.res = 0
 
-        # Returns the max height between L and R subtrees
-        def maxDepth(curr):
-            if not curr: return 0
+        # returns the maximum depth of any given node, while also updating the 
+        # global result variable at each recursive call, i.e. at each node we visit
+        def maxDepth(node) -> int:
+            if not node:
+                return 0
+            
+            left = maxDepth(node.left)  # in ex 1, left = 2 for maxDepth(root)
+            right = maxDepth(node.right)  # in ex 1, right = 1 for maxDepth(root)
 
-            left = maxDepth(curr.left)
-            right = maxDepth(curr.right)
-            # result updates every recursive call, thereby considering diameters
-            # that pass through every node, not just the root
-            # i.e. since the recursion visits every node, 
-            # we check all possible paths that could form the tree's diameter.
+            # step 1: update result! - left + right is the diameter for the node we're currently at
             self.res = max(self.res, left + right)
 
-            # Add 1 for the current node we are at
+            # step 2: actually return the max depth from the current node
             return 1 + max(left, right)
         
         maxDepth(root)
