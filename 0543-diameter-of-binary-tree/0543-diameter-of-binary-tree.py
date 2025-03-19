@@ -27,3 +27,6 @@ class Solution:
         
         maxDepth(root)
         return self.res
+
+        # time: O(n), where n = number of nodes in the tree, since each node is visited exactly once
+        # space: O(n) worst case (tree is skewed and is a line) or best case O(logn) (balanced tree)
