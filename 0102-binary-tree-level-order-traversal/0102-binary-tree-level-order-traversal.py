@@ -10,16 +10,17 @@ class Solution:
         q = collections.deque([root])
 
         while q:
-            curr_lvl = []
-            
+            curr_level = []
+
             for _ in range(len(q)):
                 curr = q.popleft()
 
                 if curr:
-                    curr_lvl.append(curr.val)
+                    curr_level.append(curr.val)
                     q.append(curr.left)
                     q.append(curr.right)
             
-            if curr_lvl: res.append(curr_lvl)
+            if curr_level:
+                res.append(curr_level)
         
         return res
