@@ -6,6 +6,7 @@
 #         self.right = right
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
+        # this is not optimal: O(n^2)
         if not root: 
             return True
 
