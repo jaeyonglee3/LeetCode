@@ -16,10 +16,11 @@ class Solution:
                 curr = q.popleft()
 
                 if curr:
+                    rightmost = curr.val
                     q.append(curr.left)
                     q.append(curr.right)
-                    rightmost = curr
             
-            if rightmost: res.append(rightmost.val)
+            if rightmost != None:
+                res.append(rightmost)
         
         return res
