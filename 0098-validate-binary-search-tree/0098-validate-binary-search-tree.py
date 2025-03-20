@@ -6,13 +6,14 @@
 #         self.right = right
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        # the BST property applies recursively throughout the structure of the tree.
-        def dfs(node, lower_bound, upper_bound):
+        # for any given node, the node has an upper and lower bound
+        # visit every node in a DFS. if just one node violates the BST property, return False
+        def dfs(node, lower, upper) -> bool:
             if not node:
                 return True
-            if node.val >= upper_bound or node.val <= lower_bound:
+            if node.val >= upper or node.val <= lower:
                 return False
             
-            return dfs(node.left, lower_bound, node.val) and dfs(node.right, node.val, upper_bound)
+            return dfs(node.left, lower, node.val) and dfs(node.right, node.val, upper)
         
         return dfs(root, -math.inf, math.inf)
