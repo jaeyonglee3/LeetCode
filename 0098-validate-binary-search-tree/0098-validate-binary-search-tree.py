@@ -6,14 +6,22 @@
 #         self.right = right
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        # for any given node, the node has an upper and lower bound
-        # visit every node in a DFS. if just one node violates the BST property, return False
-        def dfs(node, lower, upper) -> bool:
-            if not node:
-                return True
-            if node.val >= upper or node.val <= lower:
+        # BFS solution
+        q = collections.deque()
+
+        # queue contains a tuple of node, lower bound, and upper bound
+        q.append((root, -math.inf, math.inf))
+
+        while q:
+            curr, lower, upper = q.popleft()
+
+            if curr.val <= lower or curr.val >= upper:
                 return False
             
-            return dfs(node.left, lower, node.val) and dfs(node.right, node.val, upper)
+            if curr.left:
+                q.append((curr.left, lower, curr.val))
+            
+            if curr.right:
+                q.append((curr.right, curr.val, upper))
         
-        return dfs(root, -math.inf, math.inf)
+        return True
