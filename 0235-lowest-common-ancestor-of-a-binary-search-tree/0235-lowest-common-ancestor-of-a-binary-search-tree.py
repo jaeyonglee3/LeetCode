@@ -17,7 +17,8 @@ class Solution:
         # - p and q will exist in the BST
 
         # intuition
-        # - we can run a DFS visiting every node. Since we have a BST, we can easily check if the current
+        # - we can run a DFS that follows one path down the tree. 
+        # Since we have a BST, we can easily check if the current
         # node satisfies the key insight condition.
 
         if p.val > root.val and q.val > root.val:
@@ -26,3 +27,10 @@ class Solution:
             return self.lowestCommonAncestor(root.left, p, q)
         else:
             return root
+        
+        # time: O(h) where h is the height of the tree.
+        # Unlike a general tree traversal (which takes O(N) because it visits every node), 
+        # this algorithm only follows one path down the tree. Since the BST property allows us 
+        # to decide at each step whether to go left or right, we prune half the tree at each recursive call.
+        
+        # space: O(h) where h is the height of the tree
