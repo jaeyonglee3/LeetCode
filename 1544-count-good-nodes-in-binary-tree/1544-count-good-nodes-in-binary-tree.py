@@ -6,13 +6,32 @@
 #         self.right = right
 class Solution:
     def goodNodes(self, root: TreeNode) -> int:
-        def dfs(node: TreeNode, greatest: int) -> int:
-            if not node:
-                return 0
-            
-            if node.val >= greatest:
-                return 1 + dfs(node.left, node.val) + dfs(node.right, node.val)
-            else:
-                return 0 + dfs(node.left, greatest) + dfs(node.right, greatest)
+        res = 0
+        q = deque()
+
+        # Track the maximum value (max_val) seen along the path from the root to the current node.
+        q.append((root, -math.inf))
         
-        return dfs(root, root.val)
+        while q:
+            node, max_val = q.popleft()
+
+            if node.val >= max_val:
+                res += 1
+            
+            # when you append a left or right subtree to the queue, you always have the node
+            # itself as reference, so you can easily check the max value seen along the path
+            # from the root to current node.
+            if node.left:    
+                q.append((node.left, max(max_val, node.val)))
+            
+            if node.right:
+                q.append((node.right, max(max_val, node.val)))
+                
+        return res
+
+        # time: O(n), we visit each node exactly once, , we perform O(1) 
+        # operations (checking the value, updating max_val, and adding children to the queue).
+        
+        # space: O(n)
+        # Queue holds at most one level at a time, which is O(N/2) = O(N) 
+        # in the worst case (for a full binary tree).
