@@ -7,13 +7,22 @@
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        # key insight: the LCA is always the node that has p as part of one of its subtrees,
+        # and q as part of its other subtree.
+        # the LCA could also be either p or q themselves if no such node as described above exists
+
+        # assumptions + clarifications
+        # - all node values ARE in fact unique
+        # - p and q will be different nodes
+        # - p and q will exist in the BST
+
+        # intuition
+        # - we can run a DFS visiting every node. Since we have a BST, we can easily check if the current
+        # node satisfies the key insight condition.
+
         if p.val > root.val and q.val > root.val:
-            # then, LCA must be on the right subtree of root
             return self.lowestCommonAncestor(root.right, p, q)
         elif p.val < root.val and q.val < root.val:
-            # then, LCA must be on the left subtree of root
             return self.lowestCommonAncestor(root.left, p, q)
         else:
-            # we've found the LCA to be root as one of p or q is greater,
-            # and one is lesser, than the root value.
             return root
