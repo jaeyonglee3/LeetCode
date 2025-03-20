@@ -12,11 +12,10 @@ class Solution:
             if not node:
                 return
             if len(res) == depth:
-                res.append(-1)
+                res.append(node.val)
             
-            res[depth] = node.val
-            dfs(node.left, depth + 1)
             dfs(node.right, depth + 1)
+            dfs(node.left, depth + 1)
 
         dfs(root, 0)
         return res
