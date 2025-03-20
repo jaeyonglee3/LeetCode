@@ -19,3 +19,6 @@ class Solution:
 
         dfs(root, 0)
         return res
+
+        # time: O(n) since we visit every node
+        # space: O(h) for the recursion stack where h is height, so log n if tree balanced, and n if tree is skewed
