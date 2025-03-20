@@ -7,21 +7,20 @@
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         res = []
+        q = collections.deque([root])
 
-        def dfs(node, depth):
-            if not node:
-                return
-                
-            # Each list in res corresponds to a level in the tree.
-            # if len(res) == depth is true, we're at a new depth, so add a new list.
-            # if the len(res) exceeds depth, the list corresponding to that depth already exists.
-            if len(res) == depth:
-                res.append([])
+        while q:
+            curr_level = []
+
+            for _ in range(len(q)):
+                curr = q.popleft()
+
+                if curr:
+                    curr_level.append(curr.val)
+                    q.append(curr.left)
+                    q.append(curr.right)
             
-            res[depth].append(node.val)
-            dfs(node.left, depth + 1)
-            dfs(node.right, depth + 1)
-
-        dfs(root, 0)
+            if curr_level:
+                res.append(curr_level)
+        
         return res
-
