@@ -1,6 +1,7 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        # O(n) where n = len(nums)
+        # O(n) runtime, where n = len(nums)
+        # O(n) space, for the seen hashmap
 
         seen = {}  # maps values to index in array
 
