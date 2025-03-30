@@ -1,9 +1,8 @@
 class Solution:
     def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
         ROWS, COLS = len(mat), len(mat[0])
-        DIRS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-
         new_mat = [[-1] * COLS for _ in range(ROWS)]
+        DIRS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         q = collections.deque()
 
         for r in range(ROWS):
@@ -25,8 +24,3 @@ class Solution:
                 q.append((new_r, new_c))
         
         return new_mat
-
-        # time: O(m * n) b/c each cell is processed once
-
-        # space: O(m * n)
-        # In the worst case, queue holds all m * n cells
