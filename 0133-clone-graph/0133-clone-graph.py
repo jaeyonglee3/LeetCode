@@ -20,7 +20,8 @@ class Solution:
 
             for n in curr.neighbors:
                 if n not in visited:
-                    visited[n] = Node(n.val)
+                    n_copy = Node(n.val)
+                    visited[n] = n_copy
                     q.append(n)
                 
                 visited[curr].neighbors.append(visited[n])
