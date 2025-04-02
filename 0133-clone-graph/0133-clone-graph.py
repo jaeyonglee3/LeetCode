@@ -12,18 +12,17 @@ class Solution:
         if not node: return None
 
         visited = {}
+        q = collections.deque([node])
+        visited[node] = Node(node.val)
 
-        def dfs(node):
-            if node in visited:
-                return visited[node]
-            
-            copy = Node(node.val)
-            visited[node] = copy
+        while q:
+            curr = q.popleft()
 
-            for n in node.neighbors:
-                n_copy = dfs(n)
-                copy.neighbors.append(n_copy)
-            
-            return copy
+            for n in curr.neighbors:
+                if n not in visited:
+                    visited[n] = Node(n.val)
+                    q.append(n)
+                
+                visited[curr].neighbors.append(visited[n])
         
-        return dfs(node)
+        return visited[node]
