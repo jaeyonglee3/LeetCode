@@ -11,7 +11,7 @@ class Solution:
     def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
         if not node: return None
 
-        visited = {}  # maps original nodes to their new copy
+        visited = {}
 
         def dfs(node):
             if node in visited:
