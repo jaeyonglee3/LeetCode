@@ -12,19 +12,20 @@ class Solution:
         if not node:
             return None
         
+        q = collections.deque([node])
         visited = {}
+        visited[node] = Node(node.val)
 
-        def dfs(node):
-            if node in visited:
-                return visited[node]
-            
-            copy = Node(node.val)
-            visited[node] = copy
-            
-            for n in node.neighbors:
-                n_copy = dfs(n)
-                visited[node].neighbors.append(n_copy)
-            
-            return copy
+        while q:
+            curr = q.popleft()
+
+            for n in curr.neighbors:
+                if n not in visited:
+                    n_copy = Node(n.val)
+                    visited[n] = n_copy
+                    q.append(n)
+                
+                # add the copy of the neighbor to the copy of the current node's neighbors list
+                visited[curr].neighbors.append(visited[n])
         
-        return dfs(node)
+        return visited[node]
