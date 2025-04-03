@@ -4,15 +4,18 @@ class Solution:
         DIRS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         res = 0
 
-        def dfs(r, c) -> None:
+        def dfs(r, c):
+            # base cases
             if min(r, c) < 0 or r == ROWS or c == COLS or grid[r][c] == "0":
                 return
             
             grid[r][c] = "0"
-
             for dr, dc in DIRS:
                 dfs(r + dr, c + dc)
+            
+            return
         
+        # visit every cell
         for r in range(ROWS):
             for c in range(COLS):
                 if grid[r][c] == "1":
