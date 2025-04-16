@@ -12,22 +12,20 @@ class Solution:
         if not node:
             return None
         
-        # hashmap mapping original nodes to their clones
+        # maps OG nodes to their clone, helps avoid making multiple clones
         visited = {}
-        visited[node] = Node(node.val)
-        
-        # queue only contains OG nodes to be processed
-        q = collections.deque([node])
 
-        while q:
-            curr = q.popleft()
-
-            for n in curr.neighbors:
-                if n not in visited:
-                    n_copy = Node(n.val)
-                    visited[n] = n_copy
-                    q.append(n)
-                
-                visited[curr].neighbors.append(visited[n])
+        def dfs(node):
+            if node in visited:
+                return visited[node]
+            
+            node_copy = Node(node.val)
+            visited[node] = node_copy
+            
+            for n in node.neighbors:
+                n_copy = dfs(n)
+                node_copy.neighbors.append(n_copy)
+            
+            return node_copy
         
-        return visited[node]
+        return dfs(node)
