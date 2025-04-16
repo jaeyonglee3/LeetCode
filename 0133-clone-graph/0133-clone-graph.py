@@ -12,9 +12,12 @@ class Solution:
         if not node:
             return None
         
-        q = collections.deque([node])
+        # hashmap mapping original nodes to their clones
         visited = {}
         visited[node] = Node(node.val)
+        
+        # queue only contains OG nodes to be processed
+        q = collections.deque([node])
 
         while q:
             curr = q.popleft()
@@ -25,7 +28,6 @@ class Solution:
                     visited[n] = n_copy
                     q.append(n)
                 
-                # add the copy of the neighbor to the copy of the current node's neighbors list
                 visited[curr].neighbors.append(visited[n])
         
         return visited[node]
