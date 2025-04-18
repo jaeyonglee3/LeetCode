@@ -12,18 +12,17 @@ class Solution:
         if not node:
             return None
         
-        # maps OG node to the clone that's been created
-        visited = {}
+        visited = {node : Node(node.val)}  # maps OG node to the clone that's been created
+        q = collections.deque([node])  # contains OG nodes only
 
-        def dfs(node) -> Node:
-            if node in visited:
-                return visited[node]
-            
-            visited[node] = Node(node.val)
-            for neighbor in node.neighbors:
-                neighbor_copy = dfs(neighbor)
-                visited[node].neighbors.append(neighbor_copy)
-            
-            return visited[node]
+        while q:
+            curr = q.popleft()
+
+            for n in curr.neighbors:
+                if n not in visited:
+                    visited[n] = Node(n.val)
+                    q.append(n)
+                
+                visited[curr].neighbors.append(visited[n])
         
-        return dfs(node)
+        return visited[node]
