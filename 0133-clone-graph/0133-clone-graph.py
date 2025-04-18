@@ -12,20 +12,18 @@ class Solution:
         if not node:
             return None
         
-        # maps OG nodes to their clone, helps avoid making multiple clones
+        # maps OG node to the clone that's been created
         visited = {}
 
-        def dfs(node):
+        def dfs(node) -> Node:
             if node in visited:
                 return visited[node]
             
-            node_copy = Node(node.val)
-            visited[node] = node_copy
+            visited[node] = Node(node.val)
+            for neighbor in node.neighbors:
+                neighbor_copy = dfs(neighbor)
+                visited[node].neighbors.append(neighbor_copy)
             
-            for n in node.neighbors:
-                n_copy = dfs(n)
-                node_copy.neighbors.append(n_copy)
-            
-            return node_copy
+            return visited[node]
         
         return dfs(node)
