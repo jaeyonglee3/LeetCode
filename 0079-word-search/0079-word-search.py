@@ -19,7 +19,7 @@ class Solution:
                 if dfs(r + dr, c + dc, i + 1, path):
                     return True
             
-            path.pop()
+            path.remove((r, c))
             return False
         
         for r in range(ROWS):
