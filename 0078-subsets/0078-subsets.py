@@ -2,16 +2,16 @@ class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
         res = []
 
-        def dfs(i, curr_subset):
+        def dfs(i, curr):
             if i > len(nums) - 1:
-                res.append(curr_subset.copy())
+                res.append(curr[:])
                 return
             
-            curr_subset.append(nums[i])
-            dfs(i + 1, curr_subset)
+            curr.append(nums[i])
+            dfs(i + 1, curr)
 
-            curr_subset.pop()
-            dfs(i + 1, curr_subset)
+            curr.pop()
+            dfs(i + 1, curr)
         
         dfs(0, [])
         return res
