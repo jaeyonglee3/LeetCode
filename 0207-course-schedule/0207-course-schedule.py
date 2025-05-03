@@ -1,42 +1,39 @@
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        # The key insight here is that if there is a cycle in the prerequisite graph, it is 
-        # impossible to finish all courses, because a cycle means there is a circular 
-        # dependency. Thus, the problem reduces to detecting cycles in a directed graph.
-        
-        # Step 1: build adjacency list representation of directed graph with
-        # vertices: {0 -> numCourses - 1} and edges: {prerequisites}
+        # represent as a directed graph with an adjacency 
+        # list and run a cycle detection DFS algorithm
         graph = collections.defaultdict(list)
         for a, b in prerequisites:
             graph[a].append(b)
         
-        # Step 2: detect a cycle - if a cycle is detected, it is
-        # not possible to take all of the courses
-        visited = set()  # prevents redundant DFS calls → avoids reprocessing nodes that have already been checked for cycles.
-        def dfs_is_cycle_detected(node, path):
-            if node in path:
-                # Then the node is already in the current recursion path, meaning
-                # a cycle exists!
+        # visited keeps track of every node we've verified is NOT part of a cycle
+        # it allows us to avoid processing the same node multiple times
+        visited = set()
+        
+        def dfs(course, path):
+            # course is the current course we are visiting
+            # path is the current path we are on
+            if course in path:
                 return False
-            if node in visited:
-                # The node has already been processed and no cycle was detected
+            if course in visited:
                 return True
             
-            path.add(node)
-            for n in graph[node]:
-                if not dfs_is_cycle_detected(n, path):
+            # add the current course to the current path
+            path.add(course)
+
+            # visit each of the current courses neighbors and call DFS
+            for n in graph[course]:
+                if not dfs(n, path):
                     return False
             
-            path.remove(node)  # Backtracking step, required in e.g. like: [[1, 7], [7, 0], [1, 0]]
-            visited.add(node)
+            # backtracking step
+            path.remove(course)
+            visited.add(course)
+
             return True
         
-        # Call dfs on every node because the graph may be disconnected
         for course in range(numCourses):
-            if not dfs_is_cycle_detected(course, set()):
+            if not dfs(course, set()):
                 return False
         
         return True
-
-        # time: O(V + E) b/c each node and each edge is visited once
-        # space: O(V + E) b/c visited and path sets are O(V) and adjacency list is O(E)
