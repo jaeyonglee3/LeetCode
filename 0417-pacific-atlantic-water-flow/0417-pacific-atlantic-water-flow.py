@@ -3,27 +3,36 @@ class Solution:
         # the result contains all coordinates from which water can flow into both oceans
         ROWS, COLS = len(heights), len(heights[0])
         DIRS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-        pacific, atlantic = set(), set()
+        pacific = [[False] * COLS for _ in range(ROWS)]
+        atlantic = [[False] * COLS for _ in range(ROWS)]
 
-        def dfs(r, c, curr_set, prev_h):
-            if min(r, c) < 0 or r == ROWS or c == COLS or prev_h > heights[r][c] or (r, c) in curr_set:
-                return
-            
-            curr_set.add((r, c))
-            for dr, dc in DIRS:
-                new_r, new_c = r + dr, c + dc
-                dfs(new_r, new_c, curr_set, heights[r][c])
-        
+        pacific_set, atlantic_set = set(), set()
+
         for r in range(ROWS):
-            dfs(r, 0, pacific, -1)
-            dfs(r, COLS - 1, atlantic, -1)
+            pacific_set.add((r, 0))
+            atlantic_set.add((r, COLS - 1))
         
         for c in range(COLS):
-            dfs(0, c, pacific, -1)
-            dfs(ROWS - 1, c, atlantic, -1)
-        
-        return list(atlantic.intersection(pacific))
+            pacific_set.add((0, c))
+            atlantic_set.add((ROWS - 1, c))
 
-        # time: O(m * n)
-        # space: O(m * n)
-        # Where m is the number of rows and n is the number of columns.
+        def bfs(ocean):
+            q = collections.deque(ocean)
+
+            while q:
+                for _ in range(len(q)):
+                    r, c = q.popleft()
+
+                    for dr, dc in DIRS:
+                        new_r, new_c = r + dr, c + dc
+
+                        if min(new_r, new_c) < 0 or new_r == ROWS or new_c == COLS or (new_r, new_c) in ocean or heights[new_r][new_c] < heights[r][c]:
+                            continue
+                        
+                        q.append((new_r, new_c))
+                        ocean.add((new_r, new_c))
+        
+        bfs(pacific_set)
+        bfs(atlantic_set)
+
+        return list(pacific_set.intersection(atlantic_set))
