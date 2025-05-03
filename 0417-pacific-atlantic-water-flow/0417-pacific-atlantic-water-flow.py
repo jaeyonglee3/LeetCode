@@ -23,3 +23,7 @@ class Solution:
             dfs(ROWS - 1, c, atlantic, -1)
         
         return list(atlantic.intersection(pacific))
+
+        # time: O(m * n)
+        # space: O(m * n)
+        # Where m is the number of rows and n is the number of columns.
