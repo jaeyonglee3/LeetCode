@@ -3,9 +3,6 @@ class Solution:
         # the result contains all coordinates from which water can flow into both oceans
         ROWS, COLS = len(heights), len(heights[0])
         DIRS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-        pacific = [[False] * COLS for _ in range(ROWS)]
-        atlantic = [[False] * COLS for _ in range(ROWS)]
-
         pacific_set, atlantic_set = set(), set()
 
         for r in range(ROWS):
