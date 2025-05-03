@@ -2,28 +2,24 @@ class Solution:
     def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
         # the result contains all coordinates from which water can flow into both oceans
         ROWS, COLS = len(heights), len(heights[0])
+        DIRS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         pacific, atlantic = set(), set()
-        directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
-        def dfs(r, c, prev_h, curr_set):
-            if r < 0 or c < 0 or r == ROWS or c == COLS or (r, c) in curr_set or heights[r][c] < prev_h:
+        def dfs(r, c, curr_set, prev_h):
+            if min(r, c) < 0 or r == ROWS or c == COLS or prev_h > heights[r][c] or (r, c) in curr_set:
                 return
             
-            # otherwise, that current r, c can reach that ocean
             curr_set.add((r, c))
-            for dr, dc in directions:
-                dfs(r + dr, c + dc, heights[r][c], curr_set)
-
+            for dr, dc in DIRS:
+                new_r, new_c = r + dr, c + dc
+                dfs(new_r, new_c, curr_set, heights[r][c])
+        
         for r in range(ROWS):
-            dfs(r, 0, -1, pacific)
-            dfs(r, COLS - 1, -1, atlantic)
+            dfs(r, 0, pacific, -1)
+            dfs(r, COLS - 1, atlantic, -1)
         
         for c in range(COLS):
-            dfs(0, c, -1, pacific)
-            dfs(ROWS - 1, c, -2, atlantic)
+            dfs(0, c, pacific, -1)
+            dfs(ROWS - 1, c, atlantic, -1)
         
-        result = pacific.intersection(atlantic)
-        return list(result)
-        
-        
-
+        return list(atlantic.intersection(pacific))
