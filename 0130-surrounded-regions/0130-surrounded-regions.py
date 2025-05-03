@@ -3,35 +3,37 @@ class Solution:
         """
         Do not return anything, modify board in-place instead.
         """
-        # DFS approach
-        # iterate over / visit all the edge cells
-        # if that cell is an "O" mark it with a special temp character "T"
-        # then, run a DFS with that cell as the starting point to find every
-        # "O" that is connected to it. Mark them all with Ts
-        # At the end, iterate over the entire board. Make all Os into Xs
-        # and all Ts back into Os
-
+        # Multi-source BFS Approach
+        # We'll have a coordinate queue that starts with all edge cells containing Os
         ROWS, COLS = len(board), len(board[0])
         DIRS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+        q = collections.deque()
 
-        def dfs(r, c):
-            # Base case
-            if min(r, c) < 0 or r == ROWS or c == COLS or board[r][c] != "O":
-                return
-            
-            board[r][c] = "T"
-            for dr, dc in DIRS:
-                dfs(r + dr, c + dc)
-        
         for r in range(ROWS):
-            dfs(r, 0)
-            dfs(r, COLS - 1)
+            if board[r][0] == "O":
+                q.append((r, 0))
+            if board[r][COLS - 1] == "O":
+                q.append((r, COLS - 1))
         
         for c in range(COLS):
-            dfs(0, c)
-            dfs(ROWS - 1, c)
+            if board[0][c] == "O":
+                q.append((0, c))
+            if board[ROWS - 1][c] == "O":
+                q.append((ROWS - 1, c))
         
-        # Now, modify the board appropriately
+        while q:
+            for _ in range(len(q)):
+                r, c = q.popleft()
+                board[r][c] = "T"
+
+                for dr, dc in DIRS:
+                    nr, nc = r + dr, c + dc
+
+                    if min(nr, nc) < 0 or nr == ROWS or nc == COLS or board[nr][nc] != "O":
+                        continue
+                    
+                    q.append((nr, nc))
+        
         for r in range(ROWS):
             for c in range(COLS):
                 if board[r][c] == "T":
