@@ -70,6 +70,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/jaeyonglee3/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1675-magnetic-force-between-two-balls](https://github.com/jaeyonglee3/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
+| [1876-map-of-highest-peak](https://github.com/jaeyonglee3/LeetCode/tree/master/1876-map-of-highest-peak) |
 | [2058-concatenation-of-array](https://github.com/jaeyonglee3/LeetCode/tree/master/2058-concatenation-of-array) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
@@ -252,6 +253,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
+| [1876-map-of-highest-peak](https://github.com/jaeyonglee3/LeetCode/tree/master/1876-map-of-highest-peak) |
 ## Binary Tree
 |  |
 | ------- |
@@ -467,6 +469,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/jaeyonglee3/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
+| [1876-map-of-highest-peak](https://github.com/jaeyonglee3/LeetCode/tree/master/1876-map-of-highest-peak) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
 ## Bit Manipulation
 |  |
