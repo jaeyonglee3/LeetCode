@@ -17,6 +17,11 @@ class Solution:
 
             for dr, dc in DIRS:
                 nr, nc = r + dr, c + dc
+                # THIS DOESN'T WORK: valid = valid and dfs(nr, nc)
+                # this evaluates dfs(nr, nc) only if valid is already True due to Python's short-circuiting 
+                # in and operations. So if valid is False at any point, the dfs() won't even be called for 
+                # future neighbors — which means you're potentially skipping parts of the island 
+                # and not marking them as visited.
                 new_valid = dfs(nr, nc)
                 valid = valid and new_valid
             
