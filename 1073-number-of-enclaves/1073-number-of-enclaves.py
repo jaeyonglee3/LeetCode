@@ -3,13 +3,19 @@ class Solution:
         # Similar to number of islands
         # Lets iterate over the grid and when we encounter a land cell, we'll call a DFS helper.
         # Initialize a result variable at 0.
-        # dfs(r, c) will mark the current cell as 0 to mark as visited, and then will look 4
-        # directionally from it.
+        # dfs(r, c) will mark the current cell as 0 to mark as visited, and then will look 4 directionally from it.
         ROWS, COLS = len(grid), len(grid[0])
         DIRS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
         def dfs(r, c) -> (int, bool):
+            # returns a tuple where the 1st element is the number of land cells
+            # that current island is comprised of, and the 2nd element is
+            # a bool value which is TRUE if you cannot walk off the boundry of the grid
+            # in any number of moves from that island
             if min(r, c) < 0 or r == ROWS or c == COLS:
+                # so even if the current island is invalid, we must visit every
+                # land cell that it is comprised of so that we don't visit the
+                # same land cell(s) more than once.
                 return (0, False)
             if grid[r][c] == 0:
                 return (0, True)
