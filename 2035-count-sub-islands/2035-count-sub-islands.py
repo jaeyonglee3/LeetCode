@@ -12,7 +12,6 @@ class Solution:
             if min(r, c) < 0 or r == ROWS or c == COLS or grid2[r][c] == 0:
                 return True
             
-            # print(r, c)
             grid2[r][c] = 0
             valid = grid1[r][c] == 1
 
@@ -26,10 +25,7 @@ class Solution:
         for r in range(ROWS):
             for c in range(COLS):
                 if grid2[r][c] == 1:
-                    # print((r, c))
                     valid = dfs(r, c)
-                    if valid:
-                        print(r, c)
                     res += 1 if valid else 0
 
         return res
