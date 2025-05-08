@@ -73,6 +73,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1675-magnetic-force-between-two-balls](https://github.com/jaeyonglee3/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1876-map-of-highest-peak](https://github.com/jaeyonglee3/LeetCode/tree/master/1876-map-of-highest-peak) |
+| [2035-count-sub-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/2035-count-sub-islands) |
 | [2058-concatenation-of-array](https://github.com/jaeyonglee3/LeetCode/tree/master/2058-concatenation-of-array) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
@@ -235,6 +236,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [1073-number-of-enclaves](https://github.com/jaeyonglee3/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
+| [2035-count-sub-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/2035-count-sub-islands) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -260,6 +262,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1073-number-of-enclaves](https://github.com/jaeyonglee3/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [1876-map-of-highest-peak](https://github.com/jaeyonglee3/LeetCode/tree/master/1876-map-of-highest-peak) |
+| [2035-count-sub-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/2035-count-sub-islands) |
 ## Binary Tree
 |  |
 | ------- |
@@ -314,6 +317,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0684-redundant-connection](https://github.com/jaeyonglee3/LeetCode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
 | [1073-number-of-enclaves](https://github.com/jaeyonglee3/LeetCode/tree/master/1073-number-of-enclaves) |
+| [2035-count-sub-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/2035-count-sub-islands) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -479,6 +483,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/jaeyonglee3/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1876-map-of-highest-peak](https://github.com/jaeyonglee3/LeetCode/tree/master/1876-map-of-highest-peak) |
+| [2035-count-sub-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/2035-count-sub-islands) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
 ## Bit Manipulation
 |  |
