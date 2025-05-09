@@ -10,27 +10,28 @@ class Solution:
 
         def dfs(r, c):
             if min(r, c) < 0 or r == ROWS or c == COLS or grid2[r][c] == 0:
-                return True
+                return
             
             grid2[r][c] = 0
-            valid = grid1[r][c] == 1
 
             for dr, dc in DIRS:
                 nr, nc = r + dr, c + dc
-                # THIS DOESN'T WORK: valid = valid and dfs(nr, nc)
-                # this evaluates dfs(nr, nc) only if valid is already True due to Python's short-circuiting 
-                # in and operations. So if valid is False at any point, the dfs() won't even be called for 
-                # future neighbors — which means you're potentially skipping parts of the island 
-                # and not marking them as visited.
-                new_valid = dfs(nr, nc)
-                valid = valid and new_valid
-            
-            return valid
+                dfs(nr, nc)
         
+        # first, eliminate all islands in grid2 that are not sub-islands of grid1
+        for r in range(ROWS):
+            for c in range(COLS):
+                if grid2[r][c] == 1 and grid1[r][c] != 1:
+                    # if its land on grid2 but not on grid1, the island formed by that
+                    # cell is guaranteed to NOT be a valid sub-island
+                    print(r, c)
+                    dfs(r, c)
+        
+        # then, count the remaining islands in grid2 (which are guaranteed to be sub-islands)
         for r in range(ROWS):
             for c in range(COLS):
                 if grid2[r][c] == 1:
-                    valid = dfs(r, c)
-                    res += 1 if valid else 0
+                    dfs(r, c)
+                    res += 1
 
         return res
