@@ -106,6 +106,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jaeyonglee3/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Two Pointers
 |  |
 | ------- |
@@ -204,6 +205,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0789-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jaeyonglee3/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -237,6 +239,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1073-number-of-enclaves](https://github.com/jaeyonglee3/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [2035-count-sub-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/2035-count-sub-islands) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jaeyonglee3/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -263,6 +266,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [1876-map-of-highest-peak](https://github.com/jaeyonglee3/LeetCode/tree/master/1876-map-of-highest-peak) |
 | [2035-count-sub-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/2035-count-sub-islands) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jaeyonglee3/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Binary Tree
 |  |
 | ------- |
@@ -285,6 +289,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0789-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
+| [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jaeyonglee3/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Sorting
 |  |
 | ------- |
