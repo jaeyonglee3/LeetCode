@@ -1,14 +1,12 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        # O(n) runtime, where n = len(nums)
-        # O(n) space, for the seen hashmap
-
-        seen = {}  # maps values to index in array
+        # maps the number to its index in nums
+        seen = {}
 
         for i, n in enumerate(nums):
-            diff = target - n
+            difference = target - n
 
-            if diff in seen:
-                return [i, seen[diff]]
+            if difference in seen:
+                return [i, seen[difference]]
             
             seen[n] = i
