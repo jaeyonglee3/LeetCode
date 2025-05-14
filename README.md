@@ -65,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/jaeyonglee3/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1073-number-of-enclaves](https://github.com/jaeyonglee3/LeetCode/tree/master/1073-number-of-enclaves) |
+| [1117-as-far-from-land-as-possible](https://github.com/jaeyonglee3/LeetCode/tree/master/1117-as-far-from-land-as-possible) |
 | [1127-last-stone-weight](https://github.com/jaeyonglee3/LeetCode/tree/master/1127-last-stone-weight) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/jaeyonglee3/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
@@ -264,6 +265,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/jaeyonglee3/LeetCode/tree/master/1073-number-of-enclaves) |
+| [1117-as-far-from-land-as-possible](https://github.com/jaeyonglee3/LeetCode/tree/master/1117-as-far-from-land-as-possible) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [1876-map-of-highest-peak](https://github.com/jaeyonglee3/LeetCode/tree/master/1876-map-of-highest-peak) |
@@ -399,6 +401,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0435-non-overlapping-intervals](https://github.com/jaeyonglee3/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0542-01-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0542-01-matrix) |
 | [1013-fibonacci-number](https://github.com/jaeyonglee3/LeetCode/tree/master/1013-fibonacci-number) |
+| [1117-as-far-from-land-as-possible](https://github.com/jaeyonglee3/LeetCode/tree/master/1117-as-far-from-land-as-possible) |
 ## Backtracking
 |  |
 | ------- |
@@ -489,6 +492,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0733-flood-fill](https://github.com/jaeyonglee3/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/jaeyonglee3/LeetCode/tree/master/1073-number-of-enclaves) |
+| [1117-as-far-from-land-as-possible](https://github.com/jaeyonglee3/LeetCode/tree/master/1117-as-far-from-land-as-possible) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1876-map-of-highest-peak](https://github.com/jaeyonglee3/LeetCode/tree/master/1876-map-of-highest-peak) |
 | [2035-count-sub-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/2035-count-sub-islands) |
