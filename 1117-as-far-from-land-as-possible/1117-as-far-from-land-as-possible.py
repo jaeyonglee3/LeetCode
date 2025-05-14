@@ -26,7 +26,7 @@ class Solution:
                     else:
                         grid[nr][nc] = grid[r][c] + 1
 
-                    res = max(res, grid[nr][nc])
+                    res = grid[nr][nc]
                     q.append((nr, nc))
         
         return res if res != 0 else -1
