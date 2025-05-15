@@ -10,11 +10,11 @@ class Solution:
 
         while q:
             for _ in range(len(q)):
-                curr_node = q.popleft()
+                curr = q.popleft()
 
-                if curr_node:
-                    curr_node.left, curr_node.right = curr_node.right, curr_node.left
-                    q.append(curr_node.left)
-                    q.append(curr_node.right)
-        
+                if curr and (curr.left or curr.right):
+                    curr.left, curr.right = curr.right, curr.left
+                    q.append(curr.left)
+                    q.append(curr.right)
+
         return root
