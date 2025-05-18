@@ -6,19 +6,19 @@
 #         self.right = right
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
-        # to be balanced requires that at EVERY node in the tree,
-        # the difference in the heights of its left and right subtrees is at most 1
-
-        def dfs(node) -> (bool, int):
-            # returns true if balanced, and an int for its height
-            if not node:
-                return (True, 0)
-            
-            is_left, height_l = dfs(node.left)
-            is_right, height_r = dfs(node.right)
-
-            is_balanced = abs(height_l - height_r) <= 1 and is_left and is_right
-
-            return (is_balanced, 1 + max(height_l, height_r))
+        if not root:
+            return True
         
-        return dfs(root)[0]
+        left = self.getHeight(root.left)
+        right = self.getHeight(root.right)
+
+        if abs(left - right) > 1:
+            return False
+        
+        return self.isBalanced(root.left) and self.isBalanced(root.right)
+    
+    def getHeight(self, node):
+        if not node:
+            return 0
+        
+        return 1 + max(self.getHeight(node.left), self.getHeight(node.right))
