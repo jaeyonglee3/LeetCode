@@ -9,8 +9,7 @@ class Solution:
         res = []
         
         def dfs(node, depth):
-            if not node: 
-                return
+            if not node: return
 
             # Each list in res corresponds to a level in the tree.
             # if len(res) == depth is true, we're at a new depth, so add a new list.
