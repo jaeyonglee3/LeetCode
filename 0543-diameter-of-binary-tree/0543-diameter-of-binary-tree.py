@@ -6,27 +6,23 @@
 #         self.right = right
 class Solution:
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
-        # Using self.res allows us to maintain a global state that 
-        # is accessible throughout all recursive calls.
         self.res = 0
+        # at any node, the diameter can be computed by summing the depths of its left
+        # and right subtrees.
 
         # returns the maximum depth of any given node, while also updating the 
         # global result variable at each recursive call, i.e. at each node we visit
-        def maxDepth(node) -> int:
+        def maxDepth(node):
             if not node:
                 return 0
             
-            left = maxDepth(node.left)  # in ex 1, left = 2 for maxDepth(root)
-            right = maxDepth(node.right)  # in ex 1, right = 1 for maxDepth(root)
+            left = maxDepth(node.left)
+            right = maxDepth(node.right)
 
-            # step 1: update result! - left + right is the diameter for the node we're currently at
+            # update the global res variable
             self.res = max(self.res, left + right)
 
-            # step 2: return the max depth, +1 to include the current node itself
             return 1 + max(left, right)
         
         maxDepth(root)
         return self.res
-
-        # time: O(n), where n = number of nodes in the tree, since each node is visited exactly once
-        # space: O(n) worst case (tree is skewed and is a line) or best case O(logn) (balanced tree)
