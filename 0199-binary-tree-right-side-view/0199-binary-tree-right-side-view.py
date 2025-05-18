@@ -7,18 +7,20 @@
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
         res = []
+        q = collections.deque([root])
 
-        def dfs(node, depth):
-            if not node:
-                return
-            if len(res) == depth:
-                res.append(node.val)
+        while q:
+            rightmost = None
+
+            for _ in range(len(q)):
+                curr = q.popleft()
+
+                if curr:
+                    rightmost = curr.val
+                    q.append(curr.left)
+                    q.append(curr.right)
             
-            dfs(node.right, depth + 1)
-            dfs(node.left, depth + 1)
-
-        dfs(root, 0)
+            if rightmost != None:
+                res.append(rightmost)
+        
         return res
-
-        # time: O(n) since we visit every node
-        # space: O(h) for the recursion stack where h is height, so log n if tree balanced, and n if tree is skewed
