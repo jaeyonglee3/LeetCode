@@ -10,9 +10,12 @@ class Solution:
         # find the node which is one of p or q is greater and the other is lesser
         # in both cases, the node can be equal to in value as well
         # since we allow a node to be a descendant of itself
-        if p.val < root.val and q.val < root.val:
-            return self.lowestCommonAncestor(root.left, p, q)
-        elif p.val > root.val and q.val > root.val:
-            return self.lowestCommonAncestor(root.right, p, q)
-        else:
-            return root
+        curr = root
+
+        while curr:
+            if p.val > curr.val and q.val > curr.val:
+                curr = curr.right
+            elif p.val < curr.val and q.val < curr.val:
+                curr = curr.left
+            else:
+                return curr
