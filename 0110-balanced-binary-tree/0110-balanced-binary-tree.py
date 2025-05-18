@@ -6,19 +6,22 @@
 #         self.right = right
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
-        if not root:
-            return True
+        # for a tree to be balanced, EVERY node must have
+        # a difference of at most 1 between the heights of their l and r subtrees.
         
-        left = self.getHeight(root.left)
-        right = self.getHeight(root.right)
+        # Its false that any given node n is balanced if its l and r subtrees are also balanced.
+        # to determine if the node n itself is balanced, we need the heights of the l and r subtrees
 
-        if abs(left - right) > 1:
-            return False
+        def dfs(node) -> (bool, int):
+            if not node:
+                return (True, 0)
+            
+            l_is_balanced, l_height = dfs(node.left)
+            r_is_balanced, r_height = dfs(node.right)
+            
+            curr_height = max(l_height, r_height) + 1
+            curr_is_balanced = abs(l_height - r_height) <= 1 and r_is_balanced and l_is_balanced
+
+            return (curr_is_balanced, curr_height)
         
-        return self.isBalanced(root.left) and self.isBalanced(root.right)
-    
-    def getHeight(self, node):
-        if not node:
-            return 0
-        
-        return 1 + max(self.getHeight(node.left), self.getHeight(node.right))
+        return dfs(root)[0]
