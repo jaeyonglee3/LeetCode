@@ -6,26 +6,22 @@
 #         self.right = right
 class Solution:
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
-        def sameTree(p, q) -> bool:
-            if not p and not q:
-                return True
-            elif not p or not q:
-                return False
-            else:
-                return p.val == q.val and sameTree(p.left, q.left) and sameTree(p.right, q.right)
+        if not root:
+            return False
+        if self.isSameTree(root, subRoot):
+            return True
         
-        def dfs(node):
-            if not node:
-                return False
-            if sameTree(node, subRoot):
-                return True
+        left = self.isSubtree(root.left, subRoot)
+        right = self.isSubtree(root.right, subRoot)
 
-            return dfs(node.left) or dfs(node.right)
+        return left or right
         
-        return dfs(root)
-
-        # time: O(n * m). N is the number of nodes in the root tree. M is the number of nodes in the subRoot tree.
-        # In the worst case, we may need to compare every node in the root tree (which has N nodes) again every 
-        # node in the subroot tree.
-
-        # space: O(H) (O(log N) for balanced trees, O(N) for skewed trees). Only recursion stack takes extra memory
+    def isSameTree(self, p, q) -> bool:
+        if not p and not q:
+            return True
+        if not p or not q:
+            return False
+        if p.val == q.val:
+            return self.isSameTree(p.left, q.left) and self.isSameTree(q.right, p.right)
+        
+        return False
