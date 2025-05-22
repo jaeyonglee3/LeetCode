@@ -8,11 +8,21 @@ class Solution:
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
         # need to do an in-order traversal of the tree in order to visit the nodes
         # in order of least to greatest in value
-        def inOrder(node) -> list:
-            if not node:
-                return []
+        self.k = 0
+        self.res = None
+
+        def inOrder(node) -> None:
+            if not node or self.res is not None:  # Optimization hint!
+                return
             
-            return inOrder(node.left) + [node.val] + inOrder(node.right)
+            inOrder(node.left)
+
+            self.k += 1
+            if self.k == k:
+                self.res = node.val
+                return
+            
+            inOrder(node.right)
         
-        in_order = inOrder(root)
-        return in_order[k - 1]
+        inOrder(root)
+        return self.res
