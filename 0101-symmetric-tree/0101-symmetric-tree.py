@@ -6,30 +6,33 @@
 #         self.right = right
 class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
-        def copyTree(root):
-            if not root:
-                return None
-            
-            new_root = TreeNode(root.val)
-            new_root.left = copyTree(root.left)
-            new_root.right = copyTree(root.right)
-            
-            return new_root
-        
-        def invertTree(root):
-            if not root:
-                return None
-            
-            root.left, root.right = invertTree(root.right), invertTree(root.left)
-            return root
-        
-        def isSameTree(p, q):
-            if not p and not q: return True
-            if not p or not q: return False
-            if p.val != q.val: return False
+        # for any symmetric binary tree, if you invert the tree,
+        # you should always end up with the same tree
+        root_og = self.copyTree(root)
+        root_invert = self.invertTree(root)
 
-            return isSameTree(p.left, q.left) and isSameTree(p.right, q.right)
+        return self.sameTree(root_og, root_invert)
+
+    
+    def invertTree(self, node) -> Optional[TreeNode]:
+        if not node:
+            return None
         
-        original_tree = copyTree(root)
-        inverted_tree = invertTree(root)
-        return isSameTree(original_tree, inverted_tree)
+        node.left, node.right = self.invertTree(node.right), self.invertTree(node.left)
+        return node
+    
+    def sameTree(self, p, q) -> bool:
+        if not p and not q:
+            return True
+        elif not p or not q:
+            return False
+        elif p.val == q.val:
+            return self.sameTree(p.left, q.left) and self.sameTree(p.right, q.right)
+        
+        return False
+    
+    def copyTree(self, node) -> Optional[TreeNode]:
+        if not node:
+            return None
+        
+        return TreeNode(node.val, self.copyTree(node.left), self.copyTree(node.right))
