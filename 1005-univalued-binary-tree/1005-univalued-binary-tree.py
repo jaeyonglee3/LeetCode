@@ -6,19 +6,16 @@
 #         self.right = right
 class Solution:
     def isUnivalTree(self, root: Optional[TreeNode]) -> bool:
-        def dfs(node, val) -> bool:
+        def dfs(node) -> bool:
             # runs a dfs that visits every node,
             # return true if every node has the same value as the val param
             if not node:
                 return True
-            if node.val != val:
+            if node.val != root.val:
                 return False
             
-            left_res = dfs(node.left, val)
-            if not left_res:
-                return False
-            
-            return dfs(node.right, val)
+            # still efficient, as python will check left side first
+            # so dfs(node.right) runs only if dfs(node.left) returns True
+            return dfs(node.left) and dfs(node.right)
         
-        return dfs(root, root.val)
-            
+        return dfs(root)
