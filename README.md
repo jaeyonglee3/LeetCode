@@ -205,6 +205,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0572-subtree-of-another-tree) |
+| [0617-merge-two-binary-trees](https://github.com/jaeyonglee3/LeetCode/tree/master/0617-merge-two-binary-trees) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [1005-univalued-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1005-univalued-binary-tree) |
@@ -237,6 +238,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0463-island-perimeter](https://github.com/jaeyonglee3/LeetCode/tree/master/0463-island-perimeter) |
 | [0543-diameter-of-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0572-subtree-of-another-tree) |
+| [0617-merge-two-binary-trees](https://github.com/jaeyonglee3/LeetCode/tree/master/0617-merge-two-binary-trees) |
 | [0684-redundant-connection](https://github.com/jaeyonglee3/LeetCode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/jaeyonglee3/LeetCode/tree/master/0733-flood-fill) |
@@ -265,6 +267,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0417-pacific-atlantic-water-flow](https://github.com/jaeyonglee3/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0463-island-perimeter](https://github.com/jaeyonglee3/LeetCode/tree/master/0463-island-perimeter) |
 | [0542-01-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0542-01-matrix) |
+| [0617-merge-two-binary-trees](https://github.com/jaeyonglee3/LeetCode/tree/master/0617-merge-two-binary-trees) |
 | [0684-redundant-connection](https://github.com/jaeyonglee3/LeetCode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/jaeyonglee3/LeetCode/tree/master/0733-flood-fill) |
@@ -299,6 +302,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0572-subtree-of-another-tree) |
+| [0617-merge-two-binary-trees](https://github.com/jaeyonglee3/LeetCode/tree/master/0617-merge-two-binary-trees) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [1005-univalued-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1005-univalued-binary-tree) |
