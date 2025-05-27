@@ -12,7 +12,7 @@ class Solution:
             # we are at a leaf node, so return 1
             return 1
         
-        left = 1 + self.minDepth(root.left) if root.left else math.inf
-        right = 1 + self.minDepth(root.right) if root.right else math.inf
+        left = self.minDepth(root.left) if root.left else math.inf
+        right = self.minDepth(root.right) if root.right else math.inf
 
-        return min(left, right)
+        return 1 + min(left, right)
