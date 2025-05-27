@@ -8,11 +8,12 @@ class Solution:
     def minDepth(self, root: Optional[TreeNode]) -> int:
         if not root:
             return 0
-        if not root.left and not root.right:
-            # we are at a leaf node, so return 1
-            return 1
-        
-        left = self.minDepth(root.left) if root.left else math.inf
-        right = self.minDepth(root.right) if root.right else math.inf
 
-        return 1 + min(left, right)
+        # If one child is None, we must go down the other path
+        if not root.left:
+            return 1 + self.minDepth(root.right)
+        if not root.right:
+            return 1 + self.minDepth(root.left)
+
+        # Both children exist, take the minimum of the two depths
+        return 1 + min(self.minDepth(root.left), self.minDepth(root.right))
