@@ -9,8 +9,10 @@ class Solution:
         self.k = 0
         self.res = None
 
-        def inOrder(node) -> None:
+        def inOrder(node):
             if not node or self.res != None:
+                # either a result has already been found
+                # or we do not have a node
                 return
             
             inOrder(node.left)
@@ -21,6 +23,6 @@ class Solution:
                 return
             
             inOrder(node.right)
-        
+
         inOrder(root)
         return self.res
