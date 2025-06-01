@@ -9,20 +9,20 @@ class Node:
 from typing import Optional
 class Solution:
     def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
+        # with DFS
         if not node:
             return None
         
-        visited = {node : Node(node.val)}  # maps OG node to the clone that's been created
-        q = collections.deque([node])  # contains OG nodes only
+        visited = {}
+        def dfs(node):
+            if node in visited:
+                return visited[node]
+            
+            visited[node] = Node(node.val)
 
-        while q:
-            curr = q.popleft()
-
-            for n in curr.neighbors:
-                if n not in visited:
-                    visited[n] = Node(n.val)
-                    q.append(n)
-                
-                visited[curr].neighbors.append(visited[n])
+            for n in node.neighbors:
+                visited[node].neighbors.append(dfs(n))
+            
+            return visited[node]
         
-        return visited[node]
+        return dfs(node)
