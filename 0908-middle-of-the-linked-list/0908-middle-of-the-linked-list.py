@@ -5,6 +5,8 @@
 #         self.next = next
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        # slow advances one node at a time. fast advances two nodes at a time. 
+        # This means: By the time fast reaches the end of the list, slow will have reached the middle.
         slow, fast = head, head
 
         while fast:
