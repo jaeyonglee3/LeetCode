@@ -5,22 +5,16 @@ class Solution:
         if not node:
             return None
         
-        q = collections.deque([node])
         visited = {}
+        def dfs_clone(node):
+            if node in visited:
+                return visited[node]
+            
+            visited[node] = Node(node.val)
+            for n in node.neighbors:
+                n_clone = dfs_clone(n)
+                visited[node].neighbors.append(n_clone)
+            
+            return visited[node]
         
-        # You add the starting node to visited so that: 
-        # Its clone is ready before processing neighbors. 
-        # You avoid extra logic to handle the "first node" case separately.
-        visited[node] = Node(node.val)
-        
-        while q:
-            curr = q.popleft()
-
-            for n in curr.neighbors:
-                if n not in visited:
-                    visited[n] = Node(n.val)
-                    q.append(n)
-                
-                visited[curr].neighbors.append(visited[n])
-        
-        return visited[node]
+        return dfs_clone(node)
