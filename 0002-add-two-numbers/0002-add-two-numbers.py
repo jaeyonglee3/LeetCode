@@ -9,32 +9,18 @@ class Solution:
         result = curr = ListNode()
         carry = 0
 
-        while curr1 and curr2:
-            total = curr1.val + curr2.val + carry
+        while curr1 or curr2:
+            curr1_val = curr1.val if curr1 else 0
+            curr2_val = curr2.val if curr2 else 0
+            
+            total = curr1_val + curr2_val + carry
             carry = 0 if total < 10 else 1
-
-            if total == 10:
-                carry = 1
 
             curr.next = ListNode(total % 10)
             curr = curr.next
 
-            curr1 = curr1.next
-            curr2 = curr2.next
-        
-        while curr1:
-            total = curr1.val + carry
-            carry = 0 if total < 10 else 1
-            curr.next = ListNode(total % 10)
-            curr = curr.next
-            curr1 = curr1.next
-        
-        while curr2:
-            total = curr2.val + carry
-            carry = 0 if total < 10 else 1
-            curr.next = ListNode(total % 10)
-            curr = curr.next
-            curr2 = curr2.next
+            curr1 = curr1.next if curr1 else None
+            curr2 = curr2.next if curr2 else None
         
         if carry: 
             curr.next = ListNode(carry)
