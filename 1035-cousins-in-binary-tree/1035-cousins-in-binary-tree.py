@@ -6,23 +6,21 @@
 #         self.right = right
 class Solution:
     def isCousins(self, root: Optional[TreeNode], x: int, y: int) -> bool:
-        # return true if nodes with values x and y are cousins
-        # we are interested in the depths of nodes w/ vals x and y, as well as their parents
-        x_depth, x_parent = self.dfsDepthAndParent(x, root, None, 0)
-        y_depth, y_parent = self.dfsDepthAndParent(y, root, None, 0)
+        def findParentAndDepth(node, target, depth, parent) -> (int, int):
+            # returns a tuple of ints, the first is depth, the second is the val of the parent
+            if not node:
+                return (None, None)
+            if node.val == target:
+                return (depth, parent)
+            
+            left_d, left_p = findParentAndDepth(node.left, target, depth + 1, node)
+            if left_d:
+                return (left_d, left_p)
+            
+            return findParentAndDepth(node.right, target, depth + 1, node)
+
         
-        return x_depth == y_depth and x_parent != y_parent
-    
-    def dfsDepthAndParent(self, target, node, parent, depth) -> (Optional[int], Optional[int]):
-        # returns a tuple of 2 ints, the first being the depth of the node
-        # and the second being the value of the parent of the node
-        if not node:
-            return (None, None)
-        if node.val == target:
-            return (depth, parent)
-        
-        depth_left, parent_left = self.dfsDepthAndParent(target, node.left, node.val, depth + 1)
-        if depth_left != None:
-            return (depth_left, parent_left)
-        
-        return self.dfsDepthAndParent(target, node.right, node.val, depth + 1)
+        d1, p1 = findParentAndDepth(root, x, 0, None)
+        d2, p2 = findParentAndDepth(root, y, 0, None)
+
+        return d1 == d2 and p1 != p2
