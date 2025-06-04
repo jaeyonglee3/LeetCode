@@ -13,16 +13,16 @@ class Solution:
         q = deque([(root, 0, None)])  # node, depth, parent
 
         while q and (px is None or py is None):
-            node, depth, parent = q.popleft()
+            curr, depth, parent = q.popleft()
 
-            if node.val == x:
+            if curr.val == x:
                 px, dx = parent, depth
-            elif node.val == y:
+            if curr.val == y:
                 py, dy = parent, depth
-
-            if node.left:
-                q.append((node.left, depth + 1, node))
-            if node.right:
-                q.append((node.right, depth + 1, node))
-
-        return dx == dy and px != py
+            
+            if curr.left:
+                q.append((curr.left, depth + 1, curr))
+            if curr.right:
+                q.append((curr.right, depth + 1, curr))
+        
+        return px != py and dx == dy
