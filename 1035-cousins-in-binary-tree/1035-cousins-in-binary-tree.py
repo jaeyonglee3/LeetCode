@@ -6,21 +6,30 @@
 #         self.right = right
 class Solution:
     def isCousins(self, root: Optional[TreeNode], x: int, y: int) -> bool:
-        def findParentAndDepth(node, target, depth, parent) -> (int, int):
-            # returns a tuple of ints, the first is depth, the second is the val of the parent
-            if not node:
-                return (None, None)
-            if node.val == target:
-                return (depth, parent)
-            
-            left_d, left_p = findParentAndDepth(node.left, target, depth + 1, node)
-            if left_d:
-                return (left_d, left_p)
-            
-            return findParentAndDepth(node.right, target, depth + 1, node)
+        # BFS is more appropriate for level/depth related problems
+        px, dx = None, None
+        py, dy = None, None
 
+        q = collections.deque()
+        q.append((root, 0))
+
+        while q and (px == None or py == None):
+            curr, curr_depth = q.popleft()
+
+            if curr:
+                q.append((curr.left, curr_depth + 1))
+                q.append((curr.right, curr_depth + 1))
+
+                if curr.left:
+                    if curr.left.val == x:
+                        px, dx = curr.val, curr_depth
+                    elif curr.left.val == y:
+                        py, dy = curr.val, curr_depth
+                
+                if curr.right:
+                    if curr.right.val == x:
+                        px, dx = curr.val, curr_depth
+                    elif curr.right.val == y:
+                        py, dy = curr.val, curr_depth
         
-        d1, p1 = findParentAndDepth(root, x, 0, None)
-        d2, p2 = findParentAndDepth(root, y, 0, None)
-
-        return d1 == d2 and p1 != p2
+        return dx == dy and px != py
