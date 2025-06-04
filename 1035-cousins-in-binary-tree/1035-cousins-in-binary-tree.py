@@ -6,30 +6,23 @@
 #         self.right = right
 class Solution:
     def isCousins(self, root: Optional[TreeNode], x: int, y: int) -> bool:
-        # BFS is more appropriate for level/depth related problems
+        # Track parent and depth
         px, dx = None, None
         py, dy = None, None
 
-        q = collections.deque()
-        q.append((root, 0))
+        q = deque([(root, 0, None)])  # node, depth, parent
 
-        while q and (px == None or py == None):
-            curr, curr_depth = q.popleft()
+        while q and (px is None or py is None):
+            node, depth, parent = q.popleft()
 
-            if curr:
-                q.append((curr.left, curr_depth + 1))
-                q.append((curr.right, curr_depth + 1))
+            if node.val == x:
+                px, dx = parent, depth
+            elif node.val == y:
+                py, dy = parent, depth
 
-                if curr.left:
-                    if curr.left.val == x:
-                        px, dx = curr.val, curr_depth
-                    elif curr.left.val == y:
-                        py, dy = curr.val, curr_depth
-                
-                if curr.right:
-                    if curr.right.val == x:
-                        px, dx = curr.val, curr_depth
-                    elif curr.right.val == y:
-                        py, dy = curr.val, curr_depth
-        
+            if node.left:
+                q.append((node.left, depth + 1, node))
+            if node.right:
+                q.append((node.right, depth + 1, node))
+
         return dx == dy and px != py
