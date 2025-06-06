@@ -9,26 +9,24 @@ class Node:
 
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
-        # None always maps to none, so no need to worry about trying to find the
-        # value when the key may be null
+        # a hashmap would allow us to map the OG node to a copy we create
+        # we can implement this fn by doing two passes of the OG linkedlist
+        # once to create all the copies, populate a hashmap
+        # then again to assign all the random and next ptrs using the hasmap
         old_to_new = {None : None}
 
-        # First, make a copy of every node and store it in old_to_new hashmap
-        # where the original node maps to the newly created copy
+        # 1st pass
         curr = head
         while curr:
             old_to_new[curr] = Node(curr.val)
             curr = curr.next
         
-        # Then, iterate over each OG node again and for its counterpart in hashmap,
-        # assign its next and random pointers to the other values in the hashmap
+        # 2nd pass
         curr = head
         while curr:
-            new_copy = old_to_new[curr]
-            new_copy.next = old_to_new[curr.next]
-            new_copy.random = old_to_new[curr.random]
-            
+            copy = old_to_new[curr]
+            copy.next = old_to_new[curr.next]
+            copy.random = old_to_new[curr.random]
             curr = curr.next
-        
-        # Return the copy associated with the head
+
         return old_to_new[head]
