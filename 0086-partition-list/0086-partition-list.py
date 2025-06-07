@@ -24,5 +24,9 @@ class Solution:
             
             curr = old_next
         
+        # connect the two LinkedLists by making the tail of head1
+        # point to the head of head2 (head2.next to skip dummy head)
         curr1.next = head2.next
+
+        # return head1's next to skip the dummy head
         return head1.next
