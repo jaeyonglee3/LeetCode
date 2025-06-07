@@ -15,17 +15,21 @@ class Solution:
             list_len += 1
             tail, curr = curr, curr.next
         
-        # compute modulo operation
+        # step 2: compute effective number of rotations
         rotations = k % list_len
         if rotations == 0:
             return head
 
+        # step 3: temporarily make the list circular
         tail.next = head
+
+        # step 4: go to the new head and break the cycle
         # the new head will be at index length - rotations
+        # return this new head after cycle is broken
         prev, curr = None, head
         for _ in range(list_len - rotations):
             prev = curr
             curr = curr.next
-        
-        prev.next = None
-        return curr
+        prev.next = None  # breaks the cycle
+
+        return curr  # because curr points to the new head now
