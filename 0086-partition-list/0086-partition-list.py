@@ -12,14 +12,17 @@ class Solution:
 
         curr = head
         while curr:
+            old_next = curr.next
+            curr.next = None  # remove curr's next ptr
+            
             if curr.val < x:
-                curr1.next = ListNode(curr.val)
+                curr1.next = curr
                 curr1 = curr1.next
             else:
-                curr2.next = ListNode(curr.val)
+                curr2.next = curr
                 curr2 = curr2.next
             
-            curr = curr.next
+            curr = old_next
         
         curr1.next = head2.next
         return head1.next
