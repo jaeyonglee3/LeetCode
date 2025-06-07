@@ -7,6 +7,9 @@ class Solution:
     def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
         # base cases:
         if not head or not head.next or k == 0:
+            # if empty, nothing to rotate
+            # if a single node, any k applied has no effect
+            # if k == 0, no rotations at all are applied
             return head
         
         # step 1: compute the length
