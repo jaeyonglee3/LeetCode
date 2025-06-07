@@ -9,17 +9,18 @@ class Solution:
             return head
         
         # step 1: compute the length
-        curr = head
+        tail, curr = None, head
         list_len = 0
         while curr:
             list_len += 1
-            curr = curr.next
+            tail, curr = curr, curr.next
         
         # compute modulo operation
         rotations = k % list_len
         if rotations == 0:
             return head
 
+        tail.next = head
         # the new head will be at index length - rotations
         prev, curr = None, head
         for _ in range(list_len - rotations):
@@ -27,12 +28,4 @@ class Solution:
             curr = curr.next
         
         prev.next = None
-        old_head = head
-        head = curr
-
-        curr = head
-        while curr.next:
-            curr = curr.next
-        curr.next = old_head
-        
-        return head
+        return curr
