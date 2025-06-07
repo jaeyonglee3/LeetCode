@@ -15,7 +15,7 @@ class Solution:
         head2 = curr2 = ListNode()  # stores even nodes
 
         curr = head
-        i = 1
+        i = 1  # the linkedlist is 1-indexed
         while curr:
             old_next = curr.next
             curr.next = None  # remove the old ptr for the node
