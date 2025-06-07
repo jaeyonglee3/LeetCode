@@ -10,25 +10,19 @@ class Solution:
         # make the tail of the first one point to the head of the second one, 
         # then return head of 1st one. Manipulate ptrs of existing nodes, create 0 new nodes for O(1) space.
         # Code passes through LL once, processing each node once, for O(n) time
-        
-        head1 = curr1 = ListNode()  # stores odd nodes
-        head2 = curr2 = ListNode()  # stores even nodes
 
-        curr = head
-        i = 1  # the linkedlist is 1-indexed
-        while curr:
-            old_next = curr.next
-            curr.next = None  # remove the old ptr for the node
-
-            if i % 2 != 0:
-                curr1.next = curr
-                curr1 = curr1.next
-            else:
-                curr2.next = curr
-                curr2 = curr2.next
-            
-            curr = old_next
-            i += 1
+        if not head or not head.next:
+            return head
         
-        curr1.next = head2.next  # make tail of head1 point to head of head2
-        return head1.next
+        curr1 = head  # odd nodes
+        head2 = curr2 = head.next  # even nodes
+
+        while curr2 and curr2.next:
+            curr1.next = curr2.next
+            curr1 = curr1.next
+
+            curr2.next = curr1.next if curr1 else None
+            curr2 = curr1.next if curr1 else None
+        
+        curr1.next = head2  # make tail of head1 point to head of head2
+        return head
