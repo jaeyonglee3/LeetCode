@@ -1,16 +1,20 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        # use a hashmap where the keys are the words sorted alphabetically
-        # and the values are all the anagrams of that word.
+        # use a hashmap where the keys are a tuple of 26 integers,
+        # representing the count of each letter in the alphabet, used in the word.
+        # the values are all the words that have the same letter count tuple as the key.
         anagrams = {}
 
         for word in strs:
-            sorted_word = ''.join(sorted(word))
+            count = [0] * 26
 
-            if sorted_word in anagrams:
-                anagrams[sorted_word].append(word)
-            else:
-                anagrams[sorted_word] = [word]
+            for char in word:
+                count[ord(char) - ord('a')] += 1
             
-        # need to return a nested list of all the anagrams grouped together
+            count_tup = tuple(count)
+            if count_tup in anagrams:
+                anagrams[count_tup].append(word)
+            else:
+                anagrams[count_tup] = [word]
+            
         return list(anagrams.values())
