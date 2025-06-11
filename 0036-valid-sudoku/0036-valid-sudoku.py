@@ -1,28 +1,24 @@
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        import collections
-        
-        # Maps for rows, columns, and sub-boxes
-        boxes_map = collections.defaultdict(set)
-        rows_map = collections.defaultdict(set)
-        cols_map = collections.defaultdict(set)
-        
-        valid_nums = set("123456789")
-        
-        for row_num, row in enumerate(board):
-            for col_num, val in enumerate(row):
-                if val in valid_nums:
-                    # Check if the value already exists in row, column, or box
-                    if (
-                        val in rows_map[row_num] or 
-                        val in cols_map[col_num] or 
-                        val in boxes_map[(row_num // 3, col_num // 3)]
-                    ):
-                        return False
-                    
-                    # Add value to the corresponding maps
-                    rows_map[row_num].add(val)
-                    cols_map[col_num].add(val)
-                    boxes_map[(row_num // 3, col_num // 3)].add(val)
+        rows = collections.defaultdict(set)
+        cols = collections.defaultdict(set)
+        squares = collections.defaultdict(set)
+
+        for r in range(9):
+            for c in range(9):
+                val = board[r][c]
+                
+                if val == ".":
+                    continue
+
+                sq_r, sq_c = r // 3, c // 3
+
+                if val in rows[r] or val in cols[c] or val in squares[(sq_r, sq_c)]:
+                    print((r, c))
+                    return False
+                
+                rows[r].add(val)
+                cols[c].add(val)
+                squares[(sq_r, sq_c)].add(val)
         
         return True
