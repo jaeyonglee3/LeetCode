@@ -3,12 +3,11 @@ class Solution:
         l, r = 0, len(numbers) - 1
 
         while r > l:
-            total = numbers[r] + numbers[l]
+            curr_sum = numbers[l] + numbers[r]
 
-            if total == target:
+            if curr_sum == target:
                 return [l + 1, r + 1]
-            elif total > target:
+            elif curr_sum > target:
                 r -= 1
             else:
                 l += 1
-            
