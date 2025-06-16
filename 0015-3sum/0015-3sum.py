@@ -1,29 +1,33 @@
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        nums.sort()
         res = []
 
-        for i, i_val in enumerate(nums):
-            if i > 0 and nums[i] == nums[i - 1]:
+        nums.sort()
+
+        # so we need triplets of numbers a, b, and c.
+        # lets iterate over nums, fix an a, and find b and c
+        # such that b + c = -a, meaning a + b + c = 0
+
+        for i_a, a in enumerate(nums):
+            if i_a > 0 and a == nums[i_a - 1]:
                 continue
 
-            target = -i_val
-            l, r = i + 1, len(nums) - 1
+            target = -a
+            l, r = i_a + 1, len(nums) - 1
 
             while r > l:
-                total = nums[l] + nums[r]
-
-                if total == target:
-                    res.append([nums[i], nums[l], nums[r]])
-
+                curr = nums[l] + nums[r]
+                
+                if curr == target:
+                    res.append([a, nums[r], nums[l]])
+                    
                     while l < len(nums) - 1 and nums[l] == nums[l + 1]:
                         l += 1
                     while r > 0 and nums[r] == nums[r - 1]:
                         r -= 1
-                    
-                    l += 1
                     r -= 1
-                elif total > target:
+                    l += 1
+                elif curr > target:
                     r -= 1
                 else:
                     l += 1
