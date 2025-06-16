@@ -4,23 +4,22 @@ class Solution:
         # the window's start and end will be marked with l and r pointers
         
         # if the right is pointing to a character that is already inside the window,
-        # move the left pointer to the index of the repeated character + 1.
-        # right ptr still increments by 1 as usual.
+        # move the left pointer to the index of the repeated character + 1. R ptr still increments by 1 as usual.
+        # Take 'azzbcbb' as an example. When right is pointing to the 2nd last b, left needs to move up all the way to index 4
         
         # Edge case - an empty string will always return 0
         if len(s) == 0: 
             return 0
         
+        l = 0
+        last_seen = {s[l] : 0}  # maps characters to their last seen index
         res = 1
-        l, r = 0, 1
-        curr_chars = set([s[l]])
 
         for r in range(1, len(s)):
-            while s[r] in curr_chars:
-                curr_chars.remove(s[l])
-                l += 1
+            if last_seen.get(s[r], -1) >= l:
+                l = last_seen[s[r]] + 1
 
+            last_seen[s[r]] = r
             res = max(res, r - l + 1)
-            curr_chars.add(s[r])
         
         return res
