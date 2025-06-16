@@ -1,23 +1,31 @@
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
-        res = 0
+        # BFS approach
+        DIRS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
         ROWS, COLS = len(grid), len(grid[0])
+        res = 0
 
-        def dfs(r, c):
-            if min(r, c) < 0 or r == ROWS or c == COLS or grid[r][c] == "0":
-                return
-            
+        def bfs(r, c):
+            q = collections.deque()
             grid[r][c] = "0"
-            for dr, dc in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
-                dfs(r + dr, c + dc)
+            q.append((r, c))
+
+            while q:
+                r, c = q.popleft()
+
+                for dr, dc in DIRS:
+                    nr, nc = r + dr, c + dc
+
+                    if nr < 0 or nc < 0 or nr >= ROWS or nc >= COLS or grid[nr][nc] == "0":
+                        continue
+                    
+                    q.append((nr, nc))
+                    grid[nr][nc] = "0"
 
         for r in range(ROWS):
             for c in range(COLS):
                 if grid[r][c] == "1":
-                    # Use some dfs technique to change all connected 1s as 0s
-                    # this effectively marks all the connected 1 cells as "visited"
-                    # this ensures we count each island only once
                     res += 1
-                    dfs(r, c)
+                    bfs(r, c)
         
         return res
