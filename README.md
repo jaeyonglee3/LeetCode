@@ -100,6 +100,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0424-longest-repeating-character-replacement](https://github.com/jaeyonglee3/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0567-permutation-in-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0567-permutation-in-string) |
 | [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
@@ -153,6 +154,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0344-reverse-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0344-reverse-string) |
 | [0394-decode-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0394-decode-string) |
 | [0412-fizz-buzz](https://github.com/jaeyonglee3/LeetCode/tree/master/0412-fizz-buzz) |
+| [0424-longest-repeating-character-replacement](https://github.com/jaeyonglee3/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0556-next-greater-element-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/0556-next-greater-element-iii) |
 | [0567-permutation-in-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0567-permutation-in-string) |
 | [0680-valid-palindrome-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0680-valid-palindrome-ii) |
@@ -465,6 +467,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jaeyonglee3/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0209-minimum-size-subarray-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
+| [0424-longest-repeating-character-replacement](https://github.com/jaeyonglee3/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0567-permutation-in-string) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/jaeyonglee3/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 ## Monotonic Stack
