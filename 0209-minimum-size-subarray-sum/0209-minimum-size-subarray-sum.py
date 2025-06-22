@@ -1,20 +1,16 @@
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
-        # classis sliding window approach
         l, r = 0, 0
-        total = 0
-        res = math.inf
+        res, curr_sum = math.inf, nums[l]
 
         while r < len(nums):
-            total += nums[r]
-
-            # then, we have a valid subarray formed by nums[l : r + 1]
-            while total >= target:
-                res = min(r - l + 1, res)  # res becomes the smaller between curr subarray len and past res
-                # move the left pointer to attempt to make window smaller
-                total -= nums[l]
-                l += 1
+            if curr_sum >= target:
+                while curr_sum >= target:
+                    res = min(res, r - l + 1)
+                    curr_sum -= nums[l]
+                    l += 1
+            else:
+                r += 1
+                curr_sum += nums[r] if r < len(nums) else 0
         
-            r += 1
-        
-        return res if res != math.inf else 0
+        return 0 if res == math.inf else res
