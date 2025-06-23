@@ -3,7 +3,7 @@ class Solution:
         # fixed sliding window
         l, r = 0, k - 1
         vowels = set('aeiou')
-        num_vowels = len([s for s in s[0 : k] if s in vowels])
+        num_vowels = sum(1 for ch in s[0:k] if ch in vowels)
         res = 0
 
         while r < len(s):
