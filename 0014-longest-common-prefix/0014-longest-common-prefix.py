@@ -4,19 +4,14 @@ class Solution:
 
         for i in range(1, len(strs)):
             curr_str = strs[i]
-            updated = False
             
-            for j in range(len(curr_str)):
-                if j > len(curr_prefix) - 1:
+            j = 0
+            while j < min(len(curr_prefix), len(curr_str)):
+                if curr_prefix[j] != curr_str[j]:
                     break
-
-                if curr_prefix and curr_str[j] != curr_prefix[j]:
-                    updated = True
-                    curr_prefix = curr_str[ : j]
-                    break
+                j += 1
             
-            if len(curr_str) < len(curr_prefix) and not updated:
-                curr_prefix = curr_str
+            curr_prefix = curr_prefix[ : j]
         
         return curr_prefix
 
