@@ -10,10 +10,6 @@ class Solution:
                 if j > len(curr_prefix) - 1:
                     break
 
-                print(j)
-                print(curr_str)
-                print(curr_prefix)
-                print("")
                 if curr_prefix and curr_str[j] != curr_prefix[j]:
                     updated = True
                     curr_prefix = curr_str[ : j]
