@@ -1,23 +1,26 @@
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
-        # Start w/ empty result and an random word from the list
-        # we can use any word since the prefix must be common
-        # among all of the words anyway
-        res = ""
-        arbitrary_word = strs[0]
+        curr_prefix = strs[0]
 
-        # iterate over every character of our arbitrary word from our list
-        for i, c in enumerate(arbitrary_word):
-            # compare that character to the char from every
-            # other word at the same index
-            for word in strs:
-                if i == len(word) or word[i] != c:
-                    # then, we've found the prefix is no longer common
-                    # since it can't get any longer, return what we have
-                    return res
+        for i in range(1, len(strs)):
+            curr_str = strs[i]
+            updated = False
             
-            # add to the result since loop finished and we can conclude
-            # the character is common in that positon with every other word
-            res += c
+            for j in range(len(curr_str)):
+                if j > len(curr_prefix) - 1:
+                    break
 
-        return res
+                print(j)
+                print(curr_str)
+                print(curr_prefix)
+                print("")
+                if curr_prefix and curr_str[j] != curr_prefix[j]:
+                    updated = True
+                    curr_prefix = curr_str[ : j]
+                    break
+            
+            if len(curr_str) < len(curr_prefix) and not updated:
+                curr_prefix = curr_str
+        
+        return curr_prefix
+
