@@ -84,6 +84,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
 | [2665-minimum-time-to-repair-cars](https://github.com/jaeyonglee3/LeetCode/tree/master/2665-minimum-time-to-repair-cars) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/jaeyonglee3/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
+| [3329-find-the-length-of-the-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Hash Table
 |  |
 | ------- |
@@ -114,6 +115,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jaeyonglee3/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
+| [3329-find-the-length-of-the-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Two Pointers
 |  |
 | ------- |
@@ -174,6 +176,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [2470-removing-stars-from-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 | [2496-count-days-spent-together](https://github.com/jaeyonglee3/LeetCode/tree/master/2496-count-days-spent-together) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/jaeyonglee3/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
+| [3329-find-the-length-of-the-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Linked List
 |  |
 | ------- |
@@ -578,6 +581,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0211-design-add-and-search-words-data-structure](https://github.com/jaeyonglee3/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0212-word-search-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0212-word-search-ii) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/jaeyonglee3/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
+| [3329-find-the-length-of-the-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## String Matching
 |  |
 | ------- |
