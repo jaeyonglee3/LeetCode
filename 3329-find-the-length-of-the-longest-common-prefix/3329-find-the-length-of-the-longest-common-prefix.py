@@ -2,7 +2,7 @@ class Solution:
     def longestCommonPrefix(self, arr1: List[int], arr2: List[int]) -> int:
         # Hashset solution: construct two hashsets, each containing the possible
         # prefixes of each number from both arr1 and arr2. Then, do a set intersection
-        # and return the size of the set that results from it.
+        # and return the max length from the prefixes that result from it.
         arr1 = [str(n) for n in arr1]
         arr2 = [str(n) for n in arr2]
         
