@@ -6,21 +6,29 @@ class Solution:
         # return the result after window slides over entirety of s.
 
         # optimal O(len(s)) solution
+
+        # edge case: if p is longer than s, s cannot contain anagrams of p
+        if len(p) > len(s): return []
+
+        # construct 2 hashmaps. one has count of each char in p
+        # s_count will always have the count of each char in the current window
         p_count = {}
-        for c in p:
-            p_count[c] = p_count.get(c, 0) + 1
-        
         s_count = {}
-        for c in s[0 : len(p)]:
-            s_count[c] = s_count.get(c, 0) + 1
+        for i in range(len(p)):
+            p_count[p[i]] = p_count.get(p[i], 0) + 1
+            s_count[s[i]] = s_count.get(s[i], 0) + 1
         
+        # now, start the fixed size sliding window
         l, r = 0, len(p) - 1
         res = []
         
         while r < len(s):
             if s_count == p_count:
+                # the hasmaps match, meaning the current substring of s is an anagram of p
                 res.append(l)
             
+            # when you shift the window, no need to recalculate s_count from scratch
+            # just remove the old s[l], and add the new s[r] chars respectively from the count
             s_count[s[l]] -= 1
             if s_count[s[l]] == 0:
                 del s_count[s[l]]
