@@ -5,18 +5,31 @@ class Solution:
         # each time the window contains a substring of s which is an anagram of p, result += 1
         # return the result after window slides over entirety of s.
 
-        # brute force - slide a fixed size window over s and run sort(), then compare to sorted(p)
-        res = []
-        p = sorted(p)
+        # optimal O(len(s)) solution
+        p_count = {}
+        for c in p:
+            p_count[c] = p_count.get(c, 0) + 1
+        
+        s_count = {}
+        for c in s[0 : len(p)]:
+            s_count[c] = s_count.get(c, 0) + 1
+        
         l, r = 0, len(p) - 1
-
+        res = []
+        
         while r < len(s):
-            curr_str = s[l : r + 1]
-
-            if sorted(curr_str) == p:
+            if s_count == p_count:
                 res.append(l)
+            
+            s_count[s[l]] -= 1
+            if s_count[s[l]] == 0:
+                del s_count[s[l]]
             
             l += 1
             r += 1
+            
+            if r < len(s):
+                s_count[s[r]] = s_count.get(s[r], 0) + 1
         
         return res
+        
