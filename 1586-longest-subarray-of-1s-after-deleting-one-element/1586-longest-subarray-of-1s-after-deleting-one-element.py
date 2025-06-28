@@ -3,20 +3,17 @@ class Solution:
         # Variable sized fixed window approach
         l = 0
         res = 0
-        flip_used = False
+        num_zeros = 0
 
         for r in range(len(nums)):
-            if nums[r] == 0 and not flip_used:
-                flip_used = True
-            elif nums[r] == 0 and flip_used:
-                advance_l = True
+            if nums[r] == 0:
+                num_zeros += 1
                 
-                while advance_l:
-                    if nums[l] == 0:
-                        advance_l = False
-                    l += 1
+            while num_zeros > 1:
+                if nums[l] == 0:
+                    num_zeros -= 1
+                l += 1
             
-            curr_len = r - l if flip_used else r - l + 1
-            res = max(res, curr_len)
+            res = max(res, r - l)  # because we must always delete 1 element  
         
-        return res - 1 if not flip_used else res
+        return res
