@@ -3,17 +3,13 @@ class Solution:
         pairs = {'(' : ')', '{' : '}', '[' : ']'}
         stack = []
 
-        for char in s:
-            if char in pairs:
-                # char is an opening bracket
-                stack.append(char)
+        for bracket in s:
+            if bracket in pairs:
+                stack.append(bracket)
             else:
-                # char is not an opening bracket
-                if stack:
-                    removed = stack.pop()
-                    if pairs[removed] != char:
-                        return False
-                else:
+                # we've encountered a closing parentheses
+                removed = stack.pop() if stack else None
+                if not removed or pairs[removed] != bracket:
                     return False
         
         return stack == []
