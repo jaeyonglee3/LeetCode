@@ -1,19 +1,28 @@
 class Solution:
     def scoreOfParentheses(self, s: str) -> int:
+        # the stack will only ever include opening parentheses
         stack = []
-        score = 0
 
-        for c in s:
-            if c == "(":
-                stack.append(score)
-
-                # Reset score to 0, because the upcoming 
-                # parentheses will define a new sub-score.
-                score = 0
+        for par in s:
+            if par == '(':
+                stack.append(par)
             else:
-                # This handles both the base case ()
-                # and recursive doubling for nested structures
-                score = stack.pop() + max(1, score*2)
-        
-        return score
-        
+                to_multiply = None
+                while stack and type(stack[-1]) == int:
+                    num = stack.pop()
+                    
+                    if to_multiply:
+                        to_multiply += num
+                    else:
+                        to_multiply = num
+                
+                if stack:
+                    stack.pop()  # remove the opening bracket that has just been closed
+                
+                if to_multiply:
+                    num = to_multiply * 2
+                    stack.append(num)
+                else:
+                    stack.append(1)
+
+        return sum(stack)
