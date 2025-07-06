@@ -5,17 +5,16 @@ class Solution:
         stack = []
         res = [-1] * len(nums)
 
-        # do two passes over nums array b/c its circular
         for i in range(len(nums) * 2):
             num = nums[i % len(nums)]
 
             while stack and num > stack[-1][1]:
-                removed = stack.pop()
-                removed_i, removed_num = removed[0], removed[1]
+                removed_i = stack.pop()[0]
 
                 res[removed_i] = num
 
-            if i % len(nums) == i:    
+            if i < len(nums):
+                # only add to the stack on the first pass through nums
                 stack.append((i, num))
         
         return res
