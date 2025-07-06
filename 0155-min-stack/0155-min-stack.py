@@ -1,32 +1,26 @@
 class MinStack:
 
     def __init__(self):
-        self.stack = []
-        # last min keeps track of min val at that point in time in the stack
-        self.last_min = math.inf
+        self.stack = []  # stores pairs of numbers, (value, minimum value up to that point in the stack)
+        self.min_element = math.inf
 
     def push(self, val: int) -> None:
-        self.last_min = min(self.last_min, val)
-        # append with last_min val so we always know
-        # the min val at that point of the stack
-        self.stack.append((val, self.last_min))
+        self.min_element = min(self.min_element, val)
+        self.stack.append((val, self.min_element))
 
     def pop(self) -> None:
         self.stack.pop()
-        if not self.stack:
-            self.last_min = math.inf
+        
+        if self.stack:
+            self.min_element = self.stack[-1][1]
         else:
-            # set the last min to the min it was when
-            # stack[-1] was at the top of the stack
-            # because now its back at the top!
-            self.last_min = self.stack[-1][1]
+            self.min_element = math.inf
 
     def top(self) -> int:
         return self.stack[-1][0]
 
     def getMin(self) -> int:
-        return self.last_min
-
+        return self.stack[-1][1]
 
 # Your MinStack object will be instantiated and called as such:
 # obj = MinStack()
