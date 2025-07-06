@@ -1,16 +1,29 @@
 class Solution:
     def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        ans = [-1] * len(nums1)
-        nums1_set = set(nums1)
-        num1_map = {n : i for i, n in enumerate(nums1)}
+        # nums1 contains elements from nums2 for which we want to know what the next
+        # greater element is from the nums2 list
+
+        # return: an array of size len(nums1) where each element is the next greater value itself
+
+        # subproblem: given nums2 = [1,3,4,2], find the next greater element for each element
+        # return: a result array of size len(nums2) where result[i] is the next greater element
+        # of nums2[i] if one exists, otherwise is -1
+
+        res = [-1] * len(nums1)
+        # monotonically decreasing (never increasing) stack
+        # stores (value, index) pairs, so we know which index in result to update
         stack = []
 
-        for n in nums2:
-            while stack and stack[-1] < n:
+        for i, num in enumerate(nums2):
+            while stack != [] and num > stack[-1][0]:
+                # we've found a number that is greater than the number at stack[-1]
+                # now, we can update the result
                 removed = stack.pop()
-                if removed in nums1_set:
-                    ans[num1_map[removed]] = n
+                removed_val, removed_i = removed[0], removed[1]
+
+                if removed_val in nums1:
+                    res[nums1.index(removed_val)] = num
             
-            stack.append(n)
+            stack.append((num, i))
         
-        return ans
+        return res
