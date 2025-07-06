@@ -21,21 +21,14 @@ class Solution:
         while r > l:
             if s[l] != s[r]:
                 # formulate substrings 1 and 2, check if they're palindromes
-                substring1 = s[l : r]
-                if self.isPalindrome(substring1):
-                    return True
-                
-                substring2 = s[l + 1 : r + 1]
-                return self.isPalindrome(substring2)
+                return self.isPalindrome(s, l + 1, r) or self.isPalindrome(s, l, r - 1)
             
             l += 1
             r -= 1
         
         return True
     
-    def isPalindrome(self, s):
-        l, r = 0, len(s) - 1
-
+    def isPalindrome(self, s, l, r):
         while r > l:
             if s[l] != s[r]: return False
             l += 1
