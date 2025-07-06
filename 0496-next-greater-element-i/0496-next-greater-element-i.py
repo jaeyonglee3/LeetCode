@@ -13,19 +13,17 @@ class Solution:
         nums1_indices = {val : i for i, val in enumerate(nums1)}
         nums1 = set(nums1)
         # monotonically decreasing (never increasing) stack
-        # stores (value, index) pairs, so we know which index in result to update
         stack = []
 
         for i, num in enumerate(nums2):
-            while stack != [] and num > stack[-1][0]:
+            while stack and num > stack[-1]:
                 # we've found a number that is greater than the number at stack[-1]
                 # now, we can update the result
-                removed = stack.pop()
-                removed_val, removed_i = removed[0], removed[1]
+                removed_val = stack.pop()
 
                 if removed_val in nums1:
                     res[nums1_indices[removed_val]] = num
             
-            stack.append((num, i))
+            stack.append(num)
         
         return res
