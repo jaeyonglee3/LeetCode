@@ -12,7 +12,7 @@ class Solution:
 
             # base case: there are exactly n pairs of open and close parentheses
             if num_open == num_close == n:
-                res.append(''.join(curr_str.copy()))
+                res.append(''.join(curr_str))
                 return
             
             curr_str.append('(')
