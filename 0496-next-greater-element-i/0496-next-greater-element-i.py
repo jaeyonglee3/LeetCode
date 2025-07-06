@@ -10,6 +10,8 @@ class Solution:
         # of nums2[i] if one exists, otherwise is -1
 
         res = [-1] * len(nums1)
+        nums1_indices = {val : i for i, val in enumerate(nums1)}
+        nums1 = set(nums1)
         # monotonically decreasing (never increasing) stack
         # stores (value, index) pairs, so we know which index in result to update
         stack = []
@@ -22,7 +24,7 @@ class Solution:
                 removed_val, removed_i = removed[0], removed[1]
 
                 if removed_val in nums1:
-                    res[nums1.index(removed_val)] = num
+                    res[nums1_indices[removed_val]] = num
             
             stack.append((num, i))
         
