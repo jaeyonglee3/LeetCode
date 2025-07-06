@@ -1,16 +1,21 @@
 class Solution:
     def nextGreaterElements(self, nums: List[int]) -> List[int]:
-        stack = []  # stores indices
-        n = len(nums)
-        res = [-1] * n
+        # monotonically decreasing (never increasing) stack
+        # stack contains (index, num) pairs
+        stack = []
+        res = [-1] * len(nums)
 
-        for i in range(n * 2):
-            while stack and nums[stack[-1]] < nums[i % n]:
+        # do two passes over nums array b/c its circular
+        for i in range(len(nums) * 2):
+            num = nums[i % len(nums)]
+
+            while stack and num > stack[-1][1]:
                 removed = stack.pop()
-                res[removed] = nums[i % n]
-            
-            if i < n:
-                stack.append(i)
+                removed_i, removed_num = removed[0], removed[1]
+
+                res[removed_i] = num
+
+            if i % len(nums) == i:    
+                stack.append((i, num))
         
         return res
-            
