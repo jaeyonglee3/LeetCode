@@ -6,20 +6,23 @@
 #         self.right = right
 class Solution:
     def getMinimumDifference(self, root: Optional[TreeNode]) -> int:
-        # run an in-order traversal - since its a BST, 
-        # it returns the nodes in sorted order
+        self.prev = None
+        self.min_diff = math.inf
 
-        def inOrderDfs(node) -> list[int]:
+        def inOrder(node):
             if not node:
-                return []
+                return
             
-            return inOrderDfs(node.left) + [node.val] + inOrderDfs(node.right)
-        
-        in_order = inOrderDfs(root)
-        res = math.inf
+            # Traverse left
+            inOrder(node.left)
 
-        for i in range(len(in_order) - 1):
-            res = min(res, abs(in_order[i] - in_order[i + 1]))
-        
-        return res
+            # Process current node
+            if self.prev is not None:
+                self.min_diff = min(self.min_diff, node.val - self.prev)
+            self.prev = node.val
 
+            # Traverse right
+            inOrder(node.right)
+        
+        inOrder(root)
+        return self.min_diff
