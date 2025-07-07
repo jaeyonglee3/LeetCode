@@ -23,15 +23,19 @@ class Solution:
             task_freq[task] = task_freq.get(task, 0) + 1
         
         # create a max heap
+        # the heap contains the count of every single task
+        # counts only, no need to know which task its associated to
         max_heap = [-count for count in task_freq.values()]
         heapq.heapify(max_heap)
 
         time = 0
         # contains pair of values (-count, idle_time), 
         # idle_time is the time its available to add back to the max heap
+        # queue contains all the tasks that need to be completed
         q = collections.deque()
 
         while max_heap or q:
+            # as long as heap or q is nonempty, that means we have more tasks to complete
             time += 1
 
             if max_heap:
