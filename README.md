@@ -57,6 +57,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0542-01-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0542-01-matrix) |
 | [0605-can-place-flowers](https://github.com/jaeyonglee3/LeetCode/tree/master/0605-can-place-flowers) |
 | [0611-valid-triangle-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0611-valid-triangle-number) |
+| [0621-task-scheduler](https://github.com/jaeyonglee3/LeetCode/tree/master/0621-task-scheduler) |
 | [0643-maximum-average-subarray-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0643-maximum-average-subarray-i) |
 | [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/jaeyonglee3/LeetCode/tree/master/0733-flood-fill) |
@@ -111,6 +112,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0438-find-all-anagrams-in-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0567-permutation-in-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0567-permutation-in-string) |
+| [0621-task-scheduler](https://github.com/jaeyonglee3/LeetCode/tree/master/0621-task-scheduler) |
 | [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [0940-fruit-into-baskets](https://github.com/jaeyonglee3/LeetCode/tree/master/0940-fruit-into-baskets) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
@@ -363,6 +365,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0435-non-overlapping-intervals](https://github.com/jaeyonglee3/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0611-valid-triangle-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0611-valid-triangle-number) |
+| [0621-task-scheduler](https://github.com/jaeyonglee3/LeetCode/tree/master/0621-task-scheduler) |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 | [1675-magnetic-force-between-two-balls](https://github.com/jaeyonglee3/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
@@ -394,6 +397,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0621-task-scheduler](https://github.com/jaeyonglee3/LeetCode/tree/master/0621-task-scheduler) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1127-last-stone-weight](https://github.com/jaeyonglee3/LeetCode/tree/master/1127-last-stone-weight) |
 ## Bucket Sort
@@ -405,6 +409,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | ------- |
 | [0169-majority-element](https://github.com/jaeyonglee3/LeetCode/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0621-task-scheduler](https://github.com/jaeyonglee3/LeetCode/tree/master/0621-task-scheduler) |
 | [1469-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/1469-minimum-number-of-steps-to-make-two-strings-anagram) |
 | [1823-determine-if-string-halves-are-alike](https://github.com/jaeyonglee3/LeetCode/tree/master/1823-determine-if-string-halves-are-alike) |
 ## Quickselect
@@ -420,6 +425,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0435-non-overlapping-intervals](https://github.com/jaeyonglee3/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0605-can-place-flowers](https://github.com/jaeyonglee3/LeetCode/tree/master/0605-can-place-flowers) |
 | [0611-valid-triangle-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0611-valid-triangle-number) |
+| [0621-task-scheduler](https://github.com/jaeyonglee3/LeetCode/tree/master/0621-task-scheduler) |
 | [0680-valid-palindrome-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [2337-remove-digit-from-number-to-maximize-result](https://github.com/jaeyonglee3/LeetCode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
 ## Stack
