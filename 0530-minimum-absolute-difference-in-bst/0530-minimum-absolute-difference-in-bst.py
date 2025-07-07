@@ -7,22 +7,22 @@
 class Solution:
     def getMinimumDifference(self, root: Optional[TreeNode]) -> int:
         self.prev = None
-        self.min_diff = math.inf
+        self.res = float('inf')
 
         def inOrder(node):
             if not node:
                 return
             
-            # Traverse left
+            # handle left
             inOrder(node.left)
 
-            # Process current node
+            # handle curr node
             if self.prev is not None:
-                self.min_diff = min(self.min_diff, node.val - self.prev)
+                self.res = min(self.res, abs(self.prev - node.val))
             self.prev = node.val
-
-            # Traverse right
+            
+            # handle right
             inOrder(node.right)
         
         inOrder(root)
-        return self.min_diff
+        return self.res
