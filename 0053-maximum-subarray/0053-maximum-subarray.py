@@ -12,4 +12,3 @@ class Solution:
                 curr_sum = 0
         
         return res
-            
