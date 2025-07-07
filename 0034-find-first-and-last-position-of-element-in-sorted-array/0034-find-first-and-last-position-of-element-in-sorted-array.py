@@ -12,39 +12,37 @@ class Solution:
 
         # find the starting index first
         res = [-1, -1]
-        l, r = 0, len(nums) - 1
 
-        while r >= l:
-            mid = (l + r) // 2
+        # extract binary search into a helper
+        def bin_search(find_starting: bool) -> None:
+            # if find_starting is true, find the starting index
+            # otherwise, find the ending index
+            # return: nothing, modify the result array directly
+            l, r = 0, len(nums) - 1
 
-            if nums[mid] == target:
-                if mid - 1 < 0 or nums[mid - 1] != target:
-                    # mid is the starting index
-                    res[0] = mid
-                    break
-                else:
+            while r >= l:
+                mid = (r + l) // 2
+
+                if nums[mid] == target:
+                    if find_starting and (mid - 1 < 0 or nums[mid - 1] != target):
+                        res[0] = mid
+                        break
+                    
+                    if not find_starting and (mid + 1 == len(nums) or nums[mid + 1] != target):
+                        res[1] = mid
+                        break
+                    
+                    r = mid - 1 if find_starting else r
+                    l = mid + 1 if not find_starting else l
+                
+                elif nums[mid] > target:
                     r = mid - 1
-            elif nums[mid] > target:
-                r = mid - 1
-            else:
-                l = mid + 1
-        
-        # find the ending index next
-        l, r = 0, len(nums) - 1
-
-        while r >= l:
-            mid = (l + r) // 2
-
-            if nums[mid] == target:
-                if mid + 1 == len(nums) or nums[mid + 1] != target:
-                    # mid is the ending index
-                    res[1] = mid
-                    break
+                
                 else:
+                    # num[mid] < target
                     l = mid + 1
-            elif nums[mid] > target:
-                r = mid - 1
-            else:
-                l = mid + 1
         
+        bin_search(find_starting=True)
+        bin_search(find_starting=False)
+
         return res
