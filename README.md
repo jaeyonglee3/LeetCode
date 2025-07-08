@@ -22,6 +22,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0049-group-anagrams](https://github.com/jaeyonglee3/LeetCode/tree/master/0049-group-anagrams) |
 | [0051-n-queens](https://github.com/jaeyonglee3/LeetCode/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/jaeyonglee3/LeetCode/tree/master/0053-maximum-subarray) |
+| [0054-spiral-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0054-spiral-matrix) |
 | [0056-merge-intervals](https://github.com/jaeyonglee3/LeetCode/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/jaeyonglee3/LeetCode/tree/master/0057-insert-interval) |
 | [0074-search-a-2d-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0074-search-a-2d-matrix) |
@@ -560,6 +561,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | ------- |
 | [0036-valid-sudoku](https://github.com/jaeyonglee3/LeetCode/tree/master/0036-valid-sudoku) |
 | [0048-rotate-image](https://github.com/jaeyonglee3/LeetCode/tree/master/0048-rotate-image) |
+| [0054-spiral-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0054-spiral-matrix) |
 | [0074-search-a-2d-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/jaeyonglee3/LeetCode/tree/master/0130-surrounded-regions) |
@@ -596,6 +598,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 ## Simulation
 |  |
 | ------- |
+| [0054-spiral-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0054-spiral-matrix) |
 | [0412-fizz-buzz](https://github.com/jaeyonglee3/LeetCode/tree/master/0412-fizz-buzz) |
 | [0735-asteroid-collision](https://github.com/jaeyonglee3/LeetCode/tree/master/0735-asteroid-collision) |
 | [2058-concatenation-of-array](https://github.com/jaeyonglee3/LeetCode/tree/master/2058-concatenation-of-array) |
