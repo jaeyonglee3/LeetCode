@@ -3,35 +3,19 @@ class Solution:
         # first find the inner list that can contain target
         # do this with binary search
         # if none is found, return false early
-        l, r = 0, len(matrix) - 1
-        row = None
+        ROWS, COLS = len(matrix), len(matrix[0])
+        l, r = 0, ROWS * COLS - 1
 
         while r >= l:
             mid = (r + l) // 2
-            curr_row = matrix[mid]
+            row, col = mid // COLS, mid % COLS
+            curr_val = matrix[row][col]
 
-            if target >= curr_row[0] and target <= curr_row[-1]:
-                row = curr_row
-                break
-            elif target > curr_row[-1]:
-                l = mid + 1
-            elif target < curr_row[0]:
-                r = mid - 1
-        
-        if row == None:
-            return False
-        
-        l, r = 0, len(matrix[0]) - 1
-
-        while r >= l:
-            mid = (r + l) // 2
-
-            if row[mid] == target:
+            if curr_val == target:
                 return True
-            elif row[mid] > target:
-                r = mid - 1
-            else:
-                # row[mid] < target
+            elif curr_val > target:
                 l = mid + 1
+            else:
+                r = mid - 1
         
         return False
