@@ -11,7 +11,7 @@ class Solution:
             if c in target:
                 s_freq[c] = s_freq.get(c, 0) + 1
 
-        res = 0
+        res = math.inf
         for c in t_freq:
             if c not in s_freq:
                 return 0
