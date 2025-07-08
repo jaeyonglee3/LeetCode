@@ -14,8 +14,8 @@ class Solution:
             if curr_val == target:
                 return True
             elif curr_val > target:
-                l = mid + 1
-            else:
                 r = mid - 1
+            else:
+                l = mid + 1
         
         return False
