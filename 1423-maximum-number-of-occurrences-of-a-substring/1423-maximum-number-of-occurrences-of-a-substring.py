@@ -11,6 +11,7 @@ class Solution:
         diff = maxSize - minSize
         l, r = 0, minSize - 1
         freq = {}
+        res = 0
 
         while r < len(s):
             for end_i in range(r, r + diff + 1):
@@ -20,8 +21,9 @@ class Solution:
                 substring = s[l : end_i + 1]
                 if len(set(substring)) <= maxLetters:
                     freq[substring] = freq.get(substring, 0) + 1
+                    res = max(res, freq[substring])
                 
             l += 1
             r += 1
         
-        return max(freq.values()) if freq else 0
+        return res
