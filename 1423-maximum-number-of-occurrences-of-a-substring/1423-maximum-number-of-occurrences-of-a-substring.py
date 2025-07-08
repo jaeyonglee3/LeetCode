@@ -24,5 +24,4 @@ class Solution:
             l += 1
             r += 1
         
-        print(freq)
         return max(freq.values()) if freq else 0
