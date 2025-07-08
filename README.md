@@ -118,6 +118,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0896-smallest-subtree-with-all-the-deepest-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0896-smallest-subtree-with-all-the-deepest-nodes) |
 | [0940-fruit-into-baskets](https://github.com/jaeyonglee3/LeetCode/tree/master/0940-fruit-into-baskets) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
+| [1423-maximum-number-of-occurrences-of-a-substring](https://github.com/jaeyonglee3/LeetCode/tree/master/1423-maximum-number-of-occurrences-of-a-substring) |
 | [1469-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/1469-minimum-number-of-steps-to-make-two-strings-anagram) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
@@ -176,6 +177,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0680-valid-palindrome-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0886-score-of-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0886-score-of-parentheses) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
+| [1423-maximum-number-of-occurrences-of-a-substring](https://github.com/jaeyonglee3/LeetCode/tree/master/1423-maximum-number-of-occurrences-of-a-substring) |
 | [1469-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/1469-minimum-number-of-steps-to-make-two-strings-anagram) |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/jaeyonglee3/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
@@ -509,6 +511,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0643-maximum-average-subarray-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0643-maximum-average-subarray-i) |
 | [0940-fruit-into-baskets](https://github.com/jaeyonglee3/LeetCode/tree/master/0940-fruit-into-baskets) |
 | [1046-max-consecutive-ones-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+| [1423-maximum-number-of-occurrences-of-a-substring](https://github.com/jaeyonglee3/LeetCode/tree/master/1423-maximum-number-of-occurrences-of-a-substring) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/jaeyonglee3/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/jaeyonglee3/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Monotonic Stack
