@@ -23,7 +23,6 @@ class Solution:
             if num == 2 and i < two_ptr:
                 nums[i], nums[two_ptr] = nums[two_ptr], nums[i]
                 two_ptr -= 1
-                print(nums)
             
             elif num == 0:
                 nums[i], nums[zero_ptr] = nums[zero_ptr], nums[i]
