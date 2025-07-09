@@ -72,6 +72,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 | [0907-koko-eating-bananas](https://github.com/jaeyonglee3/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0940-fruit-into-baskets](https://github.com/jaeyonglee3/LeetCode/tree/master/0940-fruit-into-baskets) |
+| [1019-squares-of-a-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
 | [1046-max-consecutive-ones-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/jaeyonglee3/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
@@ -153,6 +154,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0611-valid-triangle-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0611-valid-triangle-number) |
 | [0680-valid-palindrome-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0908-middle-of-the-linked-list](https://github.com/jaeyonglee3/LeetCode/tree/master/0908-middle-of-the-linked-list) |
+| [1019-squares-of-a-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
 ## String
@@ -378,6 +380,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0611-valid-triangle-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0611-valid-triangle-number) |
 | [0621-task-scheduler](https://github.com/jaeyonglee3/LeetCode/tree/master/0621-task-scheduler) |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
+| [1019-squares-of-a-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1675-magnetic-force-between-two-balls](https://github.com/jaeyonglee3/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Prefix Sum
