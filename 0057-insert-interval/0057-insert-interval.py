@@ -1,36 +1,42 @@
 class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
-        res = []  # This will store the final merged intervals
+        # paraphrase
+        # we want to insert newInterval into intervals such that its still sorted in asc order
+        # AND there are still no overlapping intervals
 
-        # we'll iterate over every interval and run some checks to determine
-        # what to / not to do with newInterval.
+        # two intervals overlap if the 2nd one starts before the 1st one ends
 
-        # a merge needs to happen between two intervals if one's start value
-        # is lesser than the other's end value.
+        # dry runs (examples)
+        # Input: intervals = [[1,3],[6,9]], newInterval = [2,5]
+        # res = [ (1, 5), (6, 9) ]
+        # Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [3,10]
+        # res = [ (1,2), (3,10), (12,16) ]
 
-        for i in range(len(intervals)):
-            curr = intervals[i]
-            # case 1: NO OVERLAP
-            # the curr interval starts after the newInterval ends
-            # then, we can add new interval to the result, followed by the rest of the intervals
-            # after the curr one (no overlaps would happen b/c intervals is sorted by start)
-            if curr[0] > newInterval[1]:
+        # approach
+        # populate a new result list of intervals by visiting each interval in intervals one at a time
+        # 3 cases -> 2 non-overlap cases, 1 overlap case:
+            # if it has no overlap at all with newInterval, just add the interval 
+            # if it has an overlap, modify newInterval such that it handles the overlap, and continue the process
+            # if the new intervals ends before the curr interval starts, there is again no overlap, but now we can just
+            # add the new interval to the result, and add the rest of the intervals after it!
+
+        # implement
+        res = []
+
+        for i, interval in enumerate(intervals):
+            if newInterval[0] <= interval[1] and newInterval[1] >= interval[0]:
+                # overlap detected
+                # merge newInterval with interval
+                newInterval = (min(newInterval[0], interval[0]), max(newInterval[1], interval[1]))
+            elif newInterval[0] > interval[1]:
+                res.append(interval)
+            elif newInterval[1] < interval[0]:
                 res.append(newInterval)
-                return res + intervals[i : ]
-
-            # case 2: NO OVERLAP
-            # the curr interval ends before the newInterval starts
-            # there could possibly be intervals that follow the curr one that would overlap
-            # with newInterval. Here, only add the curr interval to res and do nothing else.
-            elif curr[1] < newInterval[0]:
-                res.append(curr)
-
-            # case 3: OVERLAP
-            # then, we'll modify the newInterval to reflect a merge between itself and curr
-            # interval. Its important that we modify newInterval, not curr, b/c our cases
-            # rely on comparisons with the newInterval.
-            else:
-                newInterval = [min(curr[0], newInterval[0]), max(curr[1], newInterval[1])]
+                newInterval = None
+                res += intervals[i :]
+                break
         
-        res.append(newInterval)
+        if newInterval:
+            res.append(newInterval)
+        
         return res
