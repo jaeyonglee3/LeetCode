@@ -2,9 +2,8 @@ class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
         # the largest squares produced will be the ones furthest from 0
         # either at the far left (negative) or far right (positive)
-        # if the square of the number at l ptr is greater than the one at r ptr, swap them
-        # only increment the left pointer after a swap. if no swap, keep it there
-        # right ptr always moves inwards until it meets the left ptr
+        # construct a result list by filling it in backwards
+        # populate result with the greater between the two squares at either ptr
         res = [0] * len(nums)
         l, r = 0, len(nums) - 1
         fill_pos = len(nums) - 1
