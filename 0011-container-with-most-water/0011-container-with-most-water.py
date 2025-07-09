@@ -7,10 +7,9 @@ class Solution:
             area = min(height[l], height[r]) * (r - l)
             res = max(res, area)
 
-            # move the pointer that has the smaller height
-            if height[l] > height[r]:
-                r -= 1
-            else:
+            if height[l] < height[r]:
                 l += 1
+            else:
+                r -= 1
         
         return res
