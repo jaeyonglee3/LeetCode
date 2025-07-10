@@ -2,6 +2,9 @@ class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
         # in other words, do ransomNote and magazine strings contain
         # the same count of each letter?
+        if len(ransomNote) > len(magazine):
+            return False
+
         count_r = {}
         count_m = {}
 
