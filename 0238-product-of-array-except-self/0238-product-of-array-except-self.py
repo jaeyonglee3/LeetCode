@@ -1,24 +1,32 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        # we'll construct a post and prefix array. at index i, postfix contains
-        # the product of all the numbers to the right of i in nums. prefix contains
-        # the product of all the numbers to the left of i in nums.
-        # then the result at i is the product of prefix[i] and postfix[i]
+        # for any index i, we know that the result at i should be
+        # the product of...
+            # the product of all the numbers that come before index i in nums
+            # with
+            # the product of all the numbers that come after index i in nums
         
-        pre = []
-        curr_pre = 1
-        for n in nums:
-            pre.append(curr_pre)
-            curr_pre = curr_pre * n
+        # so, construct two arrays prefix and postfix
+        # prefix at index i equals the product of all the numbers that come before index i in nums
+        # postfix at index i equals the product of all the numbers that come after index i in nums
+        n = len(nums)
         
-        post = [-1] * len(nums)
-        curr_post = 1
-        for i in range(len(nums) - 1, -1, -1):
-            post[i] = curr_post
-            curr_post *= nums[i]
+        prefix = []
+        curr_product = 1
+        for num in nums:
+            prefix.append(curr_product)
+            curr_product *= num
         
-        res = []
-        for i in range(len(nums)):
-            res.append(pre[i] * post[i])
+        postfix = [-1] * n
+        curr_idx = n - 1
+        curr_product = 1
+        for i in range(n - 1, -1, -1):
+            postfix[curr_idx] = curr_product
+            curr_product *= nums[i]
+            curr_idx -= 1
         
-        return res
+        result = []
+        for i in range(n):
+            result.append(prefix[i] * postfix[i])
+        
+        return result
