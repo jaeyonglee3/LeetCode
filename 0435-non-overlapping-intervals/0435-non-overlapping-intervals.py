@@ -1,19 +1,26 @@
 class Solution:
     def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
-        # step 1: sort the intervals arr by start values so that any
-        # overlapping intervals are next to each other.
-        intervals.sort()
+        if len(intervals) < 2:
+            # edge case
+            return 0
+
+        # sort by start times to put all overlapping intervals next to each other
+        intervals.sort(key=lambda interval : interval[0])
+        last_interval = intervals[0]
+
         res = 0
-        curr_end = intervals[0][1]
 
         for i in range(1, len(intervals)):
-            # an overlap occurs between two intervals when one of their start times
-            # is lesser than the other's end time.
-            if intervals[i][0] < curr_end:
+            interval = intervals[i]
+
+            if interval[0] < last_interval[1]:
+                # we have an overlap, so increment result
                 res += 1
-                # take the min since its less likely to overlap with other intervals.
-                curr_end = min(curr_end, intervals[i][1])
+                last_interval = last_interval if last_interval[1] < interval[1] else interval
             else:
-                curr_end = intervals[i][1]
+                last_interval = interval
         
         return res
+
+        # [[1,100],[11,22],[1,11],[2,12]]
+        # [[1,11],[1,100],[11,22],[2,12]]
