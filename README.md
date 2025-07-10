@@ -117,6 +117,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0383-ransom-note](https://github.com/jaeyonglee3/LeetCode/tree/master/0383-ransom-note) |
 | [0409-longest-palindrome](https://github.com/jaeyonglee3/LeetCode/tree/master/0409-longest-palindrome) |
 | [0424-longest-repeating-character-replacement](https://github.com/jaeyonglee3/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0438-find-all-anagrams-in-a-string) |
@@ -180,6 +181,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0212-word-search-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0212-word-search-ii) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 | [0344-reverse-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0344-reverse-string) |
+| [0383-ransom-note](https://github.com/jaeyonglee3/LeetCode/tree/master/0383-ransom-note) |
 | [0394-decode-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0394-decode-string) |
 | [0409-longest-palindrome](https://github.com/jaeyonglee3/LeetCode/tree/master/0409-longest-palindrome) |
 | [0412-fizz-buzz](https://github.com/jaeyonglee3/LeetCode/tree/master/0412-fizz-buzz) |
@@ -432,6 +434,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | ------- |
 | [0169-majority-element](https://github.com/jaeyonglee3/LeetCode/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0383-ransom-note](https://github.com/jaeyonglee3/LeetCode/tree/master/0383-ransom-note) |
 | [0621-task-scheduler](https://github.com/jaeyonglee3/LeetCode/tree/master/0621-task-scheduler) |
 | [1469-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/1469-minimum-number-of-steps-to-make-two-strings-anagram) |
 | [1823-determine-if-string-halves-are-alike](https://github.com/jaeyonglee3/LeetCode/tree/master/1823-determine-if-string-halves-are-alike) |
