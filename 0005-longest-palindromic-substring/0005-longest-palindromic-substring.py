@@ -4,7 +4,7 @@ class Solution:
         # opposite ends and work towards the middle
         # or we can start from the middle and work outwards 
         # (some middles are two chars if the palindromic string is of even length)
-        res = ""
+        res_index_start = 0
         longest_len = 0
 
         for i in range(len(s)):
@@ -14,7 +14,8 @@ class Solution:
             # odd length palindrome
             l, r = i, i
             while l >= 0 and r < len(s) and s[l] == s[r]:
-                res = s[l : r + 1] if (r - l + 1) > longest_len else res
+                if r - l + 1 > longest_len:
+                    res_index_start = l
                 longest_len = max(longest_len, r - l + 1)
                 l -= 1
                 r += 1
@@ -22,9 +23,10 @@ class Solution:
             # even length palindrome
             l, r = i, i + 1
             while l >= 0 and r < len(s) and s[l] == s[r]:
-                res = s[l : r + 1] if (r - l + 1) > longest_len else res
+                if r - l + 1 > longest_len:
+                    res_index_start = l
                 longest_len = max(longest_len, r - l + 1)
                 l -= 1
                 r += 1
         
-        return res
+        return s[res_index_start : res_index_start + longest_len]
