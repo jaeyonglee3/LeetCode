@@ -1,24 +1,14 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        # want to find the longest window within s in which there are no repeating characters
-        # the window's start and end will be marked with l and r pointers
-        
-        # Key Insight: if the right is pointing to a character that has already been seen within the window,
-        # move the left pointer to the index of the repeated character + 1. Right ptr still increments by 1 as usual.
-        # Take 'azzbcbb' as an example. When right is pointing to the 2nd last b, left needs to move up all the way to index 4
-        
-        # Edge case - an empty string will always return 0
-        if len(s) == 0: 
-            return 0
-        
+        # variable size sliding window problem
+        res = 0
         l = 0
-        last_seen = {s[l] : 0}  # maps characters to their last seen index
-        res = 1
+        last_seen = {}
 
-        for r in range(1, len(s)):
-            if last_seen.get(s[r], -1) >= l:
+        for r in range(len(s)):
+            if s[r] in last_seen and last_seen[s[r]] >= l:
                 l = last_seen[s[r]] + 1
-
+            
             last_seen[s[r]] = r
             res = max(res, r - l + 1)
         
