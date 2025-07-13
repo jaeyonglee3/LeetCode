@@ -212,6 +212,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [2496-count-days-spent-together](https://github.com/jaeyonglee3/LeetCode/tree/master/2496-count-days-spent-together) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/jaeyonglee3/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
+| [3379-score-of-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/3379-score-of-a-string) |
 ## Linked List
 |  |
 | ------- |
