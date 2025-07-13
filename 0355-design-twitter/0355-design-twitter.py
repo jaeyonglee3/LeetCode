@@ -29,6 +29,8 @@ class Twitter:
             res.append(tweetId)
 
             if index >= 0:
+                # that index tells us the next tweet belonging to uid that we can add
+                # to the feed. add it to the heap using heappush
                 count, tweetId = self.tweet_map[uid][index]
                 heapq.heappush(min_heap, [count, tweetId, uid, index - 1])
         
