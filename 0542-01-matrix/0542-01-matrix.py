@@ -1,26 +1,27 @@
+from collections import deque
+
 class Solution:
     def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
         ROWS, COLS = len(mat), len(mat[0])
-        new_mat = [[-1] * COLS for _ in range(ROWS)]
         DIRS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-        q = collections.deque()
+        q = deque()
 
         for r in range(ROWS):
             for c in range(COLS):
                 if mat[r][c] == 0:
-                    new_mat[r][c] = 0
                     q.append((r, c))
+                else:
+                    # all unexplored 1 cells start off as -1
+                    mat[r][c] = -1
         
         while q:
             r, c = q.popleft()
 
             for dr, dc in DIRS:
-                new_r, new_c = r + dr, c + dc
+                nr, nc = r + dr, c + dc
 
-                if min(new_r, new_c) < 0 or new_r == ROWS or new_c == COLS or new_mat[new_r][new_c] != -1:
-                    continue
-                
-                new_mat[new_r][new_c] = new_mat[r][c] + 1
-                q.append((new_r, new_c))
+                if 0 <= nr < ROWS and 0 <= nc < COLS and mat[nr][nc] == -1:
+                    mat[nr][nc] = mat[r][c] + 1
+                    q.append((nr, nc))
         
-        return new_mat
+        return mat
