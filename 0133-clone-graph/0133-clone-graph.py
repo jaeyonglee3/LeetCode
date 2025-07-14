@@ -2,21 +2,24 @@ from typing import Optional
 
 class Solution:
     def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
-        # DFS approach
+        # BFS approach
         if not node:
             return None
         
-        visited = {}
-        def dfs(curr_node):
-            if curr_node in visited:
-                return visited[curr_node]
-            
-            clone = Node(curr_node.val)
-            visited[curr_node] = clone
+        clone = Node(node.val)
+        visited = {node : clone}
+        q = collections.deque()  # the queue will only contain the clones
+        q.append(node)
 
-            for n in curr_node.neighbors:
-                clone.neighbors.append(dfs(n))
-            
-            return clone
+        while q:
+            curr = q.popleft()
+
+            for n in curr.neighbors:
+                if n not in visited:
+                    clone = Node(n.val)
+                    visited[n] = clone
+                    q.append(n)
+                
+                visited[curr].neighbors.append(visited[n])
         
-        return dfs(node)
+        return visited[node]
