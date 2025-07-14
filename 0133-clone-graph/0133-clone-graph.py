@@ -2,19 +2,21 @@ from typing import Optional
 
 class Solution:
     def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
+        # DFS approach
         if not node:
             return None
         
         visited = {}
-        def dfs_clone(node):
-            if node in visited:
-                return visited[node]
+        def dfs(curr_node):
+            if curr_node in visited:
+                return visited[curr_node]
             
-            visited[node] = Node(node.val)
-            for n in node.neighbors:
-                n_clone = dfs_clone(n)
-                visited[node].neighbors.append(n_clone)
+            clone = Node(curr_node.val)
+            visited[curr_node] = clone
+
+            for n in curr_node.neighbors:
+                clone.neighbors.append(dfs(n))
             
-            return visited[node]
+            return clone
         
-        return dfs_clone(node)
+        return dfs(node)
