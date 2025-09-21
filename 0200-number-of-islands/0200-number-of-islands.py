@@ -1,31 +1,26 @@
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
-        # BFS approach
-        DIRS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-        ROWS, COLS = len(grid), len(grid[0])
+        # DFS approach:
+        # iterate over the entire grid. Any time you encounter an island, increment the total 
+        # number of islands. Then, start a DFS search from that island to turn it and all
+        # connected 1s into 0s so that we don't count the same island more than once.
+
         res = 0
+        ROWS, COLS = len(grid), len(grid[0])
+        DIRS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 
-        def bfs(r, c):
-            q = collections.deque()
+        def dfs(r, c):
+            if min(r, c) < 0 or r == ROWS or c == COLS or grid[r][c] == "0":
+                return
+            
             grid[r][c] = "0"
-            q.append((r, c))
-
-            while q:
-                r, c = q.popleft()
-
-                for dr, dc in DIRS:
-                    nr, nc = r + dr, c + dc
-
-                    if nr < 0 or nc < 0 or nr >= ROWS or nc >= COLS or grid[nr][nc] == "0":
-                        continue
-                    
-                    q.append((nr, nc))
-                    grid[nr][nc] = "0"
+            for dr, dc in DIRS:
+                dfs(r + dr, c + dc)
 
         for r in range(ROWS):
             for c in range(COLS):
                 if grid[r][c] == "1":
+                    dfs(r, c)
                     res += 1
-                    bfs(r, c)
         
         return res
