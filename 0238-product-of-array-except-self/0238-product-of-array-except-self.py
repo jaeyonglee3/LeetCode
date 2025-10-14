@@ -1,32 +1,32 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        # for any index i, we know that the result at i should be
-        # the product of...
-            # the product of all the numbers that come before index i in nums
-            # with
-            # the product of all the numbers that come after index i in nums
+        # Input: nums = [1,2,3,4]
+        # Output: [24,12,8,6]
+        # pre: [1, 1, 2, 6] -> pre[i] equals the product of all the elements to the left of i
+        # post: [24, 12, 4, 1] -> post[i] equals the product of all the elements to the right of i
+        # THEN, output[i] = pre[i] * post[i]
+
+        # How output was calculated [(2, 3, 4), (1, 3, 4), (1, 2, 4), (1, 2, 3)]
+        # it would be nice to know the products up to certain points in the input array
+        # so we can do our math quickly
+
+        # compute the pre array
+        pre = [1]
+        curr = 1
+        for i in range(len(nums) - 1):
+            # i goes from 0 to the 2nd last index in nums
+            curr *= nums[i]
+            pre.append(curr)
         
-        # so, construct two arrays prefix and postfix
-        # prefix at index i equals the product of all the numbers that come before index i in nums
-        # postfix at index i equals the product of all the numbers that come after index i in nums
-        n = len(nums)
+        post = [1]
+        curr = 1
+        for i in range(len(nums) - 1, 0, -1):
+            curr *= nums[i]
+            post.append(curr)
+        post.reverse()
+
+        res = []
+        for i in range(len(nums)):
+            res.append(pre[i] * post[i])
         
-        prefix = []
-        curr_product = 1
-        for num in nums:
-            prefix.append(curr_product)
-            curr_product *= num
-        
-        postfix = [-1] * n
-        curr_idx = n - 1
-        curr_product = 1
-        for i in range(n - 1, -1, -1):
-            postfix[curr_idx] = curr_product
-            curr_product *= nums[i]
-            curr_idx -= 1
-        
-        result = []
-        for i in range(n):
-            result.append(prefix[i] * postfix[i])
-        
-        return result
+        return res
