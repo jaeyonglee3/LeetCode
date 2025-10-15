@@ -4,12 +4,12 @@ class Solution:
         res = 0
 
         while r > l:
-            area = min(height[l], height[r]) * (r - l)
-            res = max(res, area)
+            curr_area = min(height[l], height[r]) * (r - l)
+            res = max(res, curr_area)
 
-            if height[l] < height[r]:
-                l += 1
+            if height[l] > height[r]:
+                r -=1
             else:
-                r -= 1
+                l += 1
         
         return res
