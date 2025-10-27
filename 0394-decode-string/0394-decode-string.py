@@ -2,25 +2,25 @@ class Solution:
     def decodeString(self, s: str) -> str:
         stack = []
 
-        for char in s:
-            if char == "]":
-                # 1. Form the string that will be repeated
-                new_str = ""
-                while stack[-1] != "[":
-                    new_str = stack.pop() + new_str
-                
-                # 2. Remove the opening bracket
-                stack.pop()
+        for c in s:
+            if c == "]":
+                # step 1: get the char to repeat by popping until "["
+                str_to_repeat = []
+                while stack and stack[-1] != "[":
+                    str_to_repeat.append(stack.pop())
+                stack.pop()  # pop once more to rid of "["
+                str_to_repeat.reverse()  # reverse to obtain the correct order after popping
 
-                # 3. Form the number so we know how many times to repeat the string
-                num_repeat = ""
+                # step 2: obtain the number to repeat
+                num_to_repeat = []
                 while stack and stack[-1].isdigit():
-                    num_repeat = stack.pop() + num_repeat
+                    num_to_repeat.append(stack.pop())
+                num_to_repeat.reverse()  # reverse to get the digits in right order
 
-                stack.append(new_str * int(num_repeat))
-            
+                # step 3: repeat the string, then push back to stack
+                new_str = "".join(str_to_repeat) * int("".join(num_to_repeat))
+                stack.append(new_str)
             else:
-                stack.append(char)
-        
-        # By the end, the stack contains the entire decoded string
+                stack.append(c)
+
         return "".join(stack)
