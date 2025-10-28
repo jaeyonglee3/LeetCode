@@ -6,14 +6,21 @@
 #         self.right = right
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
-        def dfs(node, upper_bound, lower_bound) -> bool:
+        # we need to check that every node satisfies the BST condition
+        # each node has an upper and lower bound
+        
+        # the root node has a lower bound of -inf, upper bound of inf
+        # root's immediate left child node has an upper bound of root.val, lower bound of -inf
+        # and these bounds continue as you go along any tree
+
+        # verify that every node satisfies its upper and lower bound constraints
+        def verify_dfs(node, lower, upper) -> bool:
             if not node:
                 return True
             
-            # node must be greater than its lower bound, lesser than its upper bound.
-            if node.val > lower_bound and node.val < upper_bound:
-                return dfs(node.left, node.val, lower_bound) and dfs(node.right, upper_bound, node.val)
+            if node.val <= lower or node.val >= upper:
+                return False
             
-            return False
+            return verify_dfs(node.left, lower, node.val) and verify_dfs(node.right, node.val, upper)
         
-        return dfs(root, math.inf, -math.inf)
+        return verify_dfs(root, -math.inf, math.inf)
