@@ -9,3 +9,4 @@ class Solution:
                 return [seen[diff], i]
             
             seen[num] = i
+        
