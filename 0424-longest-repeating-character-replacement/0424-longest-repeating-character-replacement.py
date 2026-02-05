@@ -1,54 +1,27 @@
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
-        # paraphrase and notes
-        # use var length sliding window appraoch
-        # for any substring our window creates, the number of character replacements we need to do
-        # is equal to the total number of non-most-frequent characters in the substring
-        # we can calculate this by taking size of substring MINUS frequency of most-frequent character
+        # in other words
+        # let most_freq denote the most frequent character in a given substring s_string
+        # so, we want to know the length of the longest substring in s (s_string)
+        # such that len(s_string) minus all instances of most_freq is at most k
 
-        # maintain a count dictionary containing the count of each char in the substring
-        # also maintain a separate variable that tracks the most frequent character so we can access it quick
+        res = 0
+        freq_map = {}  # maps frequency of each letter in current substring s[l : r + 1]
+        most_freq = 1  # the count of the most frequent character in the substring
 
-        # if the substring requires more than k replacements, 
-        # move up the left pointer until we need <= k replacements
-
-        # dry rums (examples)
-        # Input: s = "ABAB", k = 2
-        # res = 4
-        # count = {A : 2, B : 2}
-        # most freq = A
-        # substring = A,B,A,B
-
-        # Input: s = "AABABBA", k = 1
-        # res = 4
-        # count = {A : 2, B : 3}
-        # most freq = B
-        # substring = BABBA
-
-        res = 1
         l = 0
-        count = {s[l] : 1}
-        most_freq = s[l]
+        for r in range(len(s)):
+            freq_map[s[r]] = freq_map.get(s[r], 0) + 1
 
-        for r in range(1, len(s)):
-            count[s[r]] = count.get(s[r], 0) + 1
+            most_freq = max(most_freq, freq_map[s[r]])
 
-            if count[s[r]] > count[most_freq]:
-                # we have a new most frequent character
-                most_freq = s[r]
-            
-            num_char_replacements = (r - l + 1) - count[most_freq]
+            s_string_len = r - l + 1
 
-            if num_char_replacements > k:
-                # increment the left ptr once and continue with the loop
-                # we dont increment until num_char_replacements is <= k all at once
-                # because the loop needs to go back to the top incase we have a new most_freq char
-                count[s[l]] -= 1
-                # so by doing this, we effectively shift the window up by exactly 1
-                # without changing the windows size/length
+            while (r - l + 1) - most_freq > k:
+                # s_string is no longer valid
+                freq_map[s[l]] -= 1
                 l += 1
-            else:
-                # only update the result if we have a valid subarray
-                res = max(res, r - l + 1)
+
+            res = max(res, r - l + 1)
         
         return res
