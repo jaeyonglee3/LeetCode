@@ -4,23 +4,26 @@ class Solution:
 
         for c in s:
             if c == "]":
-                # step 1: get the char to repeat by popping until "["
-                str_to_repeat = []
-                while stack and stack[-1] != "[":
-                    str_to_repeat.append(stack.pop())
-                stack.pop()  # pop once more to rid of "["
-                str_to_repeat.reverse()  # reverse to obtain the correct order after popping
+                # step 1: pop until you hit an open bracket
+                curr_str = []
+                while stack[-1] != "[":
+                    curr_str.append(stack.pop())
+                stack.pop()  # pop once more to remove "["
 
-                # step 2: obtain the number to repeat
-                num_to_repeat = []
+                # step 2: reverse the current string
+                curr_str.reverse()
+                curr_str = "".join(curr_str)
+
+                # step 3: pop to form the number
+                curr_num = []
                 while stack and stack[-1].isdigit():
-                    num_to_repeat.append(stack.pop())
-                num_to_repeat.reverse()  # reverse to get the digits in right order
+                    curr_num += stack.pop()
+                curr_num.reverse()
+                curr_num = int("".join(curr_num))
 
-                # step 3: repeat the string, then push back to stack
-                new_str = "".join(str_to_repeat) * int("".join(num_to_repeat))
-                stack.append(new_str)
+                # step 4: multiply by the number, add back to stack
+                stack.append(curr_str * curr_num)
             else:
                 stack.append(c)
-
+        
         return "".join(stack)
