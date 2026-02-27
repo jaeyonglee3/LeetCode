@@ -1,19 +1,21 @@
 class Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:
-        stones = [-stone for stone in stones]
-        heapq.heapify(stones)
+        # To use python heapq for a max heap
+        # make all the values negative
+        stones = [-weight for weight in stones]
+        heapq.heapify(stones) # this is a O(n) operation
 
-        while len(stones) > 1:
+        # Simulate the game as long as there are at least 2
+        # stone weight remaining in the max heap
+        while len(stones) >= 2:
+            # stone y is guaranteed to have weight >= x
+            # but we made everything negative so we're guaranteed to have x >= y
             y = heapq.heappop(stones)
             x = heapq.heappop(stones)
 
-            if (x == y):
-                continue
-            else:
-                # stone x destroyed
-                heapq.heappush(stones, -1 * (abs(y) - abs(x)))
+            if x != y:
+                heapq.heappush(stones, -abs(y - x))
+            
+            # if stones are equal weights, do nothing!
         
-        if len(stones) == 1:
-            return heapq.heappop(stones) * -1
-        
-        return 0
+        return abs(stones[0]) if len(stones) > 0 else 0
