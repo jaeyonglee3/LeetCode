@@ -19,7 +19,8 @@ class Solution:
             if (res > MAX // 10 or res == MAX // 10 and digit >= MAX % 10):
                 # result too big
                 return 0
-            
+
+            # This isn't necessary because you're working w/ the positive number
             # if (res < MIN // 10 or res == MIN // 10 and digit >= MIN % 10):
             #     # result too small
             #     return 0
