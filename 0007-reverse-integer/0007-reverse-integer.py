@@ -20,9 +20,9 @@ class Solution:
                 # result too big
                 return 0
             
-            if (res < MIN // 10 or res == MIN // 10 and digit >= MIN % 10):
-                # result too small
-                return 0
+            # if (res < MIN // 10 or res == MIN // 10 and digit >= MIN % 10):
+            #     # result too small
+            #     return 0
 
             # Now, update the digit
             res *= 10
