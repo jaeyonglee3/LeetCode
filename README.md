@@ -550,6 +550,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/jaeyonglee3/LeetCode/tree/master/0002-add-two-numbers) |
+| [0007-reverse-integer](https://github.com/jaeyonglee3/LeetCode/tree/main/0007-reverse-integer/) | Medium |
 | [0048-rotate-image](https://github.com/jaeyonglee3/LeetCode/tree/master/0048-rotate-image) |
 | [0070-climbing-stairs](https://github.com/jaeyonglee3/LeetCode/tree/master/0070-climbing-stairs) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/jaeyonglee3/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
