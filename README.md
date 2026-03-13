@@ -4,8 +4,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 <!---LeetCode Topics Start-->
 # LeetCode Topics
 ## Array
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0001-two-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0001-two-sum) |
 | [0011-container-with-most-water](https://github.com/jaeyonglee3/LeetCode/tree/master/0011-container-with-most-water) |
 | [0014-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/0014-longest-common-prefix) |
@@ -107,8 +107,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/jaeyonglee3/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Hash Table
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0001-two-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jaeyonglee3/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
@@ -147,8 +147,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jaeyonglee3/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Two Pointers
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/jaeyonglee3/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0011-container-with-most-water](https://github.com/jaeyonglee3/LeetCode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0015-3sum) |
@@ -177,8 +177,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
 ## String
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jaeyonglee3/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0005-longest-palindromic-substring](https://github.com/jaeyonglee3/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0014-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/0014-longest-common-prefix) |
@@ -221,8 +221,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3379-score-of-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/3379-score-of-a-string) |
 ## Linked List
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0002-add-two-numbers](https://github.com/jaeyonglee3/LeetCode/tree/master/0002-add-two-numbers) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/jaeyonglee3/LeetCode/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/jaeyonglee3/LeetCode/tree/master/0021-merge-two-sorted-lists) |
@@ -239,8 +239,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0355-design-twitter](https://github.com/jaeyonglee3/LeetCode/tree/master/0355-design-twitter) |
 | [0908-middle-of-the-linked-list](https://github.com/jaeyonglee3/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 ## Recursion
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0002-add-two-numbers](https://github.com/jaeyonglee3/LeetCode/tree/master/0002-add-two-numbers) |
 | [0021-merge-two-sorted-lists](https://github.com/jaeyonglee3/LeetCode/tree/master/0021-merge-two-sorted-lists) |
 | [0024-swap-nodes-in-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/0024-swap-nodes-in-pairs) |
@@ -250,8 +250,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0394-decode-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0394-decode-string) |
 | [1013-fibonacci-number](https://github.com/jaeyonglee3/LeetCode/tree/master/1013-fibonacci-number) |
 ## Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/jaeyonglee3/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0100-same-tree) |
@@ -281,8 +281,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jaeyonglee3/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Depth-First Search
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0079-word-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0079-word-search) |
 | [0094-binary-tree-inorder-traversal](https://github.com/jaeyonglee3/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0098-validate-binary-search-tree) |
@@ -321,8 +321,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [2035-count-sub-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/2035-count-sub-islands) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jaeyonglee3/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Breadth-First Search
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0100-same-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0101-symmetric-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/jaeyonglee3/LeetCode/tree/master/0102-binary-tree-level-order-traversal) |
@@ -358,8 +358,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [2035-count-sub-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/2035-count-sub-islands) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jaeyonglee3/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Binary Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/jaeyonglee3/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0100-same-tree) |
@@ -389,8 +389,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jaeyonglee3/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Sorting
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0015-3sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0015-3sum) |
 | [0016-3sum-closest](https://github.com/jaeyonglee3/LeetCode/tree/master/0016-3sum-closest) |
 | [0018-4sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0018-4sum) |
@@ -414,15 +414,15 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1675-magnetic-force-between-two-balls](https://github.com/jaeyonglee3/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Prefix Sum
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0238-product-of-array-except-self](https://github.com/jaeyonglee3/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0410-split-array-largest-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 ## Union Find
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/jaeyonglee3/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/jaeyonglee3/LeetCode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/0200-number-of-islands) |
@@ -431,8 +431,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1073-number-of-enclaves](https://github.com/jaeyonglee3/LeetCode/tree/master/1073-number-of-enclaves) |
 | [2035-count-sub-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/2035-count-sub-islands) |
 ## Divide and Conquer
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0053-maximum-subarray](https://github.com/jaeyonglee3/LeetCode/tree/master/0053-maximum-subarray) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/jaeyonglee3/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0169-majority-element](https://github.com/jaeyonglee3/LeetCode/tree/master/0169-majority-element) |
@@ -440,8 +440,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [1014-k-closest-points-to-origin](https://github.com/jaeyonglee3/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 ## Heap (Priority Queue)
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/jaeyonglee3/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0355-design-twitter](https://github.com/jaeyonglee3/LeetCode/tree/master/0355-design-twitter) |
@@ -450,12 +450,12 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1014-k-closest-points-to-origin](https://github.com/jaeyonglee3/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 | [1127-last-stone-weight](https://github.com/jaeyonglee3/LeetCode/tree/master/1127-last-stone-weight) |
 ## Bucket Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
 ## Counting
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0169-majority-element](https://github.com/jaeyonglee3/LeetCode/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/jaeyonglee3/LeetCode/tree/master/0383-ransom-note) |
@@ -465,14 +465,14 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1823-determine-if-string-halves-are-alike](https://github.com/jaeyonglee3/LeetCode/tree/master/1823-determine-if-string-halves-are-alike) |
 | [2372-rearrange-characters-to-make-target-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2372-rearrange-characters-to-make-target-string) |
 ## Quickselect
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/jaeyonglee3/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [1014-k-closest-points-to-origin](https://github.com/jaeyonglee3/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 ## Greedy
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0011-container-with-most-water](https://github.com/jaeyonglee3/LeetCode/tree/master/0011-container-with-most-water) |
 | [0045-jump-game-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/jaeyonglee3/LeetCode/tree/master/0055-jump-game) |
@@ -489,8 +489,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0680-valid-palindrome-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [2337-remove-digit-from-number-to-maximize-result](https://github.com/jaeyonglee3/LeetCode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
 ## Stack
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0020-valid-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0020-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/jaeyonglee3/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/jaeyonglee3/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
@@ -512,8 +512,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/jaeyonglee3/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [2470-removing-stars-from-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 ## Dynamic Programming
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/jaeyonglee3/LeetCode/tree/master/0005-longest-palindromic-substring) |
 | [0022-generate-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0022-generate-parentheses) |
 | [0042-trapping-rain-water](https://github.com/jaeyonglee3/LeetCode/tree/master/0042-trapping-rain-water) |
@@ -533,8 +533,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1117-as-far-from-land-as-possible](https://github.com/jaeyonglee3/LeetCode/tree/master/1117-as-far-from-land-as-possible) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/jaeyonglee3/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Backtracking
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0022-generate-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0022-generate-parentheses) |
 | [0039-combination-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0039-combination-sum) |
@@ -547,8 +547,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0131-palindrome-partitioning](https://github.com/jaeyonglee3/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0212-word-search-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0212-word-search-ii) |
 ## Math
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0002-add-two-numbers](https://github.com/jaeyonglee3/LeetCode/tree/master/0002-add-two-numbers) |
 | [0048-rotate-image](https://github.com/jaeyonglee3/LeetCode/tree/master/0048-rotate-image) |
 | [0070-climbing-stairs](https://github.com/jaeyonglee3/LeetCode/tree/master/0070-climbing-stairs) |
@@ -560,8 +560,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1950-sign-of-the-product-of-an-array](https://github.com/jaeyonglee3/LeetCode/tree/master/1950-sign-of-the-product-of-an-array) |
 | [2496-count-days-spent-together](https://github.com/jaeyonglee3/LeetCode/tree/master/2496-count-days-spent-together) |
 ## Sliding Window
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jaeyonglee3/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0209-minimum-size-subarray-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0424-longest-repeating-character-replacement](https://github.com/jaeyonglee3/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
@@ -575,8 +575,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/jaeyonglee3/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/jaeyonglee3/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Monotonic Stack
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0042-trapping-rain-water](https://github.com/jaeyonglee3/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/jaeyonglee3/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
@@ -586,8 +586,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/jaeyonglee3/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 ## Design
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0146-lru-cache](https://github.com/jaeyonglee3/LeetCode/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/jaeyonglee3/LeetCode/tree/master/0155-min-stack) |
 | [0208-implement-trie-prefix-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
@@ -599,8 +599,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 ## Binary Search
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0074-search-a-2d-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0074-search-a-2d-matrix) |
@@ -623,8 +623,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1675-magnetic-force-between-two-balls](https://github.com/jaeyonglee3/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
 | [2665-minimum-time-to-repair-cars](https://github.com/jaeyonglee3/LeetCode/tree/master/2665-minimum-time-to-repair-cars) |
 ## Matrix
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0036-valid-sudoku](https://github.com/jaeyonglee3/LeetCode/tree/master/0036-valid-sudoku) |
 | [0048-rotate-image](https://github.com/jaeyonglee3/LeetCode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0054-spiral-matrix) |
@@ -648,23 +648,23 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [2035-count-sub-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/2035-count-sub-islands) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
 ## Bit Manipulation
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0078-subsets](https://github.com/jaeyonglee3/LeetCode/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0090-subsets-ii) |
 | [0222-count-complete-tree-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0222-count-complete-tree-nodes) |
 | [0287-find-the-duplicate-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0287-find-the-duplicate-number) |
 ## Binary Search Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0098-validate-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/jaeyonglee3/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/jaeyonglee3/LeetCode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Simulation
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0054-spiral-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0054-spiral-matrix) |
 | [0412-fizz-buzz](https://github.com/jaeyonglee3/LeetCode/tree/master/0412-fizz-buzz) |
 | [0735-asteroid-collision](https://github.com/jaeyonglee3/LeetCode/tree/master/0735-asteroid-collision) |
@@ -672,13 +672,13 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
 | [2470-removing-stars-from-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 ## Data Stream
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
 ## Trie
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0014-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0208-implement-trie-prefix-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/jaeyonglee3/LeetCode/tree/master/0211-design-add-and-search-words-data-structure) |
@@ -686,59 +686,59 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/jaeyonglee3/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## String Matching
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0572-subtree-of-another-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/jaeyonglee3/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 ## Rolling Hash
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/jaeyonglee3/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 ## Hash Function
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0572-subtree-of-another-tree](https://github.com/jaeyonglee3/LeetCode/tree/master/0572-subtree-of-another-tree) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/jaeyonglee3/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 ## Graph
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0133-clone-graph](https://github.com/jaeyonglee3/LeetCode/tree/master/0133-clone-graph) |
 | [0207-course-schedule](https://github.com/jaeyonglee3/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0684-redundant-connection](https://github.com/jaeyonglee3/LeetCode/tree/master/0684-redundant-connection) |
 ## Topological Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0207-course-schedule](https://github.com/jaeyonglee3/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0210-course-schedule-ii) |
 ## Doubly-Linked List
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0146-lru-cache](https://github.com/jaeyonglee3/LeetCode/tree/master/0146-lru-cache) |
 ## Memoization
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0070-climbing-stairs](https://github.com/jaeyonglee3/LeetCode/tree/master/0070-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/jaeyonglee3/LeetCode/tree/master/1013-fibonacci-number) |
 ## Enumeration
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [2337-remove-digit-from-number-to-maximize-result](https://github.com/jaeyonglee3/LeetCode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
 ## Queue
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/jaeyonglee3/LeetCode/tree/master/0232-implement-queue-using-stacks) |
 ## Geometry
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1014-k-closest-points-to-origin](https://github.com/jaeyonglee3/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 ## Segment Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0729-my-calendar-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0729-my-calendar-i) |
 ## Ordered Set
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0729-my-calendar-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0729-my-calendar-i) |
 <!---LeetCode Topics End-->
