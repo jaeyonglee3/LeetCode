@@ -1,20 +1,20 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-        # key insight: say n in a number from nums
-        # if n-1 is not in nums, then n is the start of
-        # a consecutive sequence with length > 0
+        if nums == []: return 0
+        
+        # if n - 1 is not in nums, n is the start of some consecutive sequence
+        res = -math.inf
+        nums_set = set(nums)
 
-        num_set = set(nums)
-        res = 0
-
-        for n in num_set:
-            if n - 1 not in num_set:
-                # n is the start of a consecutive sequence
+        for n in nums_set:
+            if n - 1 not in nums_set:
                 curr_len = 1
-                curr = n
-                while curr + 1 in num_set:
+                curr_seq_val = n
+
+                while curr_seq_val + 1 in nums_set:
                     curr_len += 1
-                    curr += 1
+                    curr_seq_val += 1
+                
                 res = max(res, curr_len)
         
         return res
