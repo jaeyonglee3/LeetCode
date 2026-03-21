@@ -742,4 +742,8 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0729-my-calendar-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0729-my-calendar-i) |
+## Union-Find
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/jaeyonglee3/LeetCode/tree/main/0128-longest-consecutive-sequence/) | Medium |
 <!---LeetCode Topics End-->
