@@ -1,15 +1,16 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        pairs = {'(' : ')', '{' : '}', '[' : ']'}
+        pairs = {"(" : ")", "[" : "]", "{" : "}"}
         stack = []
 
-        for bracket in s:
-            if bracket in pairs:
-                stack.append(bracket)
+        for c in s:
+            if c in pairs:
+                stack.append(c)
             else:
-                # we've encountered a closing parentheses
-                removed = stack.pop() if stack else None
-                if not removed or pairs[removed] != bracket:
+                # c is a closing bracket
+                if not stack or stack[-1] not in pairs or pairs[stack[-1]] != c:
                     return False
-        
+
+                stack.pop()
+                
         return stack == []
