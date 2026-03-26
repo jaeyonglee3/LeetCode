@@ -78,6 +78,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0735-asteroid-collision](https://github.com/jaeyonglee3/LeetCode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
 | [0792-binary-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0792-binary-search) |
+| [0853-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/main/0853-car-fleet/) | Medium |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 | [0907-koko-eating-bananas](https://github.com/jaeyonglee3/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0940-fruit-into-baskets](https://github.com/jaeyonglee3/LeetCode/tree/master/0940-fruit-into-baskets) |
@@ -408,6 +409,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0594-longest-harmonious-subsequence](https://github.com/jaeyonglee3/LeetCode/tree/master/0594-longest-harmonious-subsequence) |
 | [0611-valid-triangle-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0611-valid-triangle-number) |
 | [0621-task-scheduler](https://github.com/jaeyonglee3/LeetCode/tree/master/0621-task-scheduler) |
+| [0853-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/main/0853-car-fleet/) | Medium |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 | [1014-k-closest-points-to-origin](https://github.com/jaeyonglee3/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
@@ -506,6 +508,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0678-valid-parenthesis-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0735-asteroid-collision](https://github.com/jaeyonglee3/LeetCode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
+| [0853-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/main/0853-car-fleet/) | Medium |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 | [0886-score-of-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0886-score-of-parentheses) |
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
@@ -583,6 +586,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0496-next-greater-element-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
+| [0853-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/main/0853-car-fleet/) | Medium |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/jaeyonglee3/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
