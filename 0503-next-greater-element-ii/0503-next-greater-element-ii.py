@@ -1,20 +1,17 @@
 class Solution:
     def nextGreaterElements(self, nums: List[int]) -> List[int]:
-        # monotonically decreasing (never increasing) stack
-        # stack contains (index, num) pairs
-        stack = []
-        res = [-1] * len(nums)
+        n = len(nums)
+        stack = []  # monotonically decreasing storing (index, value)
+        res = [-1] * n
 
-        for i in range(len(nums) * 2):
-            num = nums[i % len(nums)]
+        for i in range(n * 2):
+            i %= n
+            curr_val = nums[i]
 
-            while stack and num > stack[-1][1]:
-                removed_i = stack.pop()[0]
+            while stack and stack[-1][1] < curr_val:
+                idx, _ = stack.pop()
+                res[idx] = curr_val
 
-                res[removed_i] = num
-
-            if i < len(nums):
-                # only add to the stack on the first pass through nums
-                stack.append((i, num))
+            stack.append((i, curr_val))
         
         return res
