@@ -83,6 +83,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 | [0907-koko-eating-bananas](https://github.com/jaeyonglee3/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0940-fruit-into-baskets](https://github.com/jaeyonglee3/LeetCode/tree/master/0940-fruit-into-baskets) |
+| [0962-maximum-width-ramp](https://github.com/jaeyonglee3/LeetCode/tree/main/0962-maximum-width-ramp/) | Medium |
 | [1014-k-closest-points-to-origin](https://github.com/jaeyonglee3/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
@@ -175,6 +176,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0611-valid-triangle-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0611-valid-triangle-number) |
 | [0680-valid-palindrome-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0908-middle-of-the-linked-list](https://github.com/jaeyonglee3/LeetCode/tree/master/0908-middle-of-the-linked-list) |
+| [0962-maximum-width-ramp](https://github.com/jaeyonglee3/LeetCode/tree/main/0962-maximum-width-ramp/) | Medium |
 | [1019-squares-of-a-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
@@ -514,6 +516,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0886-score-of-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0886-score-of-parentheses) |
 | [0901-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/main/0901-online-stock-span/) | Medium |
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
+| [0962-maximum-width-ramp](https://github.com/jaeyonglee3/LeetCode/tree/main/0962-maximum-width-ramp/) | Medium |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/jaeyonglee3/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [2470-removing-stars-from-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 ## Dynamic Programming
@@ -592,6 +595,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 | [0901-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/main/0901-online-stock-span/) | Medium |
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
+| [0962-maximum-width-ramp](https://github.com/jaeyonglee3/LeetCode/tree/main/0962-maximum-width-ramp/) | Medium |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/jaeyonglee3/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 ## Design
 | Problem Name | Difficulty |
