@@ -512,6 +512,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0853-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/main/0853-car-fleet/) | Medium |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 | [0886-score-of-parentheses](https://github.com/jaeyonglee3/LeetCode/tree/master/0886-score-of-parentheses) |
+| [0901-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/main/0901-online-stock-span/) | Medium |
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/jaeyonglee3/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [2470-removing-stars-from-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2470-removing-stars-from-a-string) |
@@ -589,6 +590,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
 | [0853-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/main/0853-car-fleet/) | Medium |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
+| [0901-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/main/0901-online-stock-span/) | Medium |
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/jaeyonglee3/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 ## Design
@@ -602,6 +604,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0355-design-twitter](https://github.com/jaeyonglee3/LeetCode/tree/master/0355-design-twitter) |
 | [0729-my-calendar-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0729-my-calendar-i) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0901-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/main/0901-online-stock-span/) | Medium |
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 ## Binary Search
@@ -682,6 +685,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [0901-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/main/0901-online-stock-span/) | Medium |
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
 ## Trie
 | Problem Name | Difficulty |
