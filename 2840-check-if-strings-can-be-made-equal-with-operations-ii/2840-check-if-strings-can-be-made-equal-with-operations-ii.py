@@ -8,23 +8,23 @@ class Solution:
         # the characters at even and odd positions 
         # in the strings should be the same.
 
-        s1_evens, s1_odds = [], []
+        odds, evens = {}, {}
         for i, c in enumerate(s1):
             if i % 2 == 0:
-                s1_evens.append(c)
+                evens[c] = evens.get(c, 0) + 1
             else:
-                s1_odds.append(c)
+                odds[c] = odds.get(c, 0) + 1
         
-        s2_evens, s2_odds = [], []
         for i, c in enumerate(s2):
             if i % 2 == 0:
-                s2_evens.append(c)
-            else:
-                s2_odds.append(c)
-        
-        s1_evens.sort()
-        s2_evens.sort()
-        s1_odds.sort()
-        s2_odds.sort()
+                if c not in evens: return False
 
-        return s1_evens == s2_evens and s1_odds == s2_odds
+                evens[c] -= 1
+                if evens[c] == 0: del evens[c]
+            else:
+                if c not in odds: return False
+
+                odds[c] -= 1
+                if odds[c] == 0: del odds[c]
+        
+        return True
