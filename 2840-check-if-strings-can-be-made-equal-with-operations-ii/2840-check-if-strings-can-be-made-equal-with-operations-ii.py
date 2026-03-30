@@ -8,18 +8,17 @@ class Solution:
         # the characters at even and odd positions 
         # in the strings should be the same.
 
-        odds, evens = {}, {}
-        for i, c in enumerate(s1):
-            if i % 2 == 0:
-                evens[c] = evens.get(c, 0) + 1
-            else:
-                odds[c] = odds.get(c, 0) + 1
+        # We can merge the two parity groups into one frequency array.
+        # indices [0...25] are used for characters at even positions
+        # indices [26...51] are used for characters at odd positions
+
+        freq = [0] * 52
+
+        for i, (a, b) in enumerate(zip(s1, s2)):
+            offset_multiplier = 0 if i % 2 == 0 else 1
+            offset = offset_multiplier * 26
+            
+            freq[ord(a) - 97 + offset] += 1
+            freq[ord(b) - 97 + offset] -= 1
         
-        odds2, evens2 = {}, {}
-        for i, c in enumerate(s2):
-            if i % 2 == 0:
-                evens2[c] = evens2.get(c, 0) + 1
-            else:
-                odds2[c] = odds2.get(c, 0) + 1
-        
-        return odds == odds2 and evens2 == evens
+        return all(c == 0 for c in freq)
