@@ -15,10 +15,11 @@ class Solution:
             else:
                 odds[c] = odds.get(c, 0) + 1
         
+        odds2, evens2 = {}, {}
         for i, c in enumerate(s2):
             if i % 2 == 0:
-                if c not in evens: return False
+                evens2[c] = evens2.get(c, 0) + 1
             else:
-                if c not in odds: return False
+                odds2[c] = odds2.get(c, 0) + 1
         
-        return True
+        return odds == odds2 and evens2 == evens
