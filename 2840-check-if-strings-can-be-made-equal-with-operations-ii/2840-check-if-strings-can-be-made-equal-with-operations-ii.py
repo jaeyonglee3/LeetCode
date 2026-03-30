@@ -18,13 +18,7 @@ class Solution:
         for i, c in enumerate(s2):
             if i % 2 == 0:
                 if c not in evens: return False
-
-                evens[c] -= 1
-                if evens[c] == 0: del evens[c]
             else:
                 if c not in odds: return False
-
-                odds[c] -= 1
-                if odds[c] == 0: del odds[c]
         
         return True
