@@ -148,6 +148,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [2372-rearrange-characters-to-make-target-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2372-rearrange-characters-to-make-target-string) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jaeyonglee3/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
+| [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/jaeyonglee3/LeetCode/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 ## Two Pointers
 | Problem Name | Difficulty |
@@ -221,6 +222,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [2372-rearrange-characters-to-make-target-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2372-rearrange-characters-to-make-target-string) |
 | [2470-removing-stars-from-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2470-removing-stars-from-a-string) |
 | [2496-count-days-spent-together](https://github.com/jaeyonglee3/LeetCode/tree/master/2496-count-days-spent-together) |
+| [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/jaeyonglee3/LeetCode/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/jaeyonglee3/LeetCode/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/jaeyonglee3/LeetCode/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3379-score-of-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/3379-score-of-a-string) |
@@ -418,6 +420,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1019-squares-of-a-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1675-magnetic-force-between-two-balls](https://github.com/jaeyonglee3/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
+| [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/jaeyonglee3/LeetCode/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
