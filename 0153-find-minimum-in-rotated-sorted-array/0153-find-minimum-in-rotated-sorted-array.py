@@ -4,10 +4,6 @@ class Solution:
 
         l, r = 0, len(nums) - 1
         while r >= l:
-            if nums[l] < nums[r]:
-                res = min(res, nums[l])
-                break
-                
             mid = (r + l) // 2
             curr_val = nums[mid]
 
