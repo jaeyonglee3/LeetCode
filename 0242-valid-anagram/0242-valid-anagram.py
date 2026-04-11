@@ -1,5 +1,5 @@
 class Solution:
-def isAnagram(self, s: str, t: str) -> bool:
+    def isAnagram(self, s: str, t: str) -> bool:
         # MOST OPTIMAL SOLUTION
         
         # Step 1: Immediate length check (O(1))
