@@ -11,6 +11,10 @@ class Solution:
             time = 0
 
             for pile in piles:
+                if time > h:
+                    # early return false if we have already taken too long
+                    return False
+
                 if pile < k:
                     time += 1
                     continue
