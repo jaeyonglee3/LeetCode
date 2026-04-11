@@ -100,6 +100,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/jaeyonglee3/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/jaeyonglee3/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/jaeyonglee3/LeetCode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
+| [1672-richest-customer-wealth](https://github.com/jaeyonglee3/LeetCode/tree/main/1672-richest-customer-wealth/) | Easy |
 | [1675-magnetic-force-between-two-balls](https://github.com/jaeyonglee3/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1876-map-of-highest-peak](https://github.com/jaeyonglee3/LeetCode/tree/master/1876-map-of-highest-peak) |
@@ -665,6 +666,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1073-number-of-enclaves](https://github.com/jaeyonglee3/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1117-as-far-from-land-as-possible](https://github.com/jaeyonglee3/LeetCode/tree/master/1117-as-far-from-land-as-possible) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
+| [1672-richest-customer-wealth](https://github.com/jaeyonglee3/LeetCode/tree/main/1672-richest-customer-wealth/) | Easy |
 | [1876-map-of-highest-peak](https://github.com/jaeyonglee3/LeetCode/tree/master/1876-map-of-highest-peak) |
 | [2035-count-sub-islands](https://github.com/jaeyonglee3/LeetCode/tree/master/2035-count-sub-islands) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
