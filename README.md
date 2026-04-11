@@ -95,6 +95,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1127-last-stone-weight](https://github.com/jaeyonglee3/LeetCode/tree/master/1127-last-stone-weight) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/jaeyonglee3/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
+| [1480-running-sum-of-1d-array](https://github.com/jaeyonglee3/LeetCode/tree/main/1480-running-sum-of-1d-array/) | Easy |
 | [1547-destination-city](https://github.com/jaeyonglee3/LeetCode/tree/master/1547-destination-city) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/jaeyonglee3/LeetCode/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/jaeyonglee3/LeetCode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
@@ -429,6 +430,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0238-product-of-array-except-self](https://github.com/jaeyonglee3/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0410-split-array-largest-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+| [1480-running-sum-of-1d-array](https://github.com/jaeyonglee3/LeetCode/tree/main/1480-running-sum-of-1d-array/) | Easy |
 ## Union Find
 | Problem Name | Difficulty |
 | ------- | ------- |
