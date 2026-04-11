@@ -80,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0739-daily-temperatures](https://github.com/jaeyonglee3/LeetCode/tree/master/0739-daily-temperatures) |
 | [0792-binary-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0792-binary-search) |
 | [0853-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/main/0853-car-fleet/) | Medium |
+| [0875-koko-eating-bananas](https://github.com/jaeyonglee3/LeetCode/tree/main/0875-koko-eating-bananas/) | Medium |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
 | [0907-koko-eating-bananas](https://github.com/jaeyonglee3/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0940-fruit-into-baskets](https://github.com/jaeyonglee3/LeetCode/tree/master/0940-fruit-into-baskets) |
@@ -631,6 +632,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0704-binary-search](https://github.com/jaeyonglee3/LeetCode/tree/main/0704-binary-search/) | Easy |
 | [0729-my-calendar-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0729-my-calendar-i) |
 | [0792-binary-search](https://github.com/jaeyonglee3/LeetCode/tree/master/0792-binary-search) |
+| [0875-koko-eating-bananas](https://github.com/jaeyonglee3/LeetCode/tree/main/0875-koko-eating-bananas/) | Medium |
 | [0907-koko-eating-bananas](https://github.com/jaeyonglee3/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
 | [1046-max-consecutive-ones-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
