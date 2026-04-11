@@ -1,17 +1,13 @@
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
-        freq_s = {}
-        for c in s:
-            freq_s[c] = freq_s.get(c, 0) + 1
+def isAnagram(self, s: str, t: str) -> bool:
+        # MOST OPTIMAL SOLUTION
         
-        freq_t = {}
-        for c in t:
-            if c not in freq_s:
-                return False
-            
-            freq_t[c] = freq_t.get(c, 0) + 1
-
-            if freq_t[c] > freq_s[c]:
-                return False
+        # Step 1: Immediate length check (O(1))
+        # If lengths differ, they cannot be anagrams.
+        if len(s) != len(t):
+            return False
         
-        return freq_s == freq_t
+        # Step 2: Frequency Counting (O(n))
+        # collections.Counter is implemented in C, making it 
+        # faster than a manual loop in standard Python.
+        return Counter(s) == Counter(t)
