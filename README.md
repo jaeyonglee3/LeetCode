@@ -74,6 +74,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0643-maximum-average-subarray-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0643-maximum-average-subarray-i) |
 | [0695-max-area-of-island](https://github.com/jaeyonglee3/LeetCode/tree/master/0695-max-area-of-island) |
 | [0704-binary-search](https://github.com/jaeyonglee3/LeetCode/tree/main/0704-binary-search/) | Easy |
+| [0724-find-pivot-index](https://github.com/jaeyonglee3/LeetCode/tree/main/0724-find-pivot-index/) | Easy |
 | [0729-my-calendar-i](https://github.com/jaeyonglee3/LeetCode/tree/master/0729-my-calendar-i) |
 | [0733-flood-fill](https://github.com/jaeyonglee3/LeetCode/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/jaeyonglee3/LeetCode/tree/master/0735-asteroid-collision) |
@@ -430,6 +431,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0209-minimum-size-subarray-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0238-product-of-array-except-self](https://github.com/jaeyonglee3/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0410-split-array-largest-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0410-split-array-largest-sum) |
+| [0724-find-pivot-index](https://github.com/jaeyonglee3/LeetCode/tree/main/0724-find-pivot-index/) | Easy |
 | [1046-max-consecutive-ones-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
 | [1480-running-sum-of-1d-array](https://github.com/jaeyonglee3/LeetCode/tree/main/1480-running-sum-of-1d-array/) | Easy |
 ## Union Find
