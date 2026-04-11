@@ -58,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0283-move-zeroes](https://github.com/jaeyonglee3/LeetCode/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0349-intersection-of-two-arrays](https://github.com/jaeyonglee3/LeetCode/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0410-split-array-largest-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/jaeyonglee3/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0419-battleships-in-a-board](https://github.com/jaeyonglee3/LeetCode/tree/master/0419-battleships-in-a-board) |
@@ -133,6 +134,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0349-intersection-of-two-arrays](https://github.com/jaeyonglee3/LeetCode/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0355-design-twitter](https://github.com/jaeyonglee3/LeetCode/tree/master/0355-design-twitter) |
 | [0383-ransom-note](https://github.com/jaeyonglee3/LeetCode/tree/master/0383-ransom-note) |
 | [0409-longest-palindrome](https://github.com/jaeyonglee3/LeetCode/tree/master/0409-longest-palindrome) |
@@ -176,6 +178,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0283-move-zeroes](https://github.com/jaeyonglee3/LeetCode/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0344-reverse-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0344-reverse-string) |
+| [0349-intersection-of-two-arrays](https://github.com/jaeyonglee3/LeetCode/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0556-next-greater-element-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/0556-next-greater-element-iii) |
 | [0567-permutation-in-string](https://github.com/jaeyonglee3/LeetCode/tree/master/0567-permutation-in-string) |
 | [0611-valid-triangle-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0611-valid-triangle-number) |
@@ -413,6 +416,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0217-contains-duplicate](https://github.com/jaeyonglee3/LeetCode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/jaeyonglee3/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0349-intersection-of-two-arrays](https://github.com/jaeyonglee3/LeetCode/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0435-non-overlapping-intervals](https://github.com/jaeyonglee3/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/jaeyonglee3/LeetCode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0594-longest-harmonious-subsequence](https://github.com/jaeyonglee3/LeetCode/tree/master/0594-longest-harmonious-subsequence) |
@@ -632,6 +636,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0209-minimum-size-subarray-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0222-count-complete-tree-nodes](https://github.com/jaeyonglee3/LeetCode/tree/master/0222-count-complete-tree-nodes) |
 | [0287-find-the-duplicate-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0287-find-the-duplicate-number) |
+| [0349-intersection-of-two-arrays](https://github.com/jaeyonglee3/LeetCode/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0410-split-array-largest-sum](https://github.com/jaeyonglee3/LeetCode/tree/master/0410-split-array-largest-sum) |
 | [0611-valid-triangle-number](https://github.com/jaeyonglee3/LeetCode/tree/master/0611-valid-triangle-number) |
 | [0704-binary-search](https://github.com/jaeyonglee3/LeetCode/tree/main/0704-binary-search/) | Easy |
