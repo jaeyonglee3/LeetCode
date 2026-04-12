@@ -87,6 +87,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0907-koko-eating-bananas](https://github.com/jaeyonglee3/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0940-fruit-into-baskets](https://github.com/jaeyonglee3/LeetCode/tree/master/0940-fruit-into-baskets) |
 | [0962-maximum-width-ramp](https://github.com/jaeyonglee3/LeetCode/tree/main/0962-maximum-width-ramp/) | Medium |
+| [0977-squares-of-a-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/main/0977-squares-of-a-sorted-array/) | Easy |
 | [1014-k-closest-points-to-origin](https://github.com/jaeyonglee3/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
@@ -185,6 +186,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0680-valid-palindrome-ii](https://github.com/jaeyonglee3/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0908-middle-of-the-linked-list](https://github.com/jaeyonglee3/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [0962-maximum-width-ramp](https://github.com/jaeyonglee3/LeetCode/tree/main/0962-maximum-width-ramp/) | Medium |
+| [0977-squares-of-a-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/main/0977-squares-of-a-sorted-array/) | Easy |
 | [1019-squares-of-a-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1894-merge-strings-alternately](https://github.com/jaeyonglee3/LeetCode/tree/master/1894-merge-strings-alternately) |
@@ -424,6 +426,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0621-task-scheduler](https://github.com/jaeyonglee3/LeetCode/tree/master/0621-task-scheduler) |
 | [0853-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/main/0853-car-fleet/) | Medium |
 | [0883-car-fleet](https://github.com/jaeyonglee3/LeetCode/tree/master/0883-car-fleet) |
+| [0977-squares-of-a-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/main/0977-squares-of-a-sorted-array/) | Easy |
 | [1014-k-closest-points-to-origin](https://github.com/jaeyonglee3/LeetCode/tree/master/1014-k-closest-points-to-origin) |
 | [1019-squares-of-a-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1675-magnetic-force-between-two-balls](https://github.com/jaeyonglee3/LeetCode/tree/master/1675-magnetic-force-between-two-balls) |
