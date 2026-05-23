@@ -6,20 +6,11 @@
 #         self.right = right
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        # Use BFS to do it without recursion
         if not root:
             return None
         
-        q = collections.deque([root])
-
-        while q:
-            for _ in range(len(q)):
-                curr = q.popleft()
-
-                if curr:
-                    curr.left, curr.right = curr.right, curr.left
-                    q.append(curr.left)
-                    q.append(curr.right)
+        root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
 
         return root
 
+        
