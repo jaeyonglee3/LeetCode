@@ -4,9 +4,10 @@ class Solution:
         res = -math.inf
 
         while r > l:
-            curr_area = (r - l) * min(height[l], height[r])
-            res = max(res, curr_area)
+            curr_amount = min(height[l], height[r]) * (r - l)
+            res = max(res, curr_amount)
 
+            # move the pointer pointing to the shorter bar
             if height[l] > height[r]:
                 r -= 1
             else:
