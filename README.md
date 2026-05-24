@@ -92,6 +92,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [1019-squares-of-a-sorted-array](https://github.com/jaeyonglee3/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1036-rotting-oranges](https://github.com/jaeyonglee3/LeetCode/tree/master/1036-rotting-oranges) |
 | [1046-max-consecutive-ones-iii](https://github.com/jaeyonglee3/LeetCode/tree/master/1046-max-consecutive-ones-iii) |
+| [1046-last-stone-weight](https://github.com/jaeyonglee3/LeetCode/tree/main/1046-last-stone-weight/) | Easy |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/jaeyonglee3/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1073-number-of-enclaves](https://github.com/jaeyonglee3/LeetCode/tree/master/1073-number-of-enclaves) |
 | [1117-as-far-from-land-as-possible](https://github.com/jaeyonglee3/LeetCode/tree/master/1117-as-far-from-land-as-possible) |
@@ -472,6 +473,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0703-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/main/0703-kth-largest-element-in-a-stream/) | Easy |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jaeyonglee3/LeetCode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1014-k-closest-points-to-origin](https://github.com/jaeyonglee3/LeetCode/tree/master/1014-k-closest-points-to-origin) |
+| [1046-last-stone-weight](https://github.com/jaeyonglee3/LeetCode/tree/main/1046-last-stone-weight/) | Easy |
 | [1127-last-stone-weight](https://github.com/jaeyonglee3/LeetCode/tree/master/1127-last-stone-weight) |
 ## Bucket Sort
 | Problem Name | Difficulty |
