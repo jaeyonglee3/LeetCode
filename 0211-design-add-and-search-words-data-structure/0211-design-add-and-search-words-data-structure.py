@@ -1,47 +1,48 @@
 class TrieNode:
     def __init__(self):
         self.children = {}
-        self.isEndOfWord = False
+        self.ends_word = False
 
 class WordDictionary:
 
     def __init__(self):
         self.root = TrieNode()
-        
 
     def addWord(self, word: str) -> None:
         curr = self.root
 
         for c in word:
-            if c not in curr.children:
+            if c in curr.children:
+                curr = curr.children[c]
+            else:
                 curr.children[c] = TrieNode()
+                curr = curr.children[c]
         
-            curr = curr.children[c]
-        
-        curr.isEndOfWord = True
+        curr.ends_word = True
 
     def search(self, word: str) -> bool:
-        # j is index param, 
-        def dfs(j, root):
-            curr = root
-            for i in range(j, len(word)):
-                c = word[i]
-
-                if c == ".":
-                    # backtracking approach
-                    for child in curr.children.values():
-                        if dfs(i + 1, child):
-                            return True
-                    return False
-                else: 
-                    if c not in curr.children:
-                        return False
-                
-                    curr = curr.children[c]
-            
-            return curr.isEndOfWord
+        # use a recursive helper function
+        return self.searchHelper(0, word, self.root)
+    
+    def searchHelper(self, i, word, curr) -> bool:
+        if i == len(word):
+            return curr.ends_word
         
-        return dfs(0, self.root)
+        is_dot = word[i] == "."
+        if len(curr.children) == 0:
+            return False
+        if not is_dot and word[i] not in curr.children:
+            return False
+        
+        if is_dot:
+            for c in curr.children:
+                if self.searchHelper(i + 1, word, curr.children[c]):
+                    return True
+        else:
+            return self.searchHelper(i + 1, word, curr.children[word[i]])
+        
+        return False
+
 
 # Your WordDictionary object will be instantiated and called as such:
 # obj = WordDictionary()
