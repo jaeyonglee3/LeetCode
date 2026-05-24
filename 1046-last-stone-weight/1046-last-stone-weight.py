@@ -1,21 +1,22 @@
 class Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:
-        # To use python heapq for a max heap
-        # make all the values negative
-        stones = [-weight for weight in stones]
-        heapq.heapify(stones) # this is a O(n) operation
+        # we need to be able to efficiently get the two heaviest stones
+        # use a max-heap to fetch the heaviest stone in O(1) time
+        
+        # Step 1: heapify stones using heapq.heapify
+        stones = [-s for s in stones]
+        heapq.heapify(stones)
 
-        # Simulate the game as long as there are at least 2
-        # stone weight remaining in the max heap
-        while len(stones) >= 2:
-            # stone y is guaranteed to have weight >= x
-            # but we made everything negative so we're guaranteed to have x >= y
+        while len(stones) > 1:
+            # "game loop"
             y = heapq.heappop(stones)
-            x = heapq.heappop(stones)
+            x = heapq.heappop(stones)  # x <= y
 
             if x != y:
-                heapq.heappush(stones, -abs(y - x))
-            
-            # if stones are equal weights, do nothing!
+                new_stone = abs(y) - abs(x)
+                heapq.heappush(stones, -new_stone)
         
-        return abs(stones[0]) if len(stones) > 0 else 0
+        if len(stones) > 0:
+            return abs(stones[0])
+        
+        return 0
