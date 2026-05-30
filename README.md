@@ -488,6 +488,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0594-longest-harmonious-subsequence](https://github.com/jaeyonglee3/LeetCode/tree/master/0594-longest-harmonious-subsequence) |
 | [0621-task-scheduler](https://github.com/jaeyonglee3/LeetCode/tree/master/0621-task-scheduler) |
 | [1469-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/jaeyonglee3/LeetCode/tree/master/1469-minimum-number-of-steps-to-make-two-strings-anagram) |
+| [1603-design-parking-system](https://github.com/jaeyonglee3/LeetCode/tree/main/1603-design-parking-system/) | Easy |
 | [1823-determine-if-string-halves-are-alike](https://github.com/jaeyonglee3/LeetCode/tree/master/1823-determine-if-string-halves-are-alike) |
 | [2372-rearrange-characters-to-make-target-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2372-rearrange-characters-to-make-target-string) |
 ## Quickselect
@@ -633,6 +634,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0901-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/main/0901-online-stock-span/) | Medium |
 | [0937-online-stock-span](https://github.com/jaeyonglee3/LeetCode/tree/master/0937-online-stock-span) |
 | [1023-time-based-key-value-store](https://github.com/jaeyonglee3/LeetCode/tree/master/1023-time-based-key-value-store) |
+| [1603-design-parking-system](https://github.com/jaeyonglee3/LeetCode/tree/main/1603-design-parking-system/) | Easy |
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -708,6 +710,7 @@ Collection of LeetCode questions to ace the coding interview! Created using Leet
 | [0054-spiral-matrix](https://github.com/jaeyonglee3/LeetCode/tree/master/0054-spiral-matrix) |
 | [0412-fizz-buzz](https://github.com/jaeyonglee3/LeetCode/tree/master/0412-fizz-buzz) |
 | [0735-asteroid-collision](https://github.com/jaeyonglee3/LeetCode/tree/master/0735-asteroid-collision) |
+| [1603-design-parking-system](https://github.com/jaeyonglee3/LeetCode/tree/main/1603-design-parking-system/) | Easy |
 | [2058-concatenation-of-array](https://github.com/jaeyonglee3/LeetCode/tree/master/2058-concatenation-of-array) |
 | [2428-equal-row-and-column-pairs](https://github.com/jaeyonglee3/LeetCode/tree/master/2428-equal-row-and-column-pairs) |
 | [2470-removing-stars-from-a-string](https://github.com/jaeyonglee3/LeetCode/tree/master/2470-removing-stars-from-a-string) |
