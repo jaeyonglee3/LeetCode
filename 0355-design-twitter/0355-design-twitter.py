@@ -18,23 +18,27 @@ class Twitter:
         tweet_heap = []
         curr_tweet_index = -1
         
-        while len(result) < 10:
-            users_set = self.following[userId]
-            users_set.add(userId)
+        users_set = self.following[userId].copy()
+        users_set.add(userId)
 
-            for user in self.following[userId]:
-                user_tweets = self.tweets[user]
-                if len(user_tweets) < abs(curr_tweet_index):
-                    continue
-                
-                curr_tweet = user_tweets[curr_tweet_index]
-                heapq.heappush(tweet_heap, curr_tweet)
+        for user in users_set:
+            user_tweets = self.tweets[user]
+            if not user_tweets:
+                continue
             
-            curr_tweet_index -= 1
-            if not tweet_heap:
-                return result
+            index = len(user_tweets) - 1  # grab latest tweet
+            latest_tweet = user_tweets[index]
+            timestamp, tweetId = latest_tweet[0], latest_tweet[1]
             
-            result.append(heapq.heappop(tweet_heap)[1])
+            heapq.heappush(tweet_heap, [timestamp, tweetId, user, index - 1])
+        
+        while tweet_heap and len(result) < 10:
+            timestamp, tweetId, userId, index = heapq.heappop(tweet_heap)
+            result.append(tweetId)
+
+            if index >= 0:
+                timestamp, tweetId = self.tweets[userId][index]
+                heapq.heappush(tweet_heap, [timestamp, tweetId, userId, index - 1])
         
         return result
 
